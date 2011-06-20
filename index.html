@@ -21,7 +21,7 @@
 <div id="content">
 	<header role="banner">
 		<h1>Jribbble</h1>
-		<h2><span>A jQuery plugin for</span><br><span>grabbing shots from</span><br><span>the <a href="http://dribbble.com/api">Dribbble API</a></span></h2>
+		<h2><span>A jQuery plugin for</span><br><span>fetching shots from</span><br><span>the <a href="http://dribbble.com/api">Dribbble API</a></span></h2>
 	</header>
 	
 	<section id="download">
@@ -31,11 +31,25 @@
 	
 	<hr />
 	
-	<h1 class="features-heading"><span>What can Jribbble</span> <br><span>do for you? It can...</span></h1>
+	<nav>
+		<h1 class="features-heading">What can it do?</h1>
+		<ol>
+			<li><a href="#getShotById">Get a <b>shot</b></a></li>
+			<li><a href="#getCommentsOfShot">Get the <b>comments</b> of a shot</a></li>
+			<li><a href="#getReboundsOfShot">Get the <b>rebbbounds</b> of a shot</a></li>
+			<li><a href="#getShotsByList">Get a <b>list of shots</b> by the list name</a></li>
+			<li><a href="#getShotsByPlayerId">Get a list of a <b>player's shots</b></a></li>
+			<li><a href="#getShotsThatPlayerFollows">Get a list of <b>shots</b> a player is <b>following</b></a></li>
+			<li><a href="#getPlayerById">Get the <b>profile</b> details of a player</a></li>
+			<li><a href="#getPlayerFollowers">Get the <b>followers</b> of a player</a></li>
+			<li><a href="#getPlayerFollowing">Get the <b>players</b> a player is <b>following</b></a></li>
+			<li><a href="#getPlayerDraftees">Get the <b>draftees</b> of a player</a></li>
+		</ol>
+	</nav>
 	
 	<section class="jribbble-feature" id="getShotById">
 		<header>
-			<h1>Get a single shot</h1>
+			<h1>Get a shot</h1>
 			<h2>$.jribbble.getShotById(shotId, callback)</h2>
 			<dl class="method-description">
 				<dt>shotId INT</dt> 
@@ -125,7 +139,7 @@ $.jribbble.getShotById(31340, function (shot) {
 	<hr />
 	
 	
-	<section class="jribbble-feature">
+	<section class="jribbble-feature" id="getCommentsOfShot">
 		<header>
 			<h1>Get the Comments of a Shot</h1>
 			<h2>$.jribbble.getCommentsOfShot(shotId, callback, <i>[pagingOpts]</i>)</h2>
@@ -305,12 +319,9 @@ $.jribbble.getReboundsOfShot(10745, function (rebounds) {
 	</section>
 	
 	
-	
 	<hr />
 	
-	
-	
-	
+		
 	<section class="jribbble-feature" id="getShotsByList">
 		<header>
 			<h1>Get a List of Shots by the List Name</h1>
@@ -398,13 +409,10 @@ $.jribbble.getShotsByList('popular', function (listDetails) {
 	</section>
 	
 	
-	
 	<hr />
 	
 	
-	
-	
-	<section class="jribbble-feature">
+	<section class="jribbble-feature" id="getShotsByPlayerId">
 		<header>
 			<h1>Get a List of a Player's Shots</h1>
 			<h2>$.jribbble.getShotsByPlayerId(playerId, callback, <i>[pagingOpts]</i>)</h2>
@@ -497,7 +505,7 @@ $.jribbble.getShotsByPlayerId('tylergaw',
 	<hr />
 	
 	
-	<section class="jribbble-feature">
+	<section class="jribbble-feature" id="getShotsThatPlayerFollows">
 		<header>
 			<h1>Get a List of Shots a Player is Following</h1>
 			<h2>$.jribbble.getShotsThatPlayerFollows(playerId, callback, <i>[pagingOpts]</i>)</h2>
@@ -588,15 +596,10 @@ $.jribbble.getShotsThatPlayerFollows('tylergaw',
 	</section>
 	
 	
-	
 	<hr />
 	
-	
-	
-	
-	
-	
-	<section class="jribbble-feature">
+
+	<section class="jribbble-feature" id="getPlayerById">
 		<header>
 			<h1>Get the Profile Details of a Player</h1>
 			<h2>$.jribbble.getPlayerById(playerId, callback)</h2>
@@ -668,11 +671,10 @@ $.jribbble.getPlayerById('tylergaw',
 	</section>
 	
 	
-	
 	<hr />
 
 
-	<section class="jribbble-feature">
+	<section class="jribbble-feature" id="getPlayerFollowers">
 		<header>
 			<h1>Get the Followers of a Player</h1>
 			<h2>$.jribbble.getPlayerFollowers(playerId, callback, <i>[pagingOpts]</i>)</h2>
@@ -751,7 +753,7 @@ $.jribbble.getPlayerFollowers('hoefler',
 	<hr />
 	
 	
-	<section class="jribbble-feature">
+	<section class="jribbble-feature" id="getPlayerFollowing">
 		<header>
 			<h1>Get the Players a Player is Following</h1>
 			<h2>$.jribbble.getPlayerFollowing(playerId, callback, <i>[pagingOpts]</i>)</h2>
@@ -830,7 +832,7 @@ $.jribbble.getPlayerFollowing('tylergaw',
 	<hr />
 	
 	
-	<section class="jribbble-feature">
+	<section class="jribbble-feature" id="getPlayerDraftees">
 		<header>
 			<h1>Get the Draftees of a Player</h1>
 			<h2>$.jribbble.getPlayerDraftees(playerId, callback, <i>[pagingOpts]</i>)</h2>

@@ -1,0 +1,55 @@
+nav
+{
+	clear: both;
+	display: block;
+	overflow: hidden;
+	
+	h1
+	{
+		background-color: fade-out(#fff, 0.2);
+		display: inline-block;
+		@include botanika(2.7em, 1.45em);
+		margin-top: 1.4em;
+	}
+	
+	ol
+	{
+		margin-bottom: 3em;
+		padding: 0.5em 0 0 0.2em;
+	}
+	
+	li
+	{
+		border-bottom: 1px dashed darken(#ccc, 5%);
+		color: #ff0066;
+		list-style: decimal inside;
+		padding: 0.8em 0;
+		
+		&:last-child
+		{
+			border-bottom: none;
+		}
+	}
+	
+	a
+	{
+		color: #353535;
+		font-size: 1.2em;
+		
+		&:hover
+		{
+			color: #2f39ff;
+			
+			b
+			{
+				color: #2f39ff;
+			}
+		}
+		
+		b
+		{
+			color: darken(#353535, 5%);
+			font-weight: 700;
+		}
+	}
+}
