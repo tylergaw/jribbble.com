@@ -1,0 +1,52 @@
+.jribbble-feature
+{
+	clear: both;
+	margin: 4em 0;
+	
+	h1
+	{
+		color: lighten(#353535, 50%);
+		font-size: 3.2em;
+		font-weight: 700;
+		line-height: 1em;
+		margin-bottom: 0.1em;
+	}
+	
+	h2
+	{
+		//color: #ff0066;
+		background-color: #ff0066;
+		color: #ececec;
+		@include botanika(1.2em, 1.4em);
+		text-indent: 0.2em;
+		
+		i
+		{
+			color: fade-out(#ececec, 0.2);
+		}
+	}
+}
+
+.method-description
+{
+	font-size: 1.1em;
+	overflow: hidden;
+}
+	
+	.method-description dt
+	{
+		clear: left;
+		float: left;
+		font-weight: 700;
+		line-height: 1.2em;
+		padding-bottom: 30px;
+		width: 40.1878914%;
+	}
+	
+	.method-description dd
+	{
+		float: right;
+		line-height: 1.2em;
+		width: 56.4718163%;
+		vertical-align: top;
+	}

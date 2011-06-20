@@ -1,6 +1,7 @@
 body 
 {
-	background: #dfdfdf url(../images/branding.png) no-repeat -4em -12em;
+	background: #dfdfdf url(../images/branding.png) no-repeat -4em -11em;
+	
 	@include background-size('81.7857143%');
 	@include dagny('100%');
 }

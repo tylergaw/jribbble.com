@@ -20,7 +20,16 @@
 	}
 }
 
-.jribbble-feature
+pre
 {
-	clear: both;
+	background-color: #ececec;
+	border-style: solid;
+	border-width: 1px;
+	border-top-color: darken(#ececec, 20%);
+	border-left-color: darken(#ececec, 20%);
+	border-right-color: lighten(#ececec, 20%);
+	border-bottom-color: lighten(#ececec, 20%);
+	line-height: 1.2;
+	overflow: auto;
+	padding: 8px;
 }
