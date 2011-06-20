@@ -1,0 +1,26 @@
+#content
+{
+	margin: 0 auto;
+	width: 75%;
+}
+
+.features-heading
+{
+	
+	clear: both;
+	display: inline-block;
+	@include botanika(2.7em, 1.45em);
+	margin-top: 1em;
+	text-align: left;
+	width: 73.1732777%;
+	
+	span
+	{
+		background-color: fade-out(#fff, 0.2);
+	}
+}
+
+.jribbble-feature
+{
+	clear: both;
+}

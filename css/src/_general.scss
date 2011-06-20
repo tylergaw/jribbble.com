@@ -1,0 +1,17 @@
+body 
+{
+	background: #dfdfdf url(../images/branding.png) no-repeat -4em -12em;
+	@include background-size('81.7857143%');
+	@include dagny('100%');
+}
+
+a
+{
+	color: #2f39ff;
+	text-decoration: none;
+	
+	&:hover
+	{
+		text-decoration: underline;
+	}
+}

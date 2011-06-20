@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
 	<meta charset="utf-8">
@@ -8,26 +8,34 @@
 		<script src="js/html5.js"></script>
 	<![endif]-->
 	
+	<script type="text/javascript" src="http://use.typekit.com/nyr0qms.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+	
 	<link rel="stylesheet" href="css/core.css">
-	<link rel="stylesheet" href="css/shCoreFadeToGrey.css" />
+	<link rel="stylesheet" href="css/shCoreEclipse.css" />
 </head>
 <body>
+	
+<a id="fork-me" href="">Fork me on GitHub</a>
+
 <div id="content">
-	<header>
+	<header role="banner">
 		<h1>Jribbble</h1>
-		<p>A jQuery plugin for the Dribbble API - <a href="http://dribbble.com/api">http://dribbble.com/api</a></p>
+		<h2><span>A jQuery plugin for</span><br><span>grabbing shots from</span><br><span>the <a href="http://dribbble.com/api">Dribbble API</a></span></h2>
 	</header>
 	
 	<section id="download">
-		Download:
-		<a href="releases/0.11.0/jribbble-0.11.0.zip">Jribbble 0.11.0</a>
-		<a href="releases/0.11.0/jribbble-0.11.0+demos.zip">Jribbble 0.11.0 <i>+ demos</i></a>
+		<h1><a href="https://raw.github.com/tylergaw/jribbble/master/dist/jquery.jribbble-0.11.0.ugly.js">Download Jribbble</a></h1>
+		<h2>Current release: <strong>v0.11.0</strong></h2>
 	</section>
 	
 	<hr />
+	
+	<h1 class="features-heading"><span>What can Jribbble</span> <br> <span>do for you? It can...</span></h1>
+	
 	<section class="jribbble-feature" id="getShotById">
 		<header>
-			<h1>Get a Shot</h1>
+			<h1>Get a single shot</h1>
 			<h2>$.jribbble.getShotById(shotId, callback)</h2>
 			<dl class="method-description">
 				<dt>shotId INT</dt> 
@@ -58,21 +66,18 @@
 			</div>
 			
 			<div class="example-usage fullsize">
-				<pre class="brush: js jribbble-example" title="Example Usage">
-$.jribbble.getShotById(31340, 
-    function (shot)
-    {
-        $('#shotById a:first').attr('href', shot.url);
-        $('#shotById img').attr('src', shot.image_url);
-        $('#shotById h3').text(shot.title);
-        $('#shot-player').append(shot.player.name);
-        $('#shot-views').append(shot.views_count);
-        $('#shot-likes').append(shot.likes_count);
-        $('#shot-comments').append(shot.comments_count);
-        $('#shot-rebounds').append(shot.rebounds_count);
-        $('#shot-url').attr('href', shot.url).text(shot.url);
-    }
-);</pre>
+				<pre class="brush: js jribbble-example">
+$.jribbble.getShotById(31340, function (shot) {
+  $('#shotById a:first').attr('href', shot.url);
+  $('#shotById img').attr('src', shot.image_url);
+  $('#shotById h3').text(shot.title);
+  $('#shot-player').append(shot.player.name);
+  $('#shot-views').append(shot.views_count);
+  $('#shot-likes').append(shot.likes_count);
+  $('#shot-comments').append(shot.comments_count);
+  $('#shot-rebounds').append(shot.rebounds_count);
+  $('#shot-url').attr('href', shot.url).text(shot.url);
+});</pre>
 			</div>
 
 			<div class="example-json">
@@ -120,7 +125,7 @@ $.jribbble.getShotById(31340,
 	<hr />
 	
 	
-<section>
+	<section class="jribbble-feature">
 		<header>
 			<h1>Get the Comments of a Shot <i>Added in version: 0.11.0</i></h1>
 			<h2>$.jribbble.getCommentsOfShot(shotId, callback, [pagingOpts])</h2>
@@ -149,23 +154,22 @@ $.jribbble.getShotById(31340,
 			</div>
 			
 			<div class="example-usage fullsize">
-				<pre class="brush: js jribbble-example" title="Example Usage">
-$.jribbble.getCommentsOfShot(51986,
-    function (response)
-    {
-        var html = [];
-        $.each(response.comments, function (i, comment)
-        {
-            html.push('&lt;li&gt;');
-            html.push('&lt;a href="' + comment.player.url + '"&gt;');
-            html.push('&lt;img src="' + comment.player.avatar_url + '" alt="" width="30" height="30"&gt;&lt;/a&gt;');
-            html.push('&lt;h5&gt;' + comment.player.name + '&lt;/h5&gt;');
-            html.push('&lt;p&gt;' + comment.body + '&lt;/p&gt;');
-            html.push('&lt;/li&gt;');
-        });
-        $('#shotCommentsList').html(html.join(''));
-    }
-);</pre>
+				<pre class="brush: js jribbble-example">
+$.jribbble.getCommentsOfShot(51986, function (response) {
+  var html = [];
+
+  $.each(response.comments, function (i, comment) {
+    html.push('&lt;li&gt;');
+    html.push('&lt;a href="' + comment.player.url + '"&gt;');
+    html.push('&lt;img src="' + comment.player.avatar_url + 
+      '" alt="" width="30" height="30"&gt;&lt;/a&gt;');
+    html.push('&lt;h5&gt;' + comment.player.name + '&lt;/h5&gt;');
+    html.push('&lt;p&gt;' + comment.body + '&lt;/p&gt;');
+    html.push('&lt;/li&gt;');
+  });
+
+  $('#shotCommentsList').html(html.join(''));
+});</pre>
 			</div>
 			
 			<div class="example-json">
@@ -233,26 +237,21 @@ $.jribbble.getCommentsOfShot(51986,
 			<ul id="reboundsOfShot" class="teaser-list"></ul>
 			
 			<div class="example-usage fullsize">
-				<pre class="brush: js jribbble-example" title="Example Usage">
-$.jribbble.getReboundsOfShot(10745, 
-    function (rebounds)
-    {
-        var html = [];
-        
-        $.each(rebounds.shots, function (i, shot)
-        {
-            html.push('&lt;li&gt;&lt;h3&gt;' + shot.player.name + '&lt;/h3&gt;');
-            html.push('&lt;a href="' + shot.url + '"&gt;');
-            html.push('&lt;img src="' + shot.image_teaser_url + '" ');
-            html.push('alt="' + shot.title + '"&gt;');
-            html.push('&lt;/a&gt;');
-            html.push('&lt;h4&gt;' + shot.title + '&lt;/h4&gt;&lt;/li&gt;');
-        });
-    	
-        $('#reboundsOfShot').html(html.join(''));
-    },
-    {page: 1, per_page: 8}
-);</pre>
+				<pre class="brush: js jribbble-example">
+$.jribbble.getReboundsOfShot(10745, function (rebounds) {
+  var html = [];
+  
+  $.each(rebounds.shots, function (i, shot) {
+    html.push('&lt;li&gt;&lt;h3&gt;' + shot.player.name + '&lt;/h3&gt;');
+    html.push('&lt;a href="' + shot.url + '"&gt;');
+    html.push('&lt;img src="' + shot.image_teaser_url + '" ');
+    html.push('alt="' + shot.title + '"&gt;');
+    html.push('&lt;/a&gt;');
+    html.push('&lt;h4&gt;' + shot.title + '&lt;/h4&gt;&lt;/li&gt;');
+  });
+
+  $('#reboundsOfShot').html(html.join(''));
+}, {page: 1, per_page: 8});</pre>
 			</div>
 
 			<div class="example-json">
@@ -331,25 +330,21 @@ $.jribbble.getReboundsOfShot(10745,
 			<ul id="shotsByList" class="teaser-list"></ul>
 			
 			<div class="example-usage fullsize">
-				<pre class="brush: js jribbble-example" title="Example Usage">
-$.jribbble.getShotsByList('popular',
-    function (listDetails)
-    {
-        var html = [];
-        $.each(listDetails.shots, function (i, shot)
-        {
-            html.push('&lt;li&gt;&lt;h3&gt;' + shot.player.name + '&lt;/h3&gt;');
-            html.push('&lt;a href="' + shot.url + '"&gt;');
-            html.push('&lt;img src="' + shot.image_teaser_url + '" ');
-            html.push('alt="' + shot.title + '"&gt;');
-            html.push('&lt;/a&gt;');
-            html.push('&lt;h4&gt;' + shot.title + '&lt;/h4&gt;&lt;/li&gt;');
-        });
+				<pre class="brush: js jribbble-example">
+$.jribbble.getShotsByList('popular', function (listDetails) {
+  var html = [];
 
-        $('#shotsByList').html(html.join(''));
-    },
-    {page: 2, per_page: 8}
-);</pre>
+  $.each(listDetails.shots, function (i, shot) {
+      html.push('&lt;li&gt;&lt;h3&gt;' + shot.player.name + '&lt;/h3&gt;');
+      html.push('&lt;a href="' + shot.url + '"&gt;');
+      html.push('&lt;img src="' + shot.image_teaser_url + '" ');
+      html.push('alt="' + shot.title + '"&gt;');
+      html.push('&lt;/a&gt;');
+      html.push('&lt;h4&gt;' + shot.title + '&lt;/h4&gt;&lt;/li&gt;');
+  });
+
+  $('#shotsByList').html(html.join(''));
+}, {page: 2, per_page: 8});</pre>
 		</div>
 		
 		<div class="example-json">
@@ -409,7 +404,7 @@ $.jribbble.getShotsByList('popular',
 	
 	
 	
-	<section>
+	<section class="jribbble-feature">
 		<header>
 			<h1>Get a List of a Player's Shots</h1>
 			<h2>$.jribbble.getShotsByPlayerId(playerId, callback, [pagingOpts])</h2>
@@ -428,7 +423,7 @@ $.jribbble.getShotsByList('popular',
 			<ul id="shotsByPlayerId" class="teaser-list"></ul>
 			
 			<div class="example-usage fullsize">
-				<pre class="brush: js jribbble-example" title="Example Usage">
+				<pre class="brush: js jribbble-example">
 $.jribbble.getShotsByPlayerId('tylergaw',
     function (playerShots)
     {
@@ -502,9 +497,7 @@ $.jribbble.getShotsByPlayerId('tylergaw',
 	<hr />
 	
 	
-	
-	
-	<section>
+	<section class="jribbble-feature">
 		<header>
 			<h1>Get a List of Shots a Player is Following</h1>
 			<h2>$.jribbble.getShotsThatPlayerFollows(playerId, callback, [pagingOpts])</h2>
@@ -522,7 +515,7 @@ $.jribbble.getShotsByPlayerId('tylergaw',
 			<ul id="shotsPlayerFollows" class="teaser-list"></ul>
 			
 			<div class="example-usage fullsize">
-				<pre class="brush: js jribbble-example" title="Example Usage">
+				<pre class="brush: js jribbble-example">
 $.jribbble.getShotsThatPlayerFollows('tylergaw',
     function (followedShots)
     {
@@ -603,7 +596,7 @@ $.jribbble.getShotsThatPlayerFollows('tylergaw',
 	
 	
 	
-	<section>
+	<section class="jribbble-feature">
 		<header>
 			<h1>Get the Profile Details of a Player</h1>
 			<h2>$.jribbble.getPlayerById(playerId, callback)</h2>
@@ -631,7 +624,7 @@ $.jribbble.getShotsThatPlayerFollows('tylergaw',
 			</div>
 			
 			<div class="example-usage fullsize">
-				<pre class="brush: js jribbble-example" title="Example Usage">
+				<pre class="brush: js jribbble-example">
 $.jribbble.getPlayerById('tylergaw',
     function (player)
     {
@@ -679,7 +672,7 @@ $.jribbble.getPlayerById('tylergaw',
 	<hr />
 
 
-	<section>
+	<section class="jribbble-feature">
 		<header>
 			<h1>Get the Followers of a Player <i>Added in version: 0.10.0</i></h1>
 			<h2>$.jribbble.getPlayerFollowers(playerId, callback, [pagingOpts])</h2>
@@ -699,7 +692,7 @@ $.jribbble.getPlayerById('tylergaw',
 			</ul>
 			
 			<div class="example-usage fullsize">
-				<pre class="brush: js jribbble-example" title="Example Usage">
+				<pre class="brush: js jribbble-example">
 $.jribbble.getPlayerFollowers('hoefler',
     function (followers)
     {
@@ -758,7 +751,7 @@ $.jribbble.getPlayerFollowers('hoefler',
 	<hr />
 	
 	
-	<section>
+	<section class="jribbble-feature">
 		<header>
 			<h1>Get the Players a Player is Following <i>Added in version: 0.10.0</i></h1>
 			<h2>$.jribbble.getPlayerFollowing(playerId, callback, [pagingOpts])</h2>
@@ -778,7 +771,7 @@ $.jribbble.getPlayerFollowers('hoefler',
 			</ul>
 			
 			<div class="example-usage fullsize">
-				<pre class="brush: js jribbble-example" title="Example Usage">
+				<pre class="brush: js jribbble-example">
 $.jribbble.getPlayerFollowing('tylergaw',
     function (following)
     {
@@ -837,7 +830,7 @@ $.jribbble.getPlayerFollowing('tylergaw',
 	<hr />
 	
 	
-<section>
+	<section class="jribbble-feature">
 		<header>
 			<h1>Get the Draftees of a Player <i>Added in version: 0.10.0</i></h1>
 			<h2>$.jribbble.getPlayerDraftees(playerId, callback, [pagingOpts])</h2>
@@ -857,7 +850,7 @@ $.jribbble.getPlayerFollowing('tylergaw',
 			</ul>
 			
 			<div class="example-usage fullsize">
-				<pre class="brush: js jribbble-example" title="Example Usage">
+				<pre class="brush: js jribbble-example">
 $.jribbble.getPlayerDraftees('cameronmoll',
     function (draftees)
     {
@@ -911,18 +904,16 @@ $.jribbble.getPlayerDraftees('cameronmoll',
 		</div>
 	</section>
 	
-	
 	<hr/>
-	
-	
-	
+		
 	<footer>
-		<a href="http://github.com/tylergaw/jribbble">Fork Me</a> on github <span>Follow <a href="http://twitter.com/thegaw">@thegaw</a> on Twitter</span>
+		<p>Created and maintained by <a href="http://tylergaw.com">Tyler Gaw</a></p><br>
+		<p>He is <a href="http://twitter.com/thegaw">@thegaw</a> on Twitter</p>
 	</footer>
 </div>
 	<script src="js/shCore.js"></script>
 	<script src="js/shBrushJScript.js"></script>
-	<script src="js/jquery-1.4.2.min.js"></script>
+	<script src="js/jquery-1.6.1.min.js"></script>
 	<script src="js/jquery.jribbble-0.11.0.min.js"></script>
 	<script src="js/json2.js"></script>
 	<script src="js/jribbble.home.js"></script>

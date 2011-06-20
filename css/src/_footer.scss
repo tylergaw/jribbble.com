@@ -1,0 +1,16 @@
+footer
+{
+	clear: both;
+	float: right;
+	@include botanika(1.55em, 1.6em);
+	margin-top: 1.4em;
+	padding-bottom: 1.4em;
+	text-align: right;
+	width: 73.1732777%;
+	
+	p
+	{
+		background-color: fade-out(#fff, 0.2);
+		display: inline;
+	}
+}

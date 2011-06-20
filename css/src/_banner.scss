@@ -1,0 +1,25 @@
+header[role="banner"]
+{
+	clear: both;
+	overflow: hidden;
+	
+	h1
+	{
+		display: none;
+	}
+	
+	h2
+	{
+		display: inline-block;
+		float: right;
+		@include botanika(3.2em, 1.45em);
+		margin-top: 15%;
+		text-align: right;
+		width: 76.1732777%;
+		
+		span
+		{
+			background-color: fade-out(#fff, 0.15);
+		}
+	}
+}

@@ -1,0 +1,13 @@
+@import "lib/lib";
+
+@mixin botanika ($font-size, $line-height: 1em)
+{
+	font: #{$font-size}/#{$line-height} "botanika-mono-web-1", "botanika-mono-web-2", monospace, sans-serif;
+}
+
+@mixin dagny ($font-size, $line-height: 1em)
+{
+	font: #{$font-size}/#{$line-height} "ff-dagny-web-pro-1", "ff-dagny-web-pro-2", sans-serif;
+}
+
+@import "general", "forkme", "banner", "download", "content", "footer";
