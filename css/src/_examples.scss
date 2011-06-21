@@ -3,6 +3,29 @@
 	margin: 1.5em 0;
 }
 
+.shotList
+{
+	display: inline-block;
+	overflow: hidden;
+	
+	li
+	{
+		display: block;
+		float: left;
+		margin-bottom: 01.1482255%;
+		margin-right: 01.1482255%;
+		height: 150px;
+		min-width: 200px;
+		overflow: hidden;
+		width: 23.6951983%;
+	}
+	
+	h3, h4
+	{
+		display: none;
+	}
+}
+
 #shotById
 {
 	color: #353535;

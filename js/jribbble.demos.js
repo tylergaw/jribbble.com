@@ -49,24 +49,19 @@ $(document).ready(
 		
 		
 		// API Ref: http://api.dribbble/shots/:id/rebounds
-		$.jribbble.getReboundsOfShot(10745, 
-			function (rebounds)
-			{
-				var html = [];
-				$.each(rebounds.shots, function (i, shot)
-				{
-					html.push('<li><h3>' + shot.player.name + '</h3>');
-					html.push('<a href="' + shot.url + '">');
-					html.push('<img src="' + shot.image_teaser_url + '" ');
-					html.push('alt="' + shot.title + '">');
-					html.push('</a>');
-					html.push('<h4>' + shot.title + '</h4></li>');
-				});
+		$.jribbble.getReboundsOfShot(10745, function (rebounds) {
+			var html = [];
+			$.each(rebounds.shots, function (i, shot) {
+				html.push('<li><h3>' + shot.player.name + '</h3>');
+				html.push('<a href="' + shot.url + '">');
+				html.push('<img src="' + shot.image_teaser_url + '" ');
+				html.push('alt="' + shot.title + '">');
+				html.push('</a>');
+				html.push('<h4>' + shot.title + '</h4></li>');
+			});
 				
-				$('#reboundsOfShot').html(html.join(''));
-			},
-			{page: 1, per_page: 8}
-		);
+			$('#reboundsOfShot').html(html.join(''));
+		}, {page: 1, per_page: 8});
 		
 		// API Ref: http://api.dribbble/shots/:list
 		$.jribbble.getShotsByList('popular',
