@@ -68,38 +68,34 @@
 		</header>
 		
 		<div class="feature-examples">
-			
-			<div id="shotById" class="shot-container">
-				<a href="">
-					<img src="" alt="">
-				</a>
-				
+			<div id="shotById">
+				<div>
+					<a href=""><img src="" alt=""></a>
+				</div>
 				<div>
 					<h3></h3>
-					<ul>
-						<li id="shot-player"><b>Player: </b></li>
-						<li id="shot-views"><b>Views: </b></li>
-						<li id="shot-likes"><b>Likes: </b></li>
-						<li id="shot-comments"><b>Comments: </b></li>
-						<li id="shot-rebounds"><b>Rebounds: </b></li>
-					</ul>
-					<a id="shot-url" href=""></a>
+					<h4></h4>
+					<ul></ul>
 				</div>
 			</div>
 			
 			<div class="example-usage">
-				<pre>
-$.jribbble.getShotById(31340, function (shot) {
-  $('#shotById a:first').attr('href', shot.url);
-  $('#shotById img').attr('src', shot.image_url);
-  $('#shotById h3').text(shot.title);
-  $('#shot-player').append(shot.player.name);
-  $('#shot-views').append(shot.views_count);
-  $('#shot-likes').append(shot.likes_count);
-  $('#shot-comments').append(shot.comments_count);
-  $('#shot-rebounds').append(shot.rebounds_count);
-  $('#shot-url').attr('href', shot.url).text(shot.url);
-});</pre>
+				<h3>Example usage</h3>
+<pre><code>$.jribbble.getShotById(196071, function (shot) {
+    var html = [];
+
+    $('#shotById a:first').attr('href', shot.url);
+    $('#shotById img').attr('src', shot.image_url);
+    $('#shotById h3').text(shot.title);
+    $('#shotById h4').text('by ' + shot.player.name);
+
+    html.push('&lt;li&gt;&lt;b&gt;Views:&lt;/b&gt; ' + shot.views_count + '&lt;/li&gt;');
+    html.push('&lt;li&gt;&lt;b&gt;Likes:&lt;/b&gt; ' + shot.likes_count + '&lt;/li&gt;');
+    html.push('&lt;li&gt;&lt;b&gt;Comments:&lt;/b&gt; ' + shot.comments_count + '&lt;/li&gt;');
+    html.push('&lt;li&gt;&lt;b&gt;Rebounds:&lt;/b&gt; ' + shot.rebounds_count + '&lt;/li&gt;');
+
+    $('#shotById ul').html(html.join(''));
+});</code></pre>
 			</div>
 
 			<div class="example-json">

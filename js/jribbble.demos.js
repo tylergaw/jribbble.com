@@ -1,21 +1,22 @@
 $(document).ready(
-	function ()
-	{		
+	function () {		
+		
 		// API Ref: http://api.dribbble/shots/:id
-		$.jribbble.getShotById(37388, 
-			function (shot)
-			{
-				$('#shotById a:first').attr('href', shot.url);
-				$('#shotById img').attr('src', shot.image_url);
-				$('#shotById h3').text(shot.title);
-				$('#shot-player').append(shot.player.name);
-				$('#shot-views').append(shot.views_count);
-				$('#shot-likes').append(shot.likes_count);
-				$('#shot-comments').append(shot.comments_count);
-				$('#shot-rebounds').append(shot.rebounds_count);
-				$('#shot-url').attr('href', shot.url).text(shot.url);
-			}
-		);
+		$.jribbble.getShotById(196071, function (shot) {
+			var html = [];
+			
+			$('#shotById a:first').attr('href', shot.url);
+			$('#shotById img').attr('src', shot.image_url);
+			$('#shotById h3').text(shot.title);
+			$('#shotById h4').text('by ' + shot.player.name);
+			
+			html.push('<li><b>Views:</b> ' + shot.views_count + '</li>');
+			html.push('<li><b>Likes:</b> ' + shot.likes_count + '</li>');
+			html.push('<li><b>Comments:</b> ' + shot.comments_count + '</li>');
+			html.push('<li><b>Rebounds:</b> ' + shot.rebounds_count + '</li>');
+			
+			$('#shotById ul').html(html.join(''));
+		});
 		
 		// API Ref: http://api.dribbble/shots/:id/comments
 		$.jribbble.getCommentsOfShot(51986,
