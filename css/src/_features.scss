@@ -6,93 +6,19 @@
 	h1
 	{
 		background-color: fade-out(#fff, 0.3);
-		
 		display: inline-block;
 		@include botanika(3.1em, 1.2em);
-		//border-top: 8px solid #ff0066;
-		//color: lighten(#353535, 55%);
-		//font-size: 4.2em;
-		//font-weight: 700;
-		//line-height: 1em;
 		margin-bottom: 0.1em;
 	}
 	
 	h2
 	{
 		background-color: #ff0066;
-		//color: #ff0066;
 		clear: both;
 		color: #ececec;
 		display: inline-block;
 		@include botanika(1.2em, 1.4em);
 		padding: 0.2em 0.4em;
-		//padding-left: 0.4em;
-		
-		i
-		{
-			//color: fade-out(#ececec, 0.2);
-		}
-	}
-}
-
-.feature-examples
-{
-	margin: 1.5em 0;
-}
-
-#shotById
-{
-	color: #353535;
-	overflow: hidden;
-	
-	div:last-child
-	{
-		float: left;
-		margin: 1em 0 0 1.2em;
-		width: 40.1878914%;
-	}
-	
-	h3
-	{
-		font-size: 2.1em;
-		font-weight: 700;
-		margin-bottom: 0.3em;
-	}
-	
-	h4
-	{
-		color: lighten(#353535, 20%);
-		font-size: 1.2em;
-	}
-	
-	ul
-	{
-		margin-top: 1.1em;
-	}
-	
-	li
-	{
-		font-size: 0.95em;
-		padding: 0.15em 0;
-	}
-	
-	div:first-child
-	{
-		float: left;
-		max-width: 500px;
-		width: 54.4718163%;
-	}
-	
-	a
-	{
-		background-color: fade-out(#fff, 0.6);
-		display: block;
-		padding: 1em;
-	}
-	
-	img
-	{
-		width: 100%;
 	}
 }
 

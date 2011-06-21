@@ -8,7 +8,8 @@ $(document).ready(
 			$('#shotById a:first').attr('href', shot.url);
 			$('#shotById img').attr('src', shot.image_url);
 			$('#shotById h3').text(shot.title);
-			$('#shotById h4').text('by ' + shot.player.name);
+			$('#shotById h4').html('by <a href="' + shot.player.url + '">' + 
+				shot.player.name + '</a>');
 			
 			html.push('<li><b>Views:</b> ' + shot.views_count + '</li>');
 			html.push('<li><b>Likes:</b> ' + shot.likes_count + '</li>');

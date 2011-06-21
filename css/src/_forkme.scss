@@ -1,21 +1,20 @@
 #fork-me
 {
-	background-color: lighten(#353535, 10%);
-	border-bottom: 2px solid #353535;
-	color: #ececec;
-	font-size: 1em;
-	opacity: 0.7;
-	padding: 8px 38px;
+	background-color: fade-out(#fff, 0.3);
+	color: #000;
+	@include botanika(1.1em);
+	padding: 8px 42px;
 	position: fixed;
-	right: -48px;
-	top: 2.85em;
+	right: -3.5em;
+	top: 3.5em;
 	@include transform(rotate(43deg));
-	width: 9em;
+	width: 11em;
 	z-index: 999;
 	
 	&:hover
 	{
-		background-color: #000;
+		background-color: #ff0066;
+		color: #ececec;
 		text-decoration: none;
 	}
 }
