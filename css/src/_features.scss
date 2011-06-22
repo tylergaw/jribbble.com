@@ -1,7 +1,26 @@
 .jribbble-feature
 {
 	clear: both;
-	margin: 4em 0;
+	overflow: hidden;
+	margin: 3em 0;
+	padding-bottom: 0.4em;
+	
+	nav + &
+	{
+		margin-top: 2em;
+	}
+	
+	&:after
+	{
+		background-color: lighten(#353535, 40%);
+		color: lighten(#353535, 40%);
+		content: '*';
+		display: block;
+		margin: 0 auto;
+		height: 8px;
+		width: 8px;
+		@include transform(rotate(45deg));
+	}
 	
 	h1
 	{
