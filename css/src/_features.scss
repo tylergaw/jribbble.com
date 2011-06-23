@@ -1,6 +1,5 @@
 .jribbble-feature
 {
-	clear: both;
 	overflow: hidden;
 	margin: 3em 0;
 	padding-bottom: 0.4em;
@@ -13,6 +12,7 @@
 	&:after
 	{
 		background-color: lighten(#353535, 40%);
+		clear: both;
 		color: lighten(#353535, 40%);
 		content: '*';
 		display: block;

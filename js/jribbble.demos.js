@@ -20,33 +20,25 @@ $(document).ready(
 		});
 		
 		// API Ref: http://api.dribbble/shots/:id/comments
-		$.jribbble.getCommentsOfShot(51986,
-			function (response)
-			{
-				var html = [];
-				$.each(response.comments, function (i, comment)
-				{
-					html.push('<li>');
-					html.push('<a href="' + comment.player.url + '">');
-					html.push('<img src="' + comment.player.avatar_url + '" alt="" width="30" height="30"></a>');
-					html.push('<h5>' + comment.player.name + '</h5>');
-					html.push('<p>' + comment.body + '</p>');
-					html.push('</li>');
-				});
-				$('#shotCommentsList').html(html.join(''));
-			}
-		);
+		$.jribbble.getCommentsOfShot(51986, function (response) {
+			var html = [];
+			$.each(response.comments, function (i, comment) {
+				html.push('<li>');
+				html.push('<a href="' + comment.player.url + '">');
+				html.push('<img src="' + comment.player.avatar_url + '" alt="" width="30" height="30"></a>');
+				html.push('<h5>' + comment.player.name + '</h5>');
+				html.push('<p>' + comment.body + '</p>');
+				html.push('</li>');
+			});
+			$('#shotCommentsList').html(html.join(''));
+		});
 		
 		// Method used only for comments demo full sized shot
-		$.jribbble.getShotById(51986, 
-			function (shot)
-			{
-				$('#shotComments a:first').attr('href', shot.url);
-				$('#shotComments a:first img').attr('src', shot.image_url);
-				$('#shotComments h3').html(shot.title + ' <i>by ' + shot.player.name + '</i>');
-			}
-		);
-		
+		$.jribbble.getShotById(51986, function (shot) {
+			$('#shotComments a:first').attr('href', shot.url);
+			$('#shotComments a:first img').attr('src', shot.image_url);
+			$('#shotComments h3').html(shot.title + ' <i>by ' + shot.player.name + '</i>');
+		});
 		
 		// API Ref: http://api.dribbble/shots/:id/rebounds
 		$.jribbble.getReboundsOfShot(10745, function (rebounds) {
