@@ -5,4 +5,8 @@
 	position: relative;
 	width: 80%;
 	z-index: 2;
+	
+	@media screen and (max-width: 768px) {
+		width: 95%;
+	}
 }

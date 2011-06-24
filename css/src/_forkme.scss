@@ -8,8 +8,8 @@
 	padding: 8px 42px;
 	position: fixed;
 	right: -3.5em;
-	top: 3.5em;
-	@include transform(rotate(43deg));
+	top: 3em;
+	@include transform(rotate(40deg));
 	width: 11em;
 	z-index: 999;
 	
@@ -17,5 +17,15 @@
 	{
 		color: #ececec;
 		text-decoration: none;
+	}
+	
+	@media screen and (max-width: 768px) {
+		font-size: 0.8em;
+		right: -4em;
+		top: 3.1em;
+	}
+	
+	@media screen and (max-width: 480px) {
+	
 	}
 }

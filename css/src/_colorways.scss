@@ -24,22 +24,26 @@
 
 @include colorWay();
 
-@media screen and (max-width: 1368px) {
-	@include colorWay(adjust-hue(#ff0066, 250deg));
+@media screen and (max-width: 1560px) {
+	@include colorWay(adjust-hue(#ff0066, 50deg));
 }
 
-@media screen and (max-width: 1168px) {
-	@include colorWay(#000);
+@media screen and (max-width: 1360px) {
+	@include colorWay(adjust-hue(#ff0066, 30deg));
 }
 
-@media screen and (max-width: 968px) {
-	@include colorWay(adjust-hue(#ff0066, 200deg));
+@media screen and (max-width: 1160px) {
+	@include colorWay(#ff0066);
+}
+
+@media screen and (max-width: 960px) {
+	@include colorWay(darken(adjust-hue(#ff0066, 330deg), 5%));
 }
 
 @media screen and (max-width: 768px) {
-	@include colorWay(adjust-hue(#ff0066, 130deg));
+	@include colorWay(adjust-hue(#ff0066, 310deg));
 }
 
-@media screen and (max-width: 568px) {
-	@include colorWay(adjust-hue(#ff0066, 40deg));
+@media screen and (max-width: 480px) {
+	@include colorWay(adjust-hue(#ff0066, 280deg));
 }

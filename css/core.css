@@ -112,14 +112,14 @@ nav li {
   transition-timing-function: linear;
 }
 
-@media screen and (max-width: 1368px) {
+@media screen and (max-width: 1560px) {
   /* line 8, src/_colorways.scss */
   #bigAssJribbble,
   .jribbble-feature h2,
   .playerList h3,
   #fork-me:hover,
   #download a {
-    background-color: #003bff;
+    background-color: #ff6e00;
     -moz-transition-property: background-color;
     -webkit-transition-property: background-color;
     -o-transition-property: background-color;
@@ -136,12 +136,12 @@ nav li {
 
   /* line 14, src/_colorways.scss */
   #download a:hover {
-    background-color: #0030cc;
+    background-color: #cc5800;
   }
 
   /* line 19, src/_colorways.scss */
   nav li {
-    color: #003bff;
+    color: #ff6e00;
     -moz-transition-property: color;
     -webkit-transition-property: color;
     -o-transition-property: color;
@@ -156,14 +156,14 @@ nav li {
     transition-timing-function: linear;
   }
 }
-@media screen and (max-width: 1168px) {
+@media screen and (max-width: 1360px) {
   /* line 8, src/_colorways.scss */
   #bigAssJribbble,
   .jribbble-feature h2,
   .playerList h3,
   #fork-me:hover,
   #download a {
-    background-color: black;
+    background-color: #ff1a00;
     -moz-transition-property: background-color;
     -webkit-transition-property: background-color;
     -o-transition-property: background-color;
@@ -180,12 +180,12 @@ nav li {
 
   /* line 14, src/_colorways.scss */
   #download a:hover {
-    background-color: black;
+    background-color: #cc1400;
   }
 
   /* line 19, src/_colorways.scss */
   nav li {
-    color: black;
+    color: #ff1a00;
     -moz-transition-property: color;
     -webkit-transition-property: color;
     -o-transition-property: color;
@@ -200,14 +200,14 @@ nav li {
     transition-timing-function: linear;
   }
 }
-@media screen and (max-width: 968px) {
+@media screen and (max-width: 1160px) {
   /* line 8, src/_colorways.scss */
   #bigAssJribbble,
   .jribbble-feature h2,
   .playerList h3,
   #fork-me:hover,
   #download a {
-    background-color: #00ffee;
+    background-color: #ff0066;
     -moz-transition-property: background-color;
     -webkit-transition-property: background-color;
     -o-transition-property: background-color;
@@ -224,12 +224,56 @@ nav li {
 
   /* line 14, src/_colorways.scss */
   #download a:hover {
-    background-color: #00ccbe;
+    background-color: #cc0052;
   }
 
   /* line 19, src/_colorways.scss */
   nav li {
-    color: #00ffee;
+    color: #ff0066;
+    -moz-transition-property: color;
+    -webkit-transition-property: color;
+    -o-transition-property: color;
+    transition-property: color;
+    -moz-transition-duration: 0.2s;
+    -webkit-transition-duration: 0.2s;
+    -o-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    -moz-transition-timing-function: linear;
+    -webkit-transition-timing-function: linear;
+    -o-transition-timing-function: linear;
+    transition-timing-function: linear;
+  }
+}
+@media screen and (max-width: 960px) {
+  /* line 8, src/_colorways.scss */
+  #bigAssJribbble,
+  .jribbble-feature h2,
+  .playerList h3,
+  #fork-me:hover,
+  #download a {
+    background-color: #e600cf;
+    -moz-transition-property: background-color;
+    -webkit-transition-property: background-color;
+    -o-transition-property: background-color;
+    transition-property: background-color;
+    -moz-transition-duration: 0.2s;
+    -webkit-transition-duration: 0.2s;
+    -o-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    -moz-transition-timing-function: linear;
+    -webkit-transition-timing-function: linear;
+    -o-transition-timing-function: linear;
+    transition-timing-function: linear;
+  }
+
+  /* line 14, src/_colorways.scss */
+  #download a:hover {
+    background-color: #b300a1;
+  }
+
+  /* line 19, src/_colorways.scss */
+  nav li {
+    color: #e600cf;
     -moz-transition-property: color;
     -webkit-transition-property: color;
     -o-transition-property: color;
@@ -251,7 +295,7 @@ nav li {
   .playerList h3,
   #fork-me:hover,
   #download a {
-    background-color: #3bff00;
+    background-color: #c300ff;
     -moz-transition-property: background-color;
     -webkit-transition-property: background-color;
     -o-transition-property: background-color;
@@ -268,12 +312,12 @@ nav li {
 
   /* line 14, src/_colorways.scss */
   #download a:hover {
-    background-color: #30cc00;
+    background-color: #9c00cc;
   }
 
   /* line 19, src/_colorways.scss */
   nav li {
-    color: #3bff00;
+    color: #c300ff;
     -moz-transition-property: color;
     -webkit-transition-property: color;
     -o-transition-property: color;
@@ -288,14 +332,14 @@ nav li {
     transition-timing-function: linear;
   }
 }
-@media screen and (max-width: 568px) {
+@media screen and (max-width: 480px) {
   /* line 8, src/_colorways.scss */
   #bigAssJribbble,
   .jribbble-feature h2,
   .playerList h3,
   #fork-me:hover,
   #download a {
-    background-color: #ff4400;
+    background-color: #4400ff;
     -moz-transition-property: background-color;
     -webkit-transition-property: background-color;
     -o-transition-property: background-color;
@@ -312,12 +356,12 @@ nav li {
 
   /* line 14, src/_colorways.scss */
   #download a:hover {
-    background-color: #cc3600;
+    background-color: #3600cc;
   }
 
   /* line 19, src/_colorways.scss */
   nav li {
-    color: #ff4400;
+    color: #4400ff;
     -moz-transition-property: color;
     -webkit-transition-property: color;
     -o-transition-property: color;
@@ -372,12 +416,12 @@ a:hover {
   padding: 8px 42px;
   position: fixed;
   right: -3.5em;
-  top: 3.5em;
-  -moz-transform: rotate(43deg);
-  -webkit-transform: rotate(43deg);
-  -o-transform: rotate(43deg);
-  -ms-transform: rotate(43deg);
-  transform: rotate(43deg);
+  top: 3em;
+  -moz-transform: rotate(40deg);
+  -webkit-transform: rotate(40deg);
+  -o-transform: rotate(40deg);
+  -ms-transform: rotate(40deg);
+  transform: rotate(40deg);
   width: 11em;
   z-index: 999;
 }
@@ -385,6 +429,14 @@ a:hover {
 #fork-me:hover {
   color: #ececec;
   text-decoration: none;
+}
+@media screen and (max-width: 768px) {
+  /* line 2, src/_forkme.scss */
+  #fork-me {
+    font-size: 0.8em;
+    right: -4em;
+    top: 3.1em;
+  }
 }
 
 /* line 2, src/_banner.scss */
@@ -403,11 +455,25 @@ header[role="banner"] h2 {
   font: 3.2em/1.45em "botanika-mono-web-1", "botanika-mono-web-2", monospace, sans-serif;
   margin-top: 15%;
   text-align: right;
-  width: 76.1732777%;
+  width: 80.1732777%;
 }
 /* line 21, src/_banner.scss */
 header[role="banner"] h2 span {
   background-color: rgba(255, 255, 255, 0.85);
+}
+@media screen and (max-width: 768px) {
+  /* line 29, src/_banner.scss */
+  header[role="banner"] h2 {
+    font-size: 2.8em;
+    margin-top: 18%;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 480px) {
+  /* line 39, src/_banner.scss */
+  header[role="banner"] h2 {
+    font-size: 2em;
+  }
 }
 
 /* line 2, src/_download.scss */
@@ -444,6 +510,16 @@ header[role="banner"] h2 span {
   color: #8d8d8d;
   font-size: 1em;
   margin: 0.3em 0.8em 0 0;
+}
+@media screen and (max-width: 768px) {
+  /* line 2, src/_download.scss */
+  #download {
+    width: 100%;
+  }
+  /* line 39, src/_download.scss */
+  #download a {
+    font-size: 1.8em;
+  }
 }
 
 /* line 2, src/_nav.scss */
@@ -507,6 +583,12 @@ nav a b {
   position: relative;
   width: 80%;
   z-index: 2;
+}
+@media screen and (max-width: 768px) {
+  /* line 2, src/_content.scss */
+  #content {
+    width: 95%;
+  }
 }
 
 /* line 2, src/_features.scss */
