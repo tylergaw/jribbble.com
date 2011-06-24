@@ -1,7 +1,5 @@
 @import "lib/lib";
 
-$accentColor: adjust-hue(#ff0066, 110deg);
-
 @mixin botanika ($font-size, $line-height: 1em)
 {
 	font: #{$font-size}/#{$line-height} "botanika-mono-web-1", "botanika-mono-web-2", monospace, sans-serif;
@@ -12,4 +10,5 @@ $accentColor: adjust-hue(#ff0066, 110deg);
 	font: #{$font-size}/#{$line-height} "ff-dagny-web-pro-1", "ff-dagny-web-pro-2", sans-serif;
 }
 
-@import "general", "forkme", "banner", "download", "nav", "content", "features", "examples", "exampleCode", "footer";
+@import "colorways", "general", "forkme", "banner", "download", "nav";
+@import "content", "features", "examples", "exampleCode", "footer";

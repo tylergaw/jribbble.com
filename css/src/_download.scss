@@ -8,7 +8,6 @@
 	
 	a
 	{
-		background-color: $accentColor;
 		@include border-radius(32px);
 		color: #ececec;
 		display: inline-block;
@@ -21,7 +20,6 @@
 		
 		&:hover
 		{
-			background-color: darken($accentColor, 10%);
 			text-decoration: none;
 		}
 	}

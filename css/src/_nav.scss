@@ -3,7 +3,6 @@ nav
 	clear: both;
 	display: block;
 	overflow: hidden;
-	//width: 56.4718163%;
 	
 	h1
 	{
@@ -23,7 +22,6 @@ nav
 	{
 		background-color: fade-out(#dfdfdf, 0.1);
 		border-bottom: 1px dashed darken(#ccc, 5%);
-		color: $accentColor;
 		list-style: decimal inside;
 		padding: 0.8em 0.4em;
 		

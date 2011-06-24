@@ -1,0 +1,45 @@
+@mixin colorWay($color: #ff0066)
+{
+	#bigAssJribbble,
+	.jribbble-feature h2,
+	.playerList h3,
+	#fork-me:hover,
+	#download a
+	{
+		background-color: $color;
+		@include transition(background-color, .2s);
+	}
+
+	#download a:hover
+	{
+		background-color: darken($color, 10%);
+	}
+
+	nav li
+	{
+		color: $color;
+		@include transition(color, .2s);
+	}
+}
+
+@include colorWay();
+
+@media screen and (max-width: 1368px) {
+	@include colorWay(adjust-hue(#ff0066, 250deg));
+}
+
+@media screen and (max-width: 1168px) {
+	@include colorWay(#000);
+}
+
+@media screen and (max-width: 968px) {
+	@include colorWay(adjust-hue(#ff0066, 200deg));
+}
+
+@media screen and (max-width: 768px) {
+	@include colorWay(adjust-hue(#ff0066, 130deg));
+}
+
+@media screen and (max-width: 568px) {
+	@include colorWay(adjust-hue(#ff0066, 40deg));
+}
