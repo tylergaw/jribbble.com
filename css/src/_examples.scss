@@ -22,17 +22,18 @@
 		a
 		{
 			display: block;
-			min-height: 152px;
 			max-height: 152px;
+			min-height: 152px;
+			min-width: 200px;
 			overflow: hidden;
 		}
 		
 		img
 		{
 			display: block;
+			margin: 0 auto;
 			@include transition-property(opacity);
 			@include transition-duration(.15s);
-			width: 100%;
 		}
 	}
 	
@@ -77,7 +78,54 @@
 	}
 }
 
-#shotById
+.playerList
+{
+	overflow: visible;
+	
+	li
+	{
+		display: inline-block;
+		position: relative;
+		
+		&:hover h3
+		{
+			opacity: 1;
+		}
+	}
+	
+	h3
+	{
+		background-color: $thePink;
+		color: #fff;
+		font-size: 0.9em;
+		opacity: 0;
+		padding: 0 0.1em;
+		position: absolute;
+		top: -0.9em;
+		white-space: nowrap;
+	}
+	
+	a
+	{
+		background-color: fade-out(#fff, 0.3);
+		display: inline-block;
+		float: left;
+		margin: 0.2em 0.8em 0.6em 0;
+		padding: 0.4em;
+		
+		img
+		{
+			display: block;
+		}
+		
+		&:hover
+		{
+			background-color: #fff;
+		}
+	}
+}
+
+.twoUp
 {
 	color: #353535;
 	overflow: hidden;
@@ -140,5 +188,119 @@
 				width: 30%;
 			}
 		}
+	}
+}
+
+#shotCommentsList
+{
+	margin-top: 1.4em;
+	
+	li
+	{
+		border-bottom: 1px dashed darken(#ccc, 5%);
+		margin-bottom: 0.7em;
+		overflow: hidden;
+		padding-bottom: 0.7em;
+		
+		& > a
+		{
+			background-color: fade-out(#fff, 0.6);
+			display: inline-block;
+			float: left;
+			margin-right: 0.4em;
+			padding: 0.2em;
+		}
+		
+		&:last-child
+		{
+			border-bottom: none;
+		}
+	}
+	
+	img
+	{
+		display: block;
+	}
+	
+	h5
+	{
+		color: lighten(#353535, 25%);
+		float: left;
+		@include botanika(1em, 1.2em);
+		width: 86.2077922%;
+	}
+	
+	p
+	{
+		float: left;
+		font-size: 0.95em;
+		margin-top: 0.4em;
+		width: 86.2077922%;
+	}
+}
+
+#playerProfile
+{
+	color: #353535;
+	overflow: hidden;
+	
+	& > a
+	{
+		background-color: fade-out(#fff, 0.3);
+		display: inline-block;
+		float: left;
+		margin-right: 0.8em;
+		padding: 0.4em;
+		
+		img
+		{
+			display: block;
+		}
+	}
+	
+	div
+	{
+		float: left;
+		margin-top: 0.4em;
+		min-width: 290px;
+		width: 56.4384134%;
+	}
+	
+	h3
+	{
+		font-size: 1.4em;
+		font-weight: 700;
+		line-height: 0.8em;
+		margin-bottom: 0.2em;
+	}
+	
+	h4
+	{
+		@include botanika(1em, 1.2em);
+	}
+	
+	ul
+	{
+		border-top: 1px dashed darken(#ccc, 5%);
+		@include column-count(2);
+		@include column-width(50%);
+		margin-top: 0.4em;
+		max-width: 300px;
+		padding-top: 0.4em;
+		width: 80%;
+	}	
+	
+	li
+	{
+		display: inline-block;
+		font-size: 0.95em;
+		padding: 0.15em 0;
+	}
+	
+	b 
+	{
+		display: inline-block;
+		min-width: 5.2em;
+		width: 30%;
 	}
 }

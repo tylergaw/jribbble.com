@@ -1,5 +1,7 @@
 @import "lib/lib";
 
+$thePink: #ff0066;
+
 @mixin botanika ($font-size, $line-height: 1em)
 {
 	font: #{$font-size}/#{$line-height} "botanika-mono-web-1", "botanika-mono-web-2", monospace, sans-serif;

@@ -1,6 +1,8 @@
 #fork-me
 {
 	background-color: fade-out(#fff, 0.3);
+	border-bottom: 2px solid #E0E0E0;
+	border-top: 2px solid #E0E0E0;
 	color: #000;
 	@include botanika(1.1em);
 	padding: 8px 42px;
