@@ -1,6 +1,6 @@
 @import "lib/lib";
 
-$thePink: adjust-hue(#ff0066, 300deg);
+$accentColor: adjust-hue(#ff0066, 110deg);
 
 @mixin botanika ($font-size, $line-height: 1em)
 {

@@ -1,9 +1,25 @@
 body 
 {
-	background: #dfdfdf url(../images/branding.png) no-repeat -4em -11em;
+	//background: #dfdfdf url(../images/branding.png) no-repeat -4em -11em;
+	background-color: #dfdfdf;
 	
-	@include background-size('81.7857143%');
+	//@include background-size('81.7857143%');
 	@include dagny('100%');
+}
+
+#bigAssJribbble
+{
+	background-color: $accentColor;
+	background-image: url(../images/branding-die-cut.png), url(../images/branding-fauxBgColor.png);
+	background-repeat: no-repeat, repeat-y;
+	background-position: -16% 99%, 119.3% top;
+	-moz-background-size: 81.7857143%, auto 100%;
+	-webkit-background-size: 81.7857143%, auto 100%;
+	-o-background-size: 81.7857143%, auto;
+	background-size: 81.7857143%, auto 100%;
+	padding-top: 34.1%;
+	position: absolute;
+	width: 100%;
 }
 
 a
