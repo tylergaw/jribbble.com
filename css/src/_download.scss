@@ -8,7 +8,7 @@
 	
 	a
 	{
-		background-color: #ff0066;
+		background-color: $thePink;
 		@include border-radius(32px);
 		color: #ececec;
 		display: inline-block;
@@ -21,7 +21,7 @@
 		
 		&:hover
 		{
-			background-color: darken(#ff0066, 10%);
+			background-color: darken($thePink, 10%);
 			text-decoration: none;
 		}
 	}
