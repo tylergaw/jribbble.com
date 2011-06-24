@@ -22,7 +22,37 @@
 	}
 }
 
+/*-------- Media Query Color shifting, big fun, big fun!
+	This is where shit gets real. The base color I start with is #ff0066, from there
+    as the browswer scales down, the colors adjust to be cooler. As the browser 
+    scales up, the colors adjust to be warmer.
+
+    If you're looking here you're probably interested, I use SASS so for all of the
+    colors I don't have to find exact hex number. I use a built in SASS function
+    adjust-hue(). I just pass it the base color and adjust the degree value that I
+    want to change. Also, the entire CSS block is in a SASS mixin that takes a color
+    parameter. That allows me to only write the selectors and rules one time, then
+    include them in each of the media queries. Neato!
+-----------*/
+
+
 @include colorWay();
+
+@media screen and (max-width: 2360px) {
+	@include colorWay(adjust-hue(#ff0066, 210deg));
+}
+
+@media screen and (max-width: 2160px) {
+	@include colorWay(adjust-hue(#ff0066, 190deg));
+}
+
+@media screen and (max-width: 1960px) {
+	@include colorWay(adjust-hue(#ff0066, 130deg));
+}
+
+@media screen and (max-width: 1760px) {
+	@include colorWay(adjust-hue(#ff0066, 70deg));
+}
 
 @media screen and (max-width: 1560px) {
 	@include colorWay(adjust-hue(#ff0066, 50deg));

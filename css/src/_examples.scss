@@ -76,6 +76,37 @@
 			opacity: 0.15;
 		}
 	}
+	
+	@media screen and (max-width: 480px) {
+		
+		width: 100%;
+		
+		li
+		{	
+			clear: left;
+			overflow: hidden;
+			width: 45%;
+			
+			&:nth-child(2n)
+			{
+				clear: right;
+				float: right;
+				margin-right: 0;
+			}
+			
+			a
+			{
+				max-height: auto;
+				min-height: 0;
+				min-width: 0;
+			}
+
+			img
+			{
+				width: 100%;
+			}
+		}
+	}
 }
 
 .playerList
@@ -120,6 +151,25 @@
 		&:hover
 		{
 			background-color: #fff;
+		}
+	}
+	
+	@media screen and (max-width: 480px) {
+		width: 100%;
+		
+		li
+		{	
+			width: 25%;
+			
+			&:nth-child(4n)
+			{
+				margin-right: 0;
+			}
+
+			img
+			{
+				width: 100%;
+			}
 		}
 	}
 }
@@ -188,6 +238,26 @@
 			}
 		}
 	}
+	
+	@media screen and (max-width: 480px) {
+		
+		div:first-child
+		{
+			float: none;
+			width: 100%;
+
+			a
+			{
+				padding: 0.5em;
+			}
+		}
+		
+		div:last-child
+		{
+			float: none;
+			width: 100%;
+		}
+	}
 }
 
 #shotCommentsList
@@ -203,17 +273,24 @@
 		
 		& > a
 		{
-			background-color: fade-out(#fff, 0.6);
-			display: inline-block;
+			background-color: fade-out(#fff, 0.4);
+			display: block;
 			float: left;
-			margin-right: 0.4em;
 			padding: 0.2em;
+			width: 10%;
+			
+			img
+			{
+				width: 100%;
+			}
 		}
 		
 		&:last-child
 		{
 			border-bottom: none;
 		}
+		
+		width: 100%
 	}
 	
 	img
@@ -224,14 +301,14 @@
 	h5
 	{
 		color: lighten(#353535, 25%);
-		float: left;
+		float: right;
 		@include botanika(1em, 1.2em);
 		width: 86.2077922%;
 	}
 	
 	p
 	{
-		float: left;
+		float: right;
 		font-size: 0.95em;
 		margin-top: 0.4em;
 		width: 86.2077922%;
@@ -299,7 +376,44 @@
 	b 
 	{
 		display: inline-block;
-		min-width: 5.2em;
+		min-width: 5em;
 		width: 30%;
+	}
+	
+	@media screen and (max-width: 480px) {
+		& > a
+		{
+			width: 16.66666675;
+			
+			img
+			{
+				width: 100%;
+			}
+		}
+		
+		div
+		{
+			min-width: 0;
+		}
+
+		h3
+		{
+			font-size: 1.1em;
+		}
+
+		h4
+		{
+			font-size: 0.9em;
+		}
+		
+		ul
+		{
+			width: 100%;
+		}
+		
+		li
+		{
+			font-size: 0.85em;
+		}
 	}
 }

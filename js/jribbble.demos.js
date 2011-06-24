@@ -24,7 +24,7 @@ $(document).ready(function () {
 		$.each(response.comments, function (i, comment) {
 			html.push('<li>');
 			html.push('<a href="' + comment.player.url + '">');
-			html.push('<img src="' + comment.player.avatar_url + '" alt="" width="30" height="30"></a>');
+			html.push('<img src="' + comment.player.avatar_url + '" alt=""></a>');
 			html.push('<h5>' + comment.player.name + '</h5>');
 			html.push('<p>' + comment.body + '</p>');
 			html.push('</li>');

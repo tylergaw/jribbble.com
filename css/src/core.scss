@@ -1,3 +1,15 @@
+/*-------- Welcome to Thunderdome!
+
+	If you're here, I'm guessing you're interested in how I did something or just
+	curious to see how I format my CSS? I use SASS & Compass so this file is generated
+	from numerous partial CSS files. I've set the SASS output-style to expanded so
+	folks like you can still read what's going on in here. It's not the utmost 
+	readable formatting, but you can find stuff if you look. Also, if you're really
+	interested you can fork get all the source files from the github repo here:
+	https://github.com/tylergaw/jribbble.com
+	
+-----------*/
+
 @import "lib/lib";
 
 @mixin botanika ($font-size, $line-height: 1em)

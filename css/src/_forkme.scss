@@ -26,6 +26,13 @@
 	}
 	
 	@media screen and (max-width: 480px) {
-	
+		background-color: fade-out(#fff, 0.1);
+		border-bottom: 1px solid #E0E0E0;
+		border-left: 1px solid #E0E0E0;
+		border-top: none;
+		padding: 6px 6px;
+		right: 0;
+		top: 0;
+		@include transform(rotate(0deg));
 	}
 }

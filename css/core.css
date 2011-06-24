@@ -1,3 +1,14 @@
+/*-------- Welcome to Thunderdome!
+
+	If you're here, I'm guessing you're interested in how I did something or just
+	curious to see how I format my CSS? I use SASS & Compass so this file is generated
+	from numerous partial CSS files. I've set the SASS output-style to expanded so
+	folks like you can still read what's going on in here. It's not the utmost 
+	readable formatting, but you can find stuff if you look. Also, if you're really
+	interested you can fork get all the source files from the github repo here:
+	https://github.com/tylergaw/jribbble.com
+	
+-----------*/
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -69,6 +80,18 @@ hr {
   display: none;
 }
 
+/*-------- Media Query Color shifting, big fun, big fun!
+	This is where shit gets real. The base color I start with is #ff0066, from there
+    as the browswer scales down, the colors adjust to be cooler. As the browser 
+    scales up, the colors adjust to be warmer.
+
+    If you're looking here you're probably interested, I use SASS so for all of the
+    colors I don't have to find exact hex number. I use a built in SASS function
+    adjust-hue(). I just pass it the base color and adjust the degree value that I
+    want to change. Also, the entire CSS block is in a SASS mixin that takes a color
+    parameter. That allows me to only write the selectors and rules one time, then
+    include them in each of the media queries. Neato!
+-----------*/
 /* line 8, src/_colorways.scss */
 #bigAssJribbble,
 .jribbble-feature h2,
@@ -112,6 +135,182 @@ nav li {
   transition-timing-function: linear;
 }
 
+@media screen and (max-width: 2360px) {
+  /* line 8, src/_colorways.scss */
+  #bigAssJribbble,
+  .jribbble-feature h2,
+  .playerList h3,
+  #fork-me:hover,
+  #download a {
+    background-color: #00e5ff;
+    -moz-transition-property: background-color;
+    -webkit-transition-property: background-color;
+    -o-transition-property: background-color;
+    transition-property: background-color;
+    -moz-transition-duration: 0.2s;
+    -webkit-transition-duration: 0.2s;
+    -o-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    -moz-transition-timing-function: linear;
+    -webkit-transition-timing-function: linear;
+    -o-transition-timing-function: linear;
+    transition-timing-function: linear;
+  }
+
+  /* line 14, src/_colorways.scss */
+  #download a:hover {
+    background-color: #00b8cc;
+  }
+
+  /* line 19, src/_colorways.scss */
+  nav li {
+    color: #00e5ff;
+    -moz-transition-property: color;
+    -webkit-transition-property: color;
+    -o-transition-property: color;
+    transition-property: color;
+    -moz-transition-duration: 0.2s;
+    -webkit-transition-duration: 0.2s;
+    -o-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    -moz-transition-timing-function: linear;
+    -webkit-transition-timing-function: linear;
+    -o-transition-timing-function: linear;
+    transition-timing-function: linear;
+  }
+}
+@media screen and (max-width: 2160px) {
+  /* line 8, src/_colorways.scss */
+  #bigAssJribbble,
+  .jribbble-feature h2,
+  .playerList h3,
+  #fork-me:hover,
+  #download a {
+    background-color: #00ffc4;
+    -moz-transition-property: background-color;
+    -webkit-transition-property: background-color;
+    -o-transition-property: background-color;
+    transition-property: background-color;
+    -moz-transition-duration: 0.2s;
+    -webkit-transition-duration: 0.2s;
+    -o-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    -moz-transition-timing-function: linear;
+    -webkit-transition-timing-function: linear;
+    -o-transition-timing-function: linear;
+    transition-timing-function: linear;
+  }
+
+  /* line 14, src/_colorways.scss */
+  #download a:hover {
+    background-color: #00cc9c;
+  }
+
+  /* line 19, src/_colorways.scss */
+  nav li {
+    color: #00ffc4;
+    -moz-transition-property: color;
+    -webkit-transition-property: color;
+    -o-transition-property: color;
+    transition-property: color;
+    -moz-transition-duration: 0.2s;
+    -webkit-transition-duration: 0.2s;
+    -o-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    -moz-transition-timing-function: linear;
+    -webkit-transition-timing-function: linear;
+    -o-transition-timing-function: linear;
+    transition-timing-function: linear;
+  }
+}
+@media screen and (max-width: 1960px) {
+  /* line 8, src/_colorways.scss */
+  #bigAssJribbble,
+  .jribbble-feature h2,
+  .playerList h3,
+  #fork-me:hover,
+  #download a {
+    background-color: #3bff00;
+    -moz-transition-property: background-color;
+    -webkit-transition-property: background-color;
+    -o-transition-property: background-color;
+    transition-property: background-color;
+    -moz-transition-duration: 0.2s;
+    -webkit-transition-duration: 0.2s;
+    -o-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    -moz-transition-timing-function: linear;
+    -webkit-transition-timing-function: linear;
+    -o-transition-timing-function: linear;
+    transition-timing-function: linear;
+  }
+
+  /* line 14, src/_colorways.scss */
+  #download a:hover {
+    background-color: #30cc00;
+  }
+
+  /* line 19, src/_colorways.scss */
+  nav li {
+    color: #3bff00;
+    -moz-transition-property: color;
+    -webkit-transition-property: color;
+    -o-transition-property: color;
+    transition-property: color;
+    -moz-transition-duration: 0.2s;
+    -webkit-transition-duration: 0.2s;
+    -o-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    -moz-transition-timing-function: linear;
+    -webkit-transition-timing-function: linear;
+    -o-transition-timing-function: linear;
+    transition-timing-function: linear;
+  }
+}
+@media screen and (max-width: 1760px) {
+  /* line 8, src/_colorways.scss */
+  #bigAssJribbble,
+  .jribbble-feature h2,
+  .playerList h3,
+  #fork-me:hover,
+  #download a {
+    background-color: #ffc300;
+    -moz-transition-property: background-color;
+    -webkit-transition-property: background-color;
+    -o-transition-property: background-color;
+    transition-property: background-color;
+    -moz-transition-duration: 0.2s;
+    -webkit-transition-duration: 0.2s;
+    -o-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    -moz-transition-timing-function: linear;
+    -webkit-transition-timing-function: linear;
+    -o-transition-timing-function: linear;
+    transition-timing-function: linear;
+  }
+
+  /* line 14, src/_colorways.scss */
+  #download a:hover {
+    background-color: #cc9c00;
+  }
+
+  /* line 19, src/_colorways.scss */
+  nav li {
+    color: #ffc300;
+    -moz-transition-property: color;
+    -webkit-transition-property: color;
+    -o-transition-property: color;
+    transition-property: color;
+    -moz-transition-duration: 0.2s;
+    -webkit-transition-duration: 0.2s;
+    -o-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    -moz-transition-timing-function: linear;
+    -webkit-transition-timing-function: linear;
+    -o-transition-timing-function: linear;
+    transition-timing-function: linear;
+  }
+}
 @media screen and (max-width: 1560px) {
   /* line 8, src/_colorways.scss */
   #bigAssJribbble,
@@ -438,6 +637,23 @@ a:hover {
     top: 3.1em;
   }
 }
+@media screen and (max-width: 480px) {
+  /* line 2, src/_forkme.scss */
+  #fork-me {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-bottom: 1px solid #E0E0E0;
+    border-left: 1px solid #E0E0E0;
+    border-top: none;
+    padding: 6px 6px;
+    right: 0;
+    top: 0;
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
 
 /* line 2, src/_banner.scss */
 header[role="banner"] {
@@ -575,6 +791,20 @@ nav a b {
   color: #282828;
   font-weight: 700;
 }
+@media screen and (max-width: 480px) {
+  /* line 65, src/_nav.scss */
+  nav h1 {
+    font-size: 2.2em;
+  }
+  /* line 70, src/_nav.scss */
+  nav li {
+    padding: 0.6em 0.3em;
+  }
+  /* line 75, src/_nav.scss */
+  nav a {
+    font-size: 1em;
+  }
+}
 
 /* line 2, src/_content.scss */
 #content {
@@ -632,43 +862,73 @@ nav + .jribbble-feature {
   font: 1.2em/1.4em "botanika-mono-web-1", "botanika-mono-web-2", monospace, sans-serif;
   padding: 0.2em 0.4em;
 }
+@media screen and (max-width: 768px) {
+  /* line 44, src/_features.scss */
+  .jribbble-feature h1 {
+    font-size: 2.6em;
+  }
+}
+@media screen and (max-width: 480px) {
+  /* line 2, src/_features.scss */
+  .jribbble-feature {
+    margin: 1em 0 2.5em 0;
+  }
+  /* line 54, src/_features.scss */
+  .jribbble-feature h1 {
+    font-size: 2em;
+  }
+  /* line 59, src/_features.scss */
+  .jribbble-feature h2 {
+    font-size: 0.9em;
+  }
+}
 
-/* line 44, src/_features.scss */
+/* line 66, src/_features.scss */
 .method-description {
   color: #1F1F1F;
   font-size: 1.1em;
   margin-top: 1.1em;
   overflow: hidden;
 }
-/* line 51, src/_features.scss */
+/* line 73, src/_features.scss */
 .method-description li {
   border-bottom: 1px dashed #bfbfbf;
   overflow: hidden;
   padding: 0.8em 0;
 }
-/* line 57, src/_features.scss */
+/* line 79, src/_features.scss */
 .method-description li:first-child {
   padding: 0.7em 0 0.4em 0;
 }
-/* line 61, src/_features.scss */
+/* line 83, src/_features.scss */
 .method-description li:first-child h3, .method-description li:first-child p {
   font: 0.8em/1em "ff-dagny-web-pro-1", "ff-dagny-web-pro-2", sans-serif;
   font-weight: 700;
 }
-/* line 69, src/_features.scss */
+/* line 91, src/_features.scss */
 .method-description h3 {
   float: left;
   font: 1.1em/1.2em "botanika-mono-web-1", "botanika-mono-web-2", monospace, sans-serif;
   width: 40.1878914%;
 }
-/* line 76, src/_features.scss */
+/* line 98, src/_features.scss */
 .method-description p {
   float: right;
   line-height: 1.3em;
   width: 56.4718163%;
 }
+@media screen and (max-width: 480px) {
+  /* line 106, src/_features.scss */
+  .method-description h3 {
+    font-size: 0.8em;
+  }
+  /* line 111, src/_features.scss */
+  .method-description p {
+    font-size: 0.9em;
+  }
+}
 
-/* line 84, src/_features.scss */
+/* line 118, src/_features.scss */
 .example-json {
   display: none;
 }
@@ -753,21 +1013,49 @@ nav + .jribbble-feature {
 .shotList li:hover img {
   opacity: 0.15;
 }
+@media screen and (max-width: 480px) {
+  /* line 7, src/_examples.scss */
+  .shotList {
+    width: 100%;
+  }
+  /* line 85, src/_examples.scss */
+  .shotList li {
+    clear: left;
+    overflow: hidden;
+    width: 45%;
+  }
+  /* line 91, src/_examples.scss */
+  .shotList li:nth-child(2n) {
+    clear: right;
+    float: right;
+    margin-right: 0;
+  }
+  /* line 98, src/_examples.scss */
+  .shotList li a {
+    max-height: auto;
+    min-height: 0;
+    min-width: 0;
+  }
+  /* line 105, src/_examples.scss */
+  .shotList li img {
+    width: 100%;
+  }
+}
 
-/* line 82, src/_examples.scss */
+/* line 113, src/_examples.scss */
 .playerList {
   overflow: visible;
 }
-/* line 86, src/_examples.scss */
+/* line 117, src/_examples.scss */
 .playerList li {
   display: inline-block;
   position: relative;
 }
-/* line 91, src/_examples.scss */
+/* line 122, src/_examples.scss */
 .playerList li:hover h3 {
   opacity: 1;
 }
-/* line 97, src/_examples.scss */
+/* line 128, src/_examples.scss */
 .playerList h3 {
   color: #fff;
   font-size: 0.9em;
@@ -777,7 +1065,7 @@ nav + .jribbble-feature {
   top: -0.9em;
   white-space: nowrap;
 }
-/* line 108, src/_examples.scss */
+/* line 139, src/_examples.scss */
 .playerList a {
   background-color: rgba(255, 255, 255, 0.7);
   display: inline-block;
@@ -785,120 +1073,159 @@ nav + .jribbble-feature {
   margin: 0.2em 0.8em 0.6em 0;
   padding: 0.4em;
 }
-/* line 116, src/_examples.scss */
+/* line 147, src/_examples.scss */
 .playerList a img {
   display: block;
 }
-/* line 121, src/_examples.scss */
+/* line 152, src/_examples.scss */
 .playerList a:hover {
   background-color: #fff;
 }
+@media screen and (max-width: 480px) {
+  /* line 113, src/_examples.scss */
+  .playerList {
+    width: 100%;
+  }
+  /* line 161, src/_examples.scss */
+  .playerList li {
+    width: 25%;
+  }
+  /* line 165, src/_examples.scss */
+  .playerList li:nth-child(4n) {
+    margin-right: 0;
+  }
+  /* line 170, src/_examples.scss */
+  .playerList li img {
+    width: 100%;
+  }
+}
 
-/* line 128, src/_examples.scss */
+/* line 178, src/_examples.scss */
 .twoUp {
   color: #353535;
   overflow: hidden;
   padding-bottom: 0.5em;
 }
-/* line 134, src/_examples.scss */
+/* line 184, src/_examples.scss */
 .twoUp div:first-child {
   float: right;
   width: 56.4718163%;
 }
-/* line 139, src/_examples.scss */
+/* line 189, src/_examples.scss */
 .twoUp div:first-child a {
   background-color: rgba(255, 255, 255, 0.4);
   display: block;
   max-width: 500px;
   padding: 1em;
 }
-/* line 147, src/_examples.scss */
+/* line 197, src/_examples.scss */
 .twoUp div:first-child img {
   width: 100%;
 }
-/* line 153, src/_examples.scss */
+/* line 203, src/_examples.scss */
 .twoUp div:last-child {
   float: left;
   margin-top: 1em;
   width: 40.1878914%;
   text-align: left;
 }
-/* line 160, src/_examples.scss */
+/* line 210, src/_examples.scss */
 .twoUp div:last-child h3 {
   font-size: 2.1em;
   font-weight: 700;
   line-height: 0.9em;
   margin-bottom: 0.2em;
 }
-/* line 168, src/_examples.scss */
+/* line 218, src/_examples.scss */
 .twoUp div:last-child h4 {
   color: #757575;
   font: 1.1em/1.2em "botanika-mono-web-1", "botanika-mono-web-2", monospace, sans-serif;
 }
-/* line 174, src/_examples.scss */
+/* line 224, src/_examples.scss */
 .twoUp div:last-child ul {
   margin-top: 1.1em;
 }
-/* line 179, src/_examples.scss */
+/* line 229, src/_examples.scss */
 .twoUp div:last-child li {
   font-size: 0.95em;
   padding: 0.15em 0;
 }
-/* line 184, src/_examples.scss */
+/* line 234, src/_examples.scss */
 .twoUp div:last-child li b {
   display: inline-block;
   min-width: 5.5em;
   width: 30%;
 }
+@media screen and (max-width: 480px) {
+  /* line 245, src/_examples.scss */
+  .twoUp div:first-child {
+    float: none;
+    width: 100%;
+  }
+  /* line 250, src/_examples.scss */
+  .twoUp div:first-child a {
+    padding: 0.5em;
+  }
+  /* line 256, src/_examples.scss */
+  .twoUp div:last-child {
+    float: none;
+    width: 100%;
+  }
+}
 
-/* line 194, src/_examples.scss */
+/* line 264, src/_examples.scss */
 #shotCommentsList {
   margin-top: 1.4em;
 }
-/* line 198, src/_examples.scss */
+/* line 268, src/_examples.scss */
 #shotCommentsList li {
   border-bottom: 1px dashed #bfbfbf;
   margin-bottom: 0.7em;
   overflow: hidden;
   padding-bottom: 0.7em;
+  width: 100%;
 }
-/* line 205, src/_examples.scss */
+/* line 275, src/_examples.scss */
 #shotCommentsList li > a {
-  background-color: rgba(255, 255, 255, 0.4);
-  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.6);
+  display: block;
   float: left;
-  margin-right: 0.4em;
   padding: 0.2em;
+  width: 10%;
 }
-/* line 214, src/_examples.scss */
+/* line 283, src/_examples.scss */
+#shotCommentsList li > a img {
+  width: 100%;
+}
+/* line 289, src/_examples.scss */
 #shotCommentsList li:last-child {
   border-bottom: none;
 }
-/* line 220, src/_examples.scss */
+/* line 297, src/_examples.scss */
 #shotCommentsList img {
   display: block;
 }
-/* line 225, src/_examples.scss */
+/* line 302, src/_examples.scss */
 #shotCommentsList h5 {
   color: #757575;
-  float: left;
+  float: right;
   font: 1em/1.2em "botanika-mono-web-1", "botanika-mono-web-2", monospace, sans-serif;
   width: 86.2077922%;
 }
-/* line 233, src/_examples.scss */
+/* line 310, src/_examples.scss */
 #shotCommentsList p {
-  float: left;
+  float: right;
   font-size: 0.95em;
   margin-top: 0.4em;
   width: 86.2077922%;
 }
 
-/* line 242, src/_examples.scss */
+/* line 319, src/_examples.scss */
 #playerProfile {
   color: #353535;
   overflow: hidden;
 }
-/* line 247, src/_examples.scss */
+/* line 324, src/_examples.scss */
 #playerProfile > a {
   background-color: rgba(255, 255, 255, 0.7);
   display: inline-block;
@@ -906,29 +1233,29 @@ nav + .jribbble-feature {
   margin-right: 0.8em;
   padding: 0.4em;
 }
-/* line 255, src/_examples.scss */
+/* line 332, src/_examples.scss */
 #playerProfile > a img {
   display: block;
 }
-/* line 261, src/_examples.scss */
+/* line 338, src/_examples.scss */
 #playerProfile div {
   float: left;
   margin-top: 0.4em;
   min-width: 290px;
   width: 56.4384134%;
 }
-/* line 269, src/_examples.scss */
+/* line 346, src/_examples.scss */
 #playerProfile h3 {
   font-size: 1.4em;
   font-weight: 700;
   line-height: 0.8em;
   margin-bottom: 0.2em;
 }
-/* line 277, src/_examples.scss */
+/* line 354, src/_examples.scss */
 #playerProfile h4 {
   font: 1em/1.2em "botanika-mono-web-1", "botanika-mono-web-2", monospace, sans-serif;
 }
-/* line 282, src/_examples.scss */
+/* line 359, src/_examples.scss */
 #playerProfile ul {
   border-top: 1px dashed #bfbfbf;
   -moz-column-count: 2;
@@ -944,17 +1271,47 @@ nav + .jribbble-feature {
   padding-top: 0.4em;
   width: 80%;
 }
-/* line 293, src/_examples.scss */
+/* line 370, src/_examples.scss */
 #playerProfile li {
   display: inline-block;
   font-size: 0.95em;
   padding: 0.15em 0;
 }
-/* line 300, src/_examples.scss */
+/* line 377, src/_examples.scss */
 #playerProfile b {
   display: inline-block;
-  min-width: 5.2em;
+  min-width: 5em;
   width: 30%;
+}
+@media screen and (max-width: 480px) {
+  /* line 385, src/_examples.scss */
+  #playerProfile > a {
+    width: 16.66666675;
+  }
+  /* line 389, src/_examples.scss */
+  #playerProfile > a img {
+    width: 100%;
+  }
+  /* line 395, src/_examples.scss */
+  #playerProfile div {
+    min-width: 0;
+  }
+  /* line 400, src/_examples.scss */
+  #playerProfile h3 {
+    font-size: 1.1em;
+  }
+  /* line 405, src/_examples.scss */
+  #playerProfile h4 {
+    font-size: 0.9em;
+  }
+  /* line 410, src/_examples.scss */
+  #playerProfile ul {
+    width: 100%;
+  }
+  /* line 415, src/_examples.scss */
+  #playerProfile li {
+    font-size: 0.85em;
+  }
 }
 
 /* line 2, src/_exampleCode.scss */
@@ -984,4 +1341,12 @@ footer {
 footer p {
   background-color: rgba(255, 255, 255, 0.8);
   display: inline;
+}
+@media screen and (max-width: 480px) {
+  /* line 2, src/_footer.scss */
+  footer {
+    font-size: 1em;
+    margin-top: 0em;
+    width: 100%;
+  }
 }

@@ -13,4 +13,10 @@ footer
 		background-color: fade-out(#fff, 0.2);
 		display: inline;
 	}
+	
+	@media screen and (max-width: 480px) {
+		font-size: 1em;
+		margin-top: 0em;
+		width: 100%
+	}
 }
