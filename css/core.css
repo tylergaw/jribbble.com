@@ -1129,29 +1129,29 @@ nav + .jribbble-feature {
   width: 40.1878914%;
   text-align: left;
 }
-/* line 210, src/_examples.scss */
-.twoUp div:last-child h3 {
+/* line 211, src/_examples.scss */
+.twoUp h3 {
   font-size: 2.1em;
   font-weight: 700;
   line-height: 0.9em;
   margin-bottom: 0.2em;
 }
-/* line 218, src/_examples.scss */
-.twoUp div:last-child h4 {
+/* line 219, src/_examples.scss */
+.twoUp h4 {
   color: #757575;
   font: 1.1em/1.2em "botanika-mono-web-1", "botanika-mono-web-2", monospace, sans-serif;
 }
-/* line 224, src/_examples.scss */
-.twoUp div:last-child ul {
+/* line 225, src/_examples.scss */
+.twoUp ul {
   margin-top: 1.1em;
 }
-/* line 229, src/_examples.scss */
-.twoUp div:last-child li {
+/* line 230, src/_examples.scss */
+.twoUp li {
   font-size: 0.95em;
   padding: 0.15em 0;
 }
-/* line 234, src/_examples.scss */
-.twoUp div:last-child li b {
+/* line 235, src/_examples.scss */
+.twoUp li b {
   display: inline-block;
   min-width: 5.5em;
   width: 30%;
