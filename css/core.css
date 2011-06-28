@@ -1314,19 +1314,6 @@ nav + .jribbble-feature {
   }
 }
 
-/* line 2, src/_exampleCode.scss */
-.example-usage {
-  margin-top: 1em;
-  display: none;
-}
-
-/* line 8, src/_exampleCode.scss */
-pre {
-  line-height: 1.2;
-  overflow: auto;
-  padding: 8px;
-}
-
 /* line 2, src/_footer.scss */
 footer {
   clear: both;
