@@ -124,7 +124,7 @@
 		
 		&:hover h3
 		{
-			opacity: 1;
+			visibility: visible;
 		}
 	}
 	
@@ -132,10 +132,10 @@
 	{
 		color: #fff;
 		font-size: 0.9em;
-		opacity: 0;
 		padding: 0 0.1em;
 		position: absolute;
 		top: -0.9em;
+		visibility: hidden;
 		white-space: nowrap;
 	}
 	

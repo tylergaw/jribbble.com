@@ -1095,16 +1095,16 @@ nav + .jribbble-feature {
 }
 /* line 126, src/_examples.scss */
 .playerList li:hover h3 {
-  opacity: 1;
+  visibility: visible;
 }
 /* line 132, src/_examples.scss */
 .playerList h3 {
   color: #fff;
   font-size: 0.9em;
-  opacity: 0;
   padding: 0 0.1em;
   position: absolute;
   top: -0.9em;
+  visibility: hidden;
   white-space: nowrap;
 }
 /* line 143, src/_examples.scss */
