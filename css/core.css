@@ -785,7 +785,7 @@ nav {
 }
 /* line 8, src/_nav.scss */
 nav h1 {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: #f8f8f8;
   display: inline-block;
   font: 2.7em/1.45em "botanika-mono-web-1", "botanika-mono-web-2", monospace, sans-serif;
   margin-top: 1.2em;
@@ -843,6 +843,11 @@ nav a b {
   nav a {
     font-size: 1em;
   }
+}
+
+/* line 82, src/_nav.scss */
+.rgba nav h1 {
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 /* line 2, src/_content.scss */
