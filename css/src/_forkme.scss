@@ -1,15 +1,14 @@
 #fork-me
 {
-	background-color: fade-out(#fff, 0.3);
+	background-color: #fff;
 	border-bottom: 2px solid #E0E0E0;
-	border-top: 2px solid #E0E0E0;
+	border-left: 2px solid #E0E0E0;
 	color: #000;
 	@include botanika(1.1em);
-	padding: 8px 42px;
+	padding: 6px 6px;
 	position: fixed;
-	right: -3.5em;
-	top: 3em;
-	@include transform(rotate(40deg));
+	right: 0;
+	top: 0;
 	width: 11em;
 	z-index: 999;
 	
@@ -18,6 +17,21 @@
 		color: #ececec;
 		text-decoration: none;
 	}
+	
+	@media screen and (max-width: 768px) {
+		font-size: 0.8em;
+	}
+}
+
+.csstransforms #fork-me
+{
+	background-color: fade-out(#fff, 0.3);
+	border-left: none;
+	border-top: 2px solid #E0E0E0;
+	padding: 8px 42px;
+	right: -3.5em;
+	@include transform(rotate(40deg));
+	top: 3em;
 	
 	@media screen and (max-width: 768px) {
 		font-size: 0.8em;

@@ -92,11 +92,12 @@ hr {
     parameter. That allows me to only write the selectors and rules one time, then
     include them in each of the media queries. Neato!
 -----------*/
-/* line 8, src/_colorways.scss */
+/* line 9, src/_colorways.scss */
 #bigAssJribbble,
 .jribbble-feature h2,
 .playerList h3,
 #fork-me:hover,
+.rgba #fork-me:hover,
 #download a {
   background-color: #ff0066;
   -moz-transition-property: background-color;
@@ -113,12 +114,12 @@ hr {
   transition-timing-function: linear;
 }
 
-/* line 14, src/_colorways.scss */
+/* line 15, src/_colorways.scss */
 #download a:hover {
   background-color: #cc0052;
 }
 
-/* line 19, src/_colorways.scss */
+/* line 20, src/_colorways.scss */
 nav li {
   color: #ff0066;
   -moz-transition-property: color;
@@ -136,11 +137,12 @@ nav li {
 }
 
 @media screen and (max-width: 2360px) {
-  /* line 8, src/_colorways.scss */
+  /* line 9, src/_colorways.scss */
   #bigAssJribbble,
   .jribbble-feature h2,
   .playerList h3,
   #fork-me:hover,
+  .rgba #fork-me:hover,
   #download a {
     background-color: #00e5ff;
     -moz-transition-property: background-color;
@@ -157,12 +159,12 @@ nav li {
     transition-timing-function: linear;
   }
 
-  /* line 14, src/_colorways.scss */
+  /* line 15, src/_colorways.scss */
   #download a:hover {
     background-color: #00b8cc;
   }
 
-  /* line 19, src/_colorways.scss */
+  /* line 20, src/_colorways.scss */
   nav li {
     color: #00e5ff;
     -moz-transition-property: color;
@@ -180,11 +182,12 @@ nav li {
   }
 }
 @media screen and (max-width: 2160px) {
-  /* line 8, src/_colorways.scss */
+  /* line 9, src/_colorways.scss */
   #bigAssJribbble,
   .jribbble-feature h2,
   .playerList h3,
   #fork-me:hover,
+  .rgba #fork-me:hover,
   #download a {
     background-color: #00ffc4;
     -moz-transition-property: background-color;
@@ -201,12 +204,12 @@ nav li {
     transition-timing-function: linear;
   }
 
-  /* line 14, src/_colorways.scss */
+  /* line 15, src/_colorways.scss */
   #download a:hover {
     background-color: #00cc9c;
   }
 
-  /* line 19, src/_colorways.scss */
+  /* line 20, src/_colorways.scss */
   nav li {
     color: #00ffc4;
     -moz-transition-property: color;
@@ -224,11 +227,12 @@ nav li {
   }
 }
 @media screen and (max-width: 1960px) {
-  /* line 8, src/_colorways.scss */
+  /* line 9, src/_colorways.scss */
   #bigAssJribbble,
   .jribbble-feature h2,
   .playerList h3,
   #fork-me:hover,
+  .rgba #fork-me:hover,
   #download a {
     background-color: #3bff00;
     -moz-transition-property: background-color;
@@ -245,12 +249,12 @@ nav li {
     transition-timing-function: linear;
   }
 
-  /* line 14, src/_colorways.scss */
+  /* line 15, src/_colorways.scss */
   #download a:hover {
     background-color: #30cc00;
   }
 
-  /* line 19, src/_colorways.scss */
+  /* line 20, src/_colorways.scss */
   nav li {
     color: #3bff00;
     -moz-transition-property: color;
@@ -268,11 +272,12 @@ nav li {
   }
 }
 @media screen and (max-width: 1760px) {
-  /* line 8, src/_colorways.scss */
+  /* line 9, src/_colorways.scss */
   #bigAssJribbble,
   .jribbble-feature h2,
   .playerList h3,
   #fork-me:hover,
+  .rgba #fork-me:hover,
   #download a {
     background-color: #ffc300;
     -moz-transition-property: background-color;
@@ -289,12 +294,12 @@ nav li {
     transition-timing-function: linear;
   }
 
-  /* line 14, src/_colorways.scss */
+  /* line 15, src/_colorways.scss */
   #download a:hover {
     background-color: #cc9c00;
   }
 
-  /* line 19, src/_colorways.scss */
+  /* line 20, src/_colorways.scss */
   nav li {
     color: #ffc300;
     -moz-transition-property: color;
@@ -312,11 +317,12 @@ nav li {
   }
 }
 @media screen and (max-width: 1560px) {
-  /* line 8, src/_colorways.scss */
+  /* line 9, src/_colorways.scss */
   #bigAssJribbble,
   .jribbble-feature h2,
   .playerList h3,
   #fork-me:hover,
+  .rgba #fork-me:hover,
   #download a {
     background-color: #ff6e00;
     -moz-transition-property: background-color;
@@ -333,12 +339,12 @@ nav li {
     transition-timing-function: linear;
   }
 
-  /* line 14, src/_colorways.scss */
+  /* line 15, src/_colorways.scss */
   #download a:hover {
     background-color: #cc5800;
   }
 
-  /* line 19, src/_colorways.scss */
+  /* line 20, src/_colorways.scss */
   nav li {
     color: #ff6e00;
     -moz-transition-property: color;
@@ -356,11 +362,12 @@ nav li {
   }
 }
 @media screen and (max-width: 1360px) {
-  /* line 8, src/_colorways.scss */
+  /* line 9, src/_colorways.scss */
   #bigAssJribbble,
   .jribbble-feature h2,
   .playerList h3,
   #fork-me:hover,
+  .rgba #fork-me:hover,
   #download a {
     background-color: #ff1a00;
     -moz-transition-property: background-color;
@@ -377,12 +384,12 @@ nav li {
     transition-timing-function: linear;
   }
 
-  /* line 14, src/_colorways.scss */
+  /* line 15, src/_colorways.scss */
   #download a:hover {
     background-color: #cc1400;
   }
 
-  /* line 19, src/_colorways.scss */
+  /* line 20, src/_colorways.scss */
   nav li {
     color: #ff1a00;
     -moz-transition-property: color;
@@ -400,11 +407,12 @@ nav li {
   }
 }
 @media screen and (max-width: 1160px) {
-  /* line 8, src/_colorways.scss */
+  /* line 9, src/_colorways.scss */
   #bigAssJribbble,
   .jribbble-feature h2,
   .playerList h3,
   #fork-me:hover,
+  .rgba #fork-me:hover,
   #download a {
     background-color: #ff0066;
     -moz-transition-property: background-color;
@@ -421,12 +429,12 @@ nav li {
     transition-timing-function: linear;
   }
 
-  /* line 14, src/_colorways.scss */
+  /* line 15, src/_colorways.scss */
   #download a:hover {
     background-color: #cc0052;
   }
 
-  /* line 19, src/_colorways.scss */
+  /* line 20, src/_colorways.scss */
   nav li {
     color: #ff0066;
     -moz-transition-property: color;
@@ -444,11 +452,12 @@ nav li {
   }
 }
 @media screen and (max-width: 960px) {
-  /* line 8, src/_colorways.scss */
+  /* line 9, src/_colorways.scss */
   #bigAssJribbble,
   .jribbble-feature h2,
   .playerList h3,
   #fork-me:hover,
+  .rgba #fork-me:hover,
   #download a {
     background-color: #e600cf;
     -moz-transition-property: background-color;
@@ -465,12 +474,12 @@ nav li {
     transition-timing-function: linear;
   }
 
-  /* line 14, src/_colorways.scss */
+  /* line 15, src/_colorways.scss */
   #download a:hover {
     background-color: #b300a1;
   }
 
-  /* line 19, src/_colorways.scss */
+  /* line 20, src/_colorways.scss */
   nav li {
     color: #e600cf;
     -moz-transition-property: color;
@@ -488,11 +497,12 @@ nav li {
   }
 }
 @media screen and (max-width: 768px) {
-  /* line 8, src/_colorways.scss */
+  /* line 9, src/_colorways.scss */
   #bigAssJribbble,
   .jribbble-feature h2,
   .playerList h3,
   #fork-me:hover,
+  .rgba #fork-me:hover,
   #download a {
     background-color: #c300ff;
     -moz-transition-property: background-color;
@@ -509,12 +519,12 @@ nav li {
     transition-timing-function: linear;
   }
 
-  /* line 14, src/_colorways.scss */
+  /* line 15, src/_colorways.scss */
   #download a:hover {
     background-color: #9c00cc;
   }
 
-  /* line 19, src/_colorways.scss */
+  /* line 20, src/_colorways.scss */
   nav li {
     color: #c300ff;
     -moz-transition-property: color;
@@ -532,11 +542,12 @@ nav li {
   }
 }
 @media screen and (max-width: 480px) {
-  /* line 8, src/_colorways.scss */
+  /* line 9, src/_colorways.scss */
   #bigAssJribbble,
   .jribbble-feature h2,
   .playerList h3,
   #fork-me:hover,
+  .rgba #fork-me:hover,
   #download a {
     background-color: #4400ff;
     -moz-transition-property: background-color;
@@ -553,12 +564,12 @@ nav li {
     transition-timing-function: linear;
   }
 
-  /* line 14, src/_colorways.scss */
+  /* line 15, src/_colorways.scss */
   #download a:hover {
     background-color: #3600cc;
   }
 
-  /* line 19, src/_colorways.scss */
+  /* line 20, src/_colorways.scss */
   nav li {
     color: #4400ff;
     -moz-transition-property: color;
@@ -614,24 +625,19 @@ a:hover {
 
 /* line 2, src/_forkme.scss */
 #fork-me {
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: #fff;
   border-bottom: 2px solid #E0E0E0;
-  border-top: 2px solid #E0E0E0;
+  border-left: 2px solid #E0E0E0;
   color: #000;
   font: 1.1em/1em "botanika-mono-web-1", "botanika-mono-web-2", monospace, sans-serif;
-  padding: 8px 42px;
+  padding: 6px 6px;
   position: fixed;
-  right: -3.5em;
-  top: 3em;
-  -moz-transform: rotate(40deg);
-  -webkit-transform: rotate(40deg);
-  -o-transform: rotate(40deg);
-  -ms-transform: rotate(40deg);
-  transform: rotate(40deg);
+  right: 0;
+  top: 0;
   width: 11em;
   z-index: 999;
 }
-/* line 17, src/_forkme.scss */
+/* line 16, src/_forkme.scss */
 #fork-me:hover {
   color: #ececec;
   text-decoration: none;
@@ -640,13 +646,34 @@ a:hover {
   /* line 2, src/_forkme.scss */
   #fork-me {
     font-size: 0.8em;
+  }
+}
+
+/* line 27, src/_forkme.scss */
+.csstransforms #fork-me {
+  background-color: rgba(255, 255, 255, 0.7);
+  border-left: none;
+  border-top: 2px solid #E0E0E0;
+  padding: 8px 42px;
+  right: -3.5em;
+  -moz-transform: rotate(40deg);
+  -webkit-transform: rotate(40deg);
+  -o-transform: rotate(40deg);
+  -ms-transform: rotate(40deg);
+  transform: rotate(40deg);
+  top: 3em;
+}
+@media screen and (max-width: 768px) {
+  /* line 27, src/_forkme.scss */
+  .csstransforms #fork-me {
+    font-size: 0.8em;
     right: -4em;
     top: 3.1em;
   }
 }
 @media screen and (max-width: 480px) {
-  /* line 2, src/_forkme.scss */
-  #fork-me {
+  /* line 27, src/_forkme.scss */
+  .csstransforms #fork-me {
     background-color: rgba(255, 255, 255, 0.9);
     border-bottom: 1px solid #E0E0E0;
     border-left: 1px solid #E0E0E0;
