@@ -888,7 +888,7 @@ nav + .jribbble-feature {
 }
 /* line 26, src/_features.scss */
 .jribbble-feature h1 {
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: #f8f8f8;
   display: inline-block;
   font: 3.1em/1.2em "botanika-mono-web-1", "botanika-mono-web-2", monospace, sans-serif;
   margin-bottom: 0.1em;
