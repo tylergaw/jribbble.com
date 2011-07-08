@@ -989,7 +989,7 @@ nav + .jribbble-feature {
 }
 /* line 12, src/_examples.scss */
 .shotList li {
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: #ebebeb;
   display: block;
   float: left;
   margin-bottom: 02.4482255%;
@@ -1021,18 +1021,10 @@ nav + .jribbble-feature {
 }
 /* line 41, src/_examples.scss */
 .shotList h3, .shotList h4 {
-  opacity: 0;
   position: absolute;
-  -moz-transition-property: opacity;
-  -webkit-transition-property: opacity;
-  -o-transition-property: opacity;
-  transition-property: opacity;
-  -moz-transition-duration: 0.15s;
-  -webkit-transition-duration: 0.15s;
-  -o-transition-duration: 0.15s;
-  transition-duration: 0.15s;
+  visibility: hidden;
 }
-/* line 49, src/_examples.scss */
+/* line 47, src/_examples.scss */
 .shotList h3 {
   left: 0.8em;
   line-height: 1.2em;
@@ -1041,7 +1033,7 @@ nav + .jribbble-feature {
   top: 0.9em;
   width: 90%;
 }
-/* line 59, src/_examples.scss */
+/* line 57, src/_examples.scss */
 .shotList h4 {
   bottom: 0.9em;
   color: #4f4f4f;
@@ -1049,57 +1041,63 @@ nav + .jribbble-feature {
   text-align: right;
   width: 90%;
 }
-/* line 70, src/_examples.scss */
+/* line 68, src/_examples.scss */
 .shotList li:hover h3, .shotList li:hover h4 {
-  opacity: 1;
+  visibility: visible;
 }
-/* line 75, src/_examples.scss */
+/* line 73, src/_examples.scss */
 .shotList li:hover img {
-  opacity: 0.15;
+  visibility: hidden;
 }
 @media screen and (max-width: 480px) {
   /* line 7, src/_examples.scss */
   .shotList {
     width: 100%;
   }
-  /* line 85, src/_examples.scss */
+  /* line 83, src/_examples.scss */
   .shotList li {
     clear: left;
     overflow: hidden;
     width: 45%;
   }
-  /* line 91, src/_examples.scss */
+  /* line 89, src/_examples.scss */
   .shotList li:nth-child(2n) {
     clear: right;
     float: right;
     margin-right: 0;
   }
-  /* line 98, src/_examples.scss */
+  /* line 96, src/_examples.scss */
   .shotList li a {
     max-height: auto;
     min-height: 0;
     min-width: 0;
   }
-  /* line 105, src/_examples.scss */
+  /* line 103, src/_examples.scss */
   .shotList li img {
     width: 100%;
   }
 }
 
-/* line 113, src/_examples.scss */
+/* line 111, src/_examples.scss */
+.opacity .shotList li:hover img {
+  opacity: 0.15;
+  visibility: visible;
+}
+
+/* line 117, src/_examples.scss */
 .playerList {
   overflow: visible;
 }
-/* line 117, src/_examples.scss */
+/* line 121, src/_examples.scss */
 .playerList li {
   display: inline-block;
   position: relative;
 }
-/* line 122, src/_examples.scss */
+/* line 126, src/_examples.scss */
 .playerList li:hover h3 {
   opacity: 1;
 }
-/* line 128, src/_examples.scss */
+/* line 132, src/_examples.scss */
 .playerList h3 {
   color: #fff;
   font-size: 0.9em;
@@ -1109,119 +1107,119 @@ nav + .jribbble-feature {
   top: -0.9em;
   white-space: nowrap;
 }
-/* line 139, src/_examples.scss */
+/* line 143, src/_examples.scss */
 .playerList a {
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: #ebebeb;
   display: inline-block;
   float: left;
   margin: 0.2em 0.8em 0.6em 0;
   padding: 0.4em;
 }
-/* line 147, src/_examples.scss */
+/* line 151, src/_examples.scss */
 .playerList a img {
   display: block;
 }
-/* line 152, src/_examples.scss */
+/* line 156, src/_examples.scss */
 .playerList a:hover {
   background-color: #fff;
 }
 @media screen and (max-width: 480px) {
-  /* line 113, src/_examples.scss */
+  /* line 117, src/_examples.scss */
   .playerList {
     width: 100%;
   }
-  /* line 161, src/_examples.scss */
+  /* line 165, src/_examples.scss */
   .playerList li {
     width: 25%;
   }
-  /* line 165, src/_examples.scss */
+  /* line 169, src/_examples.scss */
   .playerList li:nth-child(4n) {
     margin-right: 0;
   }
-  /* line 170, src/_examples.scss */
+  /* line 174, src/_examples.scss */
   .playerList li img {
     width: 100%;
   }
 }
 
-/* line 178, src/_examples.scss */
+/* line 182, src/_examples.scss */
 .twoUp {
   color: #353535;
   overflow: hidden;
   padding-bottom: 0.5em;
 }
-/* line 184, src/_examples.scss */
+/* line 188, src/_examples.scss */
 .twoUp div:first-child {
   float: right;
   width: 56.4718163%;
 }
-/* line 189, src/_examples.scss */
+/* line 193, src/_examples.scss */
 .twoUp div:first-child a {
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: #ebebeb;
   display: block;
   max-width: 500px;
   padding: 1em;
 }
-/* line 197, src/_examples.scss */
+/* line 201, src/_examples.scss */
 .twoUp div:first-child img {
   width: 100%;
 }
-/* line 203, src/_examples.scss */
+/* line 207, src/_examples.scss */
 .twoUp div:last-child {
   float: left;
   margin-top: 1em;
   width: 40.1878914%;
   text-align: left;
 }
-/* line 211, src/_examples.scss */
+/* line 215, src/_examples.scss */
 .twoUp h3 {
   font-size: 2.1em;
   font-weight: 700;
   line-height: 0.9em;
   margin-bottom: 0.2em;
 }
-/* line 219, src/_examples.scss */
+/* line 223, src/_examples.scss */
 .twoUp h4 {
   color: #757575;
   font: 1.1em/1.2em "botanika-mono-web-1", "botanika-mono-web-2", monospace, sans-serif;
 }
-/* line 225, src/_examples.scss */
+/* line 229, src/_examples.scss */
 .twoUp ul {
   margin-top: 1.1em;
 }
-/* line 230, src/_examples.scss */
+/* line 234, src/_examples.scss */
 .twoUp li {
   font-size: 0.95em;
   padding: 0.15em 0;
 }
-/* line 235, src/_examples.scss */
+/* line 239, src/_examples.scss */
 .twoUp li b {
   display: inline-block;
   min-width: 5.5em;
   width: 30%;
 }
 @media screen and (max-width: 480px) {
-  /* line 245, src/_examples.scss */
+  /* line 249, src/_examples.scss */
   .twoUp div:first-child {
     float: none;
     width: 100%;
   }
-  /* line 250, src/_examples.scss */
+  /* line 254, src/_examples.scss */
   .twoUp div:first-child a {
     padding: 0.5em;
   }
-  /* line 256, src/_examples.scss */
+  /* line 260, src/_examples.scss */
   .twoUp div:last-child {
     float: none;
     width: 100%;
   }
 }
 
-/* line 264, src/_examples.scss */
+/* line 268, src/_examples.scss */
 #shotCommentsList {
   margin-top: 1.4em;
 }
-/* line 268, src/_examples.scss */
+/* line 272, src/_examples.scss */
 #shotCommentsList li {
   border-bottom: 1px dashed #bfbfbf;
   margin-bottom: 0.7em;
@@ -1229,34 +1227,34 @@ nav + .jribbble-feature {
   padding-bottom: 0.7em;
   width: 100%;
 }
-/* line 275, src/_examples.scss */
+/* line 279, src/_examples.scss */
 #shotCommentsList li > a {
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: #ebebeb;
   display: block;
   float: left;
   padding: 0.2em;
   width: 10%;
 }
-/* line 283, src/_examples.scss */
+/* line 287, src/_examples.scss */
 #shotCommentsList li > a img {
   width: 100%;
 }
-/* line 289, src/_examples.scss */
+/* line 293, src/_examples.scss */
 #shotCommentsList li:last-child {
   border-bottom: none;
 }
-/* line 297, src/_examples.scss */
+/* line 301, src/_examples.scss */
 #shotCommentsList img {
   display: block;
 }
-/* line 302, src/_examples.scss */
+/* line 306, src/_examples.scss */
 #shotCommentsList h5 {
   color: #757575;
   float: right;
   font: 1em/1.2em "botanika-mono-web-1", "botanika-mono-web-2", monospace, sans-serif;
   width: 86.2077922%;
 }
-/* line 310, src/_examples.scss */
+/* line 314, src/_examples.scss */
 #shotCommentsList p {
   float: right;
   font-size: 0.95em;
@@ -1264,42 +1262,42 @@ nav + .jribbble-feature {
   width: 86.2077922%;
 }
 
-/* line 319, src/_examples.scss */
+/* line 323, src/_examples.scss */
 #playerProfile {
   color: #353535;
   overflow: hidden;
 }
-/* line 324, src/_examples.scss */
+/* line 328, src/_examples.scss */
 #playerProfile > a {
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: #ebebeb;
   display: inline-block;
   float: left;
   margin-right: 0.8em;
   padding: 0.4em;
 }
-/* line 332, src/_examples.scss */
+/* line 336, src/_examples.scss */
 #playerProfile > a img {
   display: block;
 }
-/* line 338, src/_examples.scss */
+/* line 342, src/_examples.scss */
 #playerProfile div {
   float: left;
   margin-top: 0.4em;
   min-width: 290px;
   width: 56.4384134%;
 }
-/* line 346, src/_examples.scss */
+/* line 350, src/_examples.scss */
 #playerProfile h3 {
   font-size: 1.4em;
   font-weight: 700;
   line-height: 0.8em;
   margin-bottom: 0.2em;
 }
-/* line 354, src/_examples.scss */
+/* line 358, src/_examples.scss */
 #playerProfile h4 {
   font: 1em/1.2em "botanika-mono-web-1", "botanika-mono-web-2", monospace, sans-serif;
 }
-/* line 359, src/_examples.scss */
+/* line 363, src/_examples.scss */
 #playerProfile ul {
   border-top: 1px dashed #bfbfbf;
   -moz-column-count: 2;
@@ -1315,44 +1313,44 @@ nav + .jribbble-feature {
   padding-top: 0.4em;
   width: 80%;
 }
-/* line 370, src/_examples.scss */
+/* line 374, src/_examples.scss */
 #playerProfile li {
   display: inline-block;
   font-size: 0.95em;
   padding: 0.15em 0;
 }
-/* line 377, src/_examples.scss */
+/* line 381, src/_examples.scss */
 #playerProfile b {
   display: inline-block;
   min-width: 5em;
   width: 30%;
 }
 @media screen and (max-width: 480px) {
-  /* line 385, src/_examples.scss */
+  /* line 389, src/_examples.scss */
   #playerProfile > a {
     width: 16.66666675;
   }
-  /* line 389, src/_examples.scss */
+  /* line 393, src/_examples.scss */
   #playerProfile > a img {
     width: 100%;
   }
-  /* line 395, src/_examples.scss */
+  /* line 399, src/_examples.scss */
   #playerProfile div {
     min-width: 0;
   }
-  /* line 400, src/_examples.scss */
+  /* line 404, src/_examples.scss */
   #playerProfile h3 {
     font-size: 1.1em;
   }
-  /* line 405, src/_examples.scss */
+  /* line 409, src/_examples.scss */
   #playerProfile h4 {
     font-size: 0.9em;
   }
-  /* line 410, src/_examples.scss */
+  /* line 414, src/_examples.scss */
   #playerProfile ul {
     width: 100%;
   }
-  /* line 415, src/_examples.scss */
+  /* line 419, src/_examples.scss */
   #playerProfile li {
     font-size: 0.85em;
   }
