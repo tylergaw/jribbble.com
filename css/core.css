@@ -13,7 +13,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-/* line 18, /Users/tylergaw/Projects/lab/jribbble.com/css/src/lib/_reset.scss */
+/* line 18, src/lib/_reset.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -36,46 +36,46 @@ time, mark, audio, video {
 }
 
 /* HTML5 display-role reset for older browsers */
-/* line 28, /Users/tylergaw/Projects/lab/jribbble.com/css/src/lib/_reset.scss */
+/* line 28, src/lib/_reset.scss */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
-/* line 31, /Users/tylergaw/Projects/lab/jribbble.com/css/src/lib/_reset.scss */
+/* line 31, src/lib/_reset.scss */
 body {
   line-height: 1;
 }
 
-/* line 34, /Users/tylergaw/Projects/lab/jribbble.com/css/src/lib/_reset.scss */
+/* line 34, src/lib/_reset.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 37, /Users/tylergaw/Projects/lab/jribbble.com/css/src/lib/_reset.scss */
+/* line 37, src/lib/_reset.scss */
 blockquote, q {
   quotes: none;
 }
 
-/* line 41, /Users/tylergaw/Projects/lab/jribbble.com/css/src/lib/_reset.scss */
+/* line 41, src/lib/_reset.scss */
 blockquote:before, blockquote:after,
 q:before, q:after {
   content: '';
   content: none;
 }
 
-/* line 45, /Users/tylergaw/Projects/lab/jribbble.com/css/src/lib/_reset.scss */
+/* line 45, src/lib/_reset.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 51, /Users/tylergaw/Projects/lab/jribbble.com/css/src/lib/_reset.scss */
+/* line 51, src/lib/_reset.scss */
 b, strong {
   font-weight: bold;
 }
 
-/* line 56, /Users/tylergaw/Projects/lab/jribbble.com/css/src/lib/_reset.scss */
+/* line 56, src/lib/_reset.scss */
 hr {
   display: none;
 }
@@ -92,7 +92,7 @@ hr {
     parameter. That allows me to only write the selectors and rules one time, then
     include them in each of the media queries. Neato!
 -----------*/
-/* line 8, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_colorways.scss */
+/* line 8, src/_colorways.scss */
 #bigAssJribbble,
 .jribbble-feature h2,
 .playerList h3,
@@ -113,12 +113,12 @@ hr {
   transition-timing-function: linear;
 }
 
-/* line 14, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_colorways.scss */
+/* line 14, src/_colorways.scss */
 #download a:hover {
   background-color: #cc0052;
 }
 
-/* line 19, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_colorways.scss */
+/* line 19, src/_colorways.scss */
 nav li {
   color: #ff0066;
   -moz-transition-property: color;
@@ -136,7 +136,7 @@ nav li {
 }
 
 @media screen and (max-width: 2360px) {
-  /* line 8, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_colorways.scss */
+  /* line 8, src/_colorways.scss */
   #bigAssJribbble,
   .jribbble-feature h2,
   .playerList h3,
@@ -157,12 +157,12 @@ nav li {
     transition-timing-function: linear;
   }
 
-  /* line 14, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_colorways.scss */
+  /* line 14, src/_colorways.scss */
   #download a:hover {
     background-color: #00b8cc;
   }
 
-  /* line 19, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_colorways.scss */
+  /* line 19, src/_colorways.scss */
   nav li {
     color: #00e5ff;
     -moz-transition-property: color;
@@ -180,7 +180,7 @@ nav li {
   }
 }
 @media screen and (max-width: 2160px) {
-  /* line 8, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_colorways.scss */
+  /* line 8, src/_colorways.scss */
   #bigAssJribbble,
   .jribbble-feature h2,
   .playerList h3,
@@ -201,12 +201,12 @@ nav li {
     transition-timing-function: linear;
   }
 
-  /* line 14, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_colorways.scss */
+  /* line 14, src/_colorways.scss */
   #download a:hover {
     background-color: #00cc9c;
   }
 
-  /* line 19, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_colorways.scss */
+  /* line 19, src/_colorways.scss */
   nav li {
     color: #00ffc4;
     -moz-transition-property: color;
@@ -224,7 +224,7 @@ nav li {
   }
 }
 @media screen and (max-width: 1960px) {
-  /* line 8, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_colorways.scss */
+  /* line 8, src/_colorways.scss */
   #bigAssJribbble,
   .jribbble-feature h2,
   .playerList h3,
@@ -245,12 +245,12 @@ nav li {
     transition-timing-function: linear;
   }
 
-  /* line 14, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_colorways.scss */
+  /* line 14, src/_colorways.scss */
   #download a:hover {
     background-color: #30cc00;
   }
 
-  /* line 19, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_colorways.scss */
+  /* line 19, src/_colorways.scss */
   nav li {
     color: #3bff00;
     -moz-transition-property: color;
@@ -268,7 +268,7 @@ nav li {
   }
 }
 @media screen and (max-width: 1760px) {
-  /* line 8, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_colorways.scss */
+  /* line 8, src/_colorways.scss */
   #bigAssJribbble,
   .jribbble-feature h2,
   .playerList h3,
@@ -289,12 +289,12 @@ nav li {
     transition-timing-function: linear;
   }
 
-  /* line 14, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_colorways.scss */
+  /* line 14, src/_colorways.scss */
   #download a:hover {
     background-color: #cc9c00;
   }
 
-  /* line 19, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_colorways.scss */
+  /* line 19, src/_colorways.scss */
   nav li {
     color: #ffc300;
     -moz-transition-property: color;
@@ -312,7 +312,7 @@ nav li {
   }
 }
 @media screen and (max-width: 1560px) {
-  /* line 8, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_colorways.scss */
+  /* line 8, src/_colorways.scss */
   #bigAssJribbble,
   .jribbble-feature h2,
   .playerList h3,
@@ -333,12 +333,12 @@ nav li {
     transition-timing-function: linear;
   }
 
-  /* line 14, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_colorways.scss */
+  /* line 14, src/_colorways.scss */
   #download a:hover {
     background-color: #cc5800;
   }
 
-  /* line 19, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_colorways.scss */
+  /* line 19, src/_colorways.scss */
   nav li {
     color: #ff6e00;
     -moz-transition-property: color;
@@ -356,7 +356,7 @@ nav li {
   }
 }
 @media screen and (max-width: 1360px) {
-  /* line 8, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_colorways.scss */
+  /* line 8, src/_colorways.scss */
   #bigAssJribbble,
   .jribbble-feature h2,
   .playerList h3,
@@ -377,12 +377,12 @@ nav li {
     transition-timing-function: linear;
   }
 
-  /* line 14, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_colorways.scss */
+  /* line 14, src/_colorways.scss */
   #download a:hover {
     background-color: #cc1400;
   }
 
-  /* line 19, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_colorways.scss */
+  /* line 19, src/_colorways.scss */
   nav li {
     color: #ff1a00;
     -moz-transition-property: color;
@@ -400,7 +400,7 @@ nav li {
   }
 }
 @media screen and (max-width: 1160px) {
-  /* line 8, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_colorways.scss */
+  /* line 8, src/_colorways.scss */
   #bigAssJribbble,
   .jribbble-feature h2,
   .playerList h3,
@@ -421,12 +421,12 @@ nav li {
     transition-timing-function: linear;
   }
 
-  /* line 14, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_colorways.scss */
+  /* line 14, src/_colorways.scss */
   #download a:hover {
     background-color: #cc0052;
   }
 
-  /* line 19, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_colorways.scss */
+  /* line 19, src/_colorways.scss */
   nav li {
     color: #ff0066;
     -moz-transition-property: color;
@@ -444,7 +444,7 @@ nav li {
   }
 }
 @media screen and (max-width: 960px) {
-  /* line 8, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_colorways.scss */
+  /* line 8, src/_colorways.scss */
   #bigAssJribbble,
   .jribbble-feature h2,
   .playerList h3,
@@ -465,12 +465,12 @@ nav li {
     transition-timing-function: linear;
   }
 
-  /* line 14, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_colorways.scss */
+  /* line 14, src/_colorways.scss */
   #download a:hover {
     background-color: #b300a1;
   }
 
-  /* line 19, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_colorways.scss */
+  /* line 19, src/_colorways.scss */
   nav li {
     color: #e600cf;
     -moz-transition-property: color;
@@ -488,7 +488,7 @@ nav li {
   }
 }
 @media screen and (max-width: 768px) {
-  /* line 8, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_colorways.scss */
+  /* line 8, src/_colorways.scss */
   #bigAssJribbble,
   .jribbble-feature h2,
   .playerList h3,
@@ -509,12 +509,12 @@ nav li {
     transition-timing-function: linear;
   }
 
-  /* line 14, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_colorways.scss */
+  /* line 14, src/_colorways.scss */
   #download a:hover {
     background-color: #9c00cc;
   }
 
-  /* line 19, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_colorways.scss */
+  /* line 19, src/_colorways.scss */
   nav li {
     color: #c300ff;
     -moz-transition-property: color;
@@ -532,7 +532,7 @@ nav li {
   }
 }
 @media screen and (max-width: 480px) {
-  /* line 8, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_colorways.scss */
+  /* line 8, src/_colorways.scss */
   #bigAssJribbble,
   .jribbble-feature h2,
   .playerList h3,
@@ -553,12 +553,12 @@ nav li {
     transition-timing-function: linear;
   }
 
-  /* line 14, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_colorways.scss */
+  /* line 14, src/_colorways.scss */
   #download a:hover {
     background-color: #3600cc;
   }
 
-  /* line 19, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_colorways.scss */
+  /* line 19, src/_colorways.scss */
   nav li {
     color: #4400ff;
     -moz-transition-property: color;
@@ -575,37 +575,44 @@ nav li {
     transition-timing-function: linear;
   }
 }
-/* line 2, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_general.scss */
+/* line 2, src/_general.scss */
 body {
   background-color: #dfdfdf;
   font: 100%/1em "ff-dagny-web-pro-1", "ff-dagny-web-pro-2", sans-serif;
 }
 
-/* line 11, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_general.scss */
+/* line 8, src/_general.scss */
 #bigAssJribbble {
-  background-image: url(../images/branding-die-cut.png), url(../images/branding-fauxBgColor.png);
-  background-repeat: no-repeat, repeat-y;
-  background-position: -16% 99%, 119.3% top;
-  -moz-background-size: 81.7857143%, auto 100%;
-  -webkit-background-size: 81.7857143%, auto 100%;
-  -o-background-size: 81.7857143%, auto;
-  background-size: 81.7857143%, auto 100%;
-  padding-top: 34.1%;
+  background-image: url(../images/branding-die-cut.png);
+  background-repeat: no-repeat;
+  background-position: -12em -13em;
+  height: 454px;
   position: absolute;
   width: 100%;
 }
 
-/* line 25, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_general.scss */
+/* line 18, src/_general.scss */
+.multiplebgs #bigAssJribbble {
+  background-position: 15% 100%;
+  -moz-background-size: 190% 140%;
+  -webkit-background-size: 190% 140%;
+  -o-background-size: 190% 140%;
+  background-size: 190% 140%;
+  height: auto;
+  padding-top: 45%;
+}
+
+/* line 33, src/_general.scss */
 a {
   color: #2f39ff;
   text-decoration: none;
 }
-/* line 30, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_general.scss */
+/* line 38, src/_general.scss */
 a:hover {
   text-decoration: underline;
 }
 
-/* line 2, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_forkme.scss */
+/* line 2, src/_forkme.scss */
 #fork-me {
   background-color: rgba(255, 255, 255, 0.7);
   border-bottom: 2px solid #E0E0E0;
@@ -624,13 +631,13 @@ a:hover {
   width: 11em;
   z-index: 999;
 }
-/* line 17, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_forkme.scss */
+/* line 17, src/_forkme.scss */
 #fork-me:hover {
   color: #ececec;
   text-decoration: none;
 }
 @media screen and (max-width: 768px) {
-  /* line 2, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_forkme.scss */
+  /* line 2, src/_forkme.scss */
   #fork-me {
     font-size: 0.8em;
     right: -4em;
@@ -638,7 +645,7 @@ a:hover {
   }
 }
 @media screen and (max-width: 480px) {
-  /* line 2, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_forkme.scss */
+  /* line 2, src/_forkme.scss */
   #fork-me {
     background-color: rgba(255, 255, 255, 0.9);
     border-bottom: 1px solid #E0E0E0;
@@ -655,16 +662,16 @@ a:hover {
   }
 }
 
-/* line 2, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_banner.scss */
+/* line 2, src/_banner.scss */
 header[role="banner"] {
   clear: both;
   overflow: hidden;
 }
-/* line 7, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_banner.scss */
+/* line 7, src/_banner.scss */
 header[role="banner"] h1 {
   display: none;
 }
-/* line 12, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_banner.scss */
+/* line 12, src/_banner.scss */
 header[role="banner"] h2 {
   display: inline-block;
   float: right;
@@ -673,12 +680,12 @@ header[role="banner"] h2 {
   text-align: right;
   width: 80.1732777%;
 }
-/* line 21, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_banner.scss */
+/* line 21, src/_banner.scss */
 header[role="banner"] h2 span {
   background-color: rgba(255, 255, 255, 0.85);
 }
 @media screen and (max-width: 768px) {
-  /* line 29, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_banner.scss */
+  /* line 29, src/_banner.scss */
   header[role="banner"] h2 {
     font-size: 2.8em;
     margin-top: 18%;
@@ -686,13 +693,13 @@ header[role="banner"] h2 span {
   }
 }
 @media screen and (max-width: 480px) {
-  /* line 39, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_banner.scss */
+  /* line 39, src/_banner.scss */
   header[role="banner"] h2 {
     font-size: 2em;
   }
 }
 
-/* line 2, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_download.scss */
+/* line 2, src/_download.scss */
 #download {
   clear: both;
   float: right;
@@ -700,7 +707,7 @@ header[role="banner"] h2 span {
   text-align: right;
   width: 73.1732777%;
 }
-/* line 10, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_download.scss */
+/* line 10, src/_download.scss */
 #download a {
   -moz-border-radius: 32px;
   -webkit-border-radius: 32px;
@@ -717,96 +724,96 @@ header[role="banner"] h2 span {
   text-align: center;
   text-transform: uppercase;
 }
-/* line 22, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_download.scss */
+/* line 22, src/_download.scss */
 #download a:hover {
   text-decoration: none;
 }
-/* line 28, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_download.scss */
+/* line 28, src/_download.scss */
 #download h2 {
   color: #8d8d8d;
   font-size: 1em;
   margin: 0.3em 0.8em 0 0;
 }
 @media screen and (max-width: 768px) {
-  /* line 2, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_download.scss */
+  /* line 2, src/_download.scss */
   #download {
     width: 100%;
   }
-  /* line 39, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_download.scss */
+  /* line 39, src/_download.scss */
   #download a {
     font-size: 1.8em;
   }
 }
 
-/* line 2, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_nav.scss */
+/* line 2, src/_nav.scss */
 nav {
   clear: both;
   display: block;
   overflow: hidden;
 }
-/* line 8, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_nav.scss */
+/* line 8, src/_nav.scss */
 nav h1 {
   background-color: rgba(255, 255, 255, 0.8);
   display: inline-block;
   font: 2.7em/1.45em "botanika-mono-web-1", "botanika-mono-web-2", monospace, sans-serif;
   margin-top: 1.2em;
 }
-/* line 16, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_nav.scss */
+/* line 16, src/_nav.scss */
 nav ol {
   margin-bottom: 2em;
   padding: 0.5em 0 0 0.2em;
 }
-/* line 22, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_nav.scss */
+/* line 22, src/_nav.scss */
 nav li {
   background-color: rgba(223, 223, 223, 0.9);
   border-bottom: 1px dashed #bfbfbf;
   list-style: decimal inside;
   padding: 0.8em 0.4em;
 }
-/* line 29, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_nav.scss */
+/* line 29, src/_nav.scss */
 nav li:last-child {
   border-bottom: none;
 }
-/* line 34, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_nav.scss */
+/* line 34, src/_nav.scss */
 nav li:hover {
   background-color: rgba(255, 255, 255, 0.1);
 }
-/* line 40, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_nav.scss */
+/* line 40, src/_nav.scss */
 nav a {
   color: #353535;
   font-size: 1.2em;
   line-height: 1.2em;
   padding-left: 0.4em;
 }
-/* line 47, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_nav.scss */
+/* line 47, src/_nav.scss */
 nav a:hover {
   color: #2f39ff;
 }
-/* line 51, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_nav.scss */
+/* line 51, src/_nav.scss */
 nav a:hover b {
   color: #2f39ff;
 }
-/* line 57, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_nav.scss */
+/* line 57, src/_nav.scss */
 nav a b {
   color: #282828;
   font-weight: 700;
 }
 @media screen and (max-width: 480px) {
-  /* line 65, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_nav.scss */
+  /* line 65, src/_nav.scss */
   nav h1 {
     font-size: 2.2em;
   }
-  /* line 70, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_nav.scss */
+  /* line 70, src/_nav.scss */
   nav li {
     padding: 0.6em 0.3em;
   }
-  /* line 75, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_nav.scss */
+  /* line 75, src/_nav.scss */
   nav a {
     font-size: 1em;
   }
 }
 
-/* line 2, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_content.scss */
+/* line 2, src/_content.scss */
 #content {
   margin: 0 auto;
   max-width: 1280px;
@@ -815,23 +822,23 @@ nav a b {
   z-index: 2;
 }
 @media screen and (max-width: 768px) {
-  /* line 2, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_content.scss */
+  /* line 2, src/_content.scss */
   #content {
     width: 95%;
   }
 }
 
-/* line 2, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_features.scss */
+/* line 2, src/_features.scss */
 .jribbble-feature {
   overflow: hidden;
   margin: 3em 0;
   padding-bottom: 0.4em;
 }
-/* line 8, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_features.scss */
+/* line 8, src/_features.scss */
 nav + .jribbble-feature {
   margin-top: 2em;
 }
-/* line 13, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_features.scss */
+/* line 13, src/_features.scss */
 .jribbble-feature:after {
   background-color: #9b9b9b;
   clear: both;
@@ -847,14 +854,14 @@ nav + .jribbble-feature {
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-/* line 26, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_features.scss */
+/* line 26, src/_features.scss */
 .jribbble-feature h1 {
   background-color: rgba(255, 255, 255, 0.7);
   display: inline-block;
   font: 3.1em/1.2em "botanika-mono-web-1", "botanika-mono-web-2", monospace, sans-serif;
   margin-bottom: 0.1em;
 }
-/* line 34, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_features.scss */
+/* line 34, src/_features.scss */
 .jribbble-feature h2 {
   clear: both;
   color: #ececec;
@@ -863,87 +870,87 @@ nav + .jribbble-feature {
   padding: 0.2em 0.4em;
 }
 @media screen and (max-width: 768px) {
-  /* line 44, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_features.scss */
+  /* line 44, src/_features.scss */
   .jribbble-feature h1 {
     font-size: 2.6em;
   }
 }
 @media screen and (max-width: 480px) {
-  /* line 2, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_features.scss */
+  /* line 2, src/_features.scss */
   .jribbble-feature {
     margin: 1em 0 2.5em 0;
   }
-  /* line 54, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_features.scss */
+  /* line 54, src/_features.scss */
   .jribbble-feature h1 {
     font-size: 2em;
   }
-  /* line 59, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_features.scss */
+  /* line 59, src/_features.scss */
   .jribbble-feature h2 {
     font-size: 0.9em;
   }
 }
 
-/* line 66, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_features.scss */
+/* line 66, src/_features.scss */
 .method-description {
   color: #1F1F1F;
   font-size: 1.1em;
   margin-top: 1.1em;
   overflow: hidden;
 }
-/* line 73, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_features.scss */
+/* line 73, src/_features.scss */
 .method-description li {
   border-bottom: 1px dashed #bfbfbf;
   overflow: hidden;
   padding: 0.8em 0;
 }
-/* line 79, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_features.scss */
+/* line 79, src/_features.scss */
 .method-description li:first-child {
   padding: 0.7em 0 0.4em 0;
 }
-/* line 83, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_features.scss */
+/* line 83, src/_features.scss */
 .method-description li:first-child h3, .method-description li:first-child p {
   font: 0.8em/1em "ff-dagny-web-pro-1", "ff-dagny-web-pro-2", sans-serif;
   font-weight: 700;
 }
-/* line 91, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_features.scss */
+/* line 91, src/_features.scss */
 .method-description h3 {
   float: left;
   font: 1.1em/1.2em "botanika-mono-web-1", "botanika-mono-web-2", monospace, sans-serif;
   width: 40.1878914%;
 }
-/* line 98, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_features.scss */
+/* line 98, src/_features.scss */
 .method-description p {
   float: right;
   line-height: 1.3em;
   width: 56.4718163%;
 }
 @media screen and (max-width: 480px) {
-  /* line 106, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_features.scss */
+  /* line 106, src/_features.scss */
   .method-description h3 {
     font-size: 0.8em;
   }
-  /* line 111, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_features.scss */
+  /* line 111, src/_features.scss */
   .method-description p {
     font-size: 0.9em;
   }
 }
 
-/* line 118, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_features.scss */
+/* line 118, src/_features.scss */
 .example-json {
   display: none;
 }
 
-/* line 2, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_examples.scss */
+/* line 2, src/_examples.scss */
 .feature-examples {
   margin: 1.5em 0;
 }
 
-/* line 7, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_examples.scss */
+/* line 7, src/_examples.scss */
 .shotList {
   display: inline-block;
   overflow: hidden;
 }
-/* line 12, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_examples.scss */
+/* line 12, src/_examples.scss */
 .shotList li {
   background-color: rgba(255, 255, 255, 0.4);
   display: block;
@@ -954,7 +961,7 @@ nav + .jribbble-feature {
   position: relative;
   padding: 0.4em;
 }
-/* line 23, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_examples.scss */
+/* line 23, src/_examples.scss */
 .shotList li a {
   display: block;
   max-height: 152px;
@@ -962,7 +969,7 @@ nav + .jribbble-feature {
   min-width: 200px;
   overflow: hidden;
 }
-/* line 32, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_examples.scss */
+/* line 32, src/_examples.scss */
 .shotList li img {
   display: block;
   margin: 0 auto;
@@ -975,7 +982,7 @@ nav + .jribbble-feature {
   -o-transition-duration: 0.15s;
   transition-duration: 0.15s;
 }
-/* line 41, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_examples.scss */
+/* line 41, src/_examples.scss */
 .shotList h3, .shotList h4 {
   opacity: 0;
   position: absolute;
@@ -988,7 +995,7 @@ nav + .jribbble-feature {
   -o-transition-duration: 0.15s;
   transition-duration: 0.15s;
 }
-/* line 49, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_examples.scss */
+/* line 49, src/_examples.scss */
 .shotList h3 {
   left: 0.8em;
   line-height: 1.2em;
@@ -997,7 +1004,7 @@ nav + .jribbble-feature {
   top: 0.9em;
   width: 90%;
 }
-/* line 59, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_examples.scss */
+/* line 59, src/_examples.scss */
 .shotList h4 {
   bottom: 0.9em;
   color: #4f4f4f;
@@ -1005,57 +1012,57 @@ nav + .jribbble-feature {
   text-align: right;
   width: 90%;
 }
-/* line 70, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_examples.scss */
+/* line 70, src/_examples.scss */
 .shotList li:hover h3, .shotList li:hover h4 {
   opacity: 1;
 }
-/* line 75, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_examples.scss */
+/* line 75, src/_examples.scss */
 .shotList li:hover img {
   opacity: 0.15;
 }
 @media screen and (max-width: 480px) {
-  /* line 7, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_examples.scss */
+  /* line 7, src/_examples.scss */
   .shotList {
     width: 100%;
   }
-  /* line 85, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_examples.scss */
+  /* line 85, src/_examples.scss */
   .shotList li {
     clear: left;
     overflow: hidden;
     width: 45%;
   }
-  /* line 91, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_examples.scss */
+  /* line 91, src/_examples.scss */
   .shotList li:nth-child(2n) {
     clear: right;
     float: right;
     margin-right: 0;
   }
-  /* line 98, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_examples.scss */
+  /* line 98, src/_examples.scss */
   .shotList li a {
     max-height: auto;
     min-height: 0;
     min-width: 0;
   }
-  /* line 105, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_examples.scss */
+  /* line 105, src/_examples.scss */
   .shotList li img {
     width: 100%;
   }
 }
 
-/* line 113, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_examples.scss */
+/* line 113, src/_examples.scss */
 .playerList {
   overflow: visible;
 }
-/* line 117, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_examples.scss */
+/* line 117, src/_examples.scss */
 .playerList li {
   display: inline-block;
   position: relative;
 }
-/* line 122, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_examples.scss */
+/* line 122, src/_examples.scss */
 .playerList li:hover h3 {
   opacity: 1;
 }
-/* line 128, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_examples.scss */
+/* line 128, src/_examples.scss */
 .playerList h3 {
   color: #fff;
   font-size: 0.9em;
@@ -1065,7 +1072,7 @@ nav + .jribbble-feature {
   top: -0.9em;
   white-space: nowrap;
 }
-/* line 139, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_examples.scss */
+/* line 139, src/_examples.scss */
 .playerList a {
   background-color: rgba(255, 255, 255, 0.7);
   display: inline-block;
@@ -1073,111 +1080,111 @@ nav + .jribbble-feature {
   margin: 0.2em 0.8em 0.6em 0;
   padding: 0.4em;
 }
-/* line 147, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_examples.scss */
+/* line 147, src/_examples.scss */
 .playerList a img {
   display: block;
 }
-/* line 152, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_examples.scss */
+/* line 152, src/_examples.scss */
 .playerList a:hover {
   background-color: #fff;
 }
 @media screen and (max-width: 480px) {
-  /* line 113, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_examples.scss */
+  /* line 113, src/_examples.scss */
   .playerList {
     width: 100%;
   }
-  /* line 161, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_examples.scss */
+  /* line 161, src/_examples.scss */
   .playerList li {
     width: 25%;
   }
-  /* line 165, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_examples.scss */
+  /* line 165, src/_examples.scss */
   .playerList li:nth-child(4n) {
     margin-right: 0;
   }
-  /* line 170, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_examples.scss */
+  /* line 170, src/_examples.scss */
   .playerList li img {
     width: 100%;
   }
 }
 
-/* line 178, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_examples.scss */
+/* line 178, src/_examples.scss */
 .twoUp {
   color: #353535;
   overflow: hidden;
   padding-bottom: 0.5em;
 }
-/* line 184, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_examples.scss */
+/* line 184, src/_examples.scss */
 .twoUp div:first-child {
   float: right;
   width: 56.4718163%;
 }
-/* line 189, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_examples.scss */
+/* line 189, src/_examples.scss */
 .twoUp div:first-child a {
   background-color: rgba(255, 255, 255, 0.4);
   display: block;
   max-width: 500px;
   padding: 1em;
 }
-/* line 197, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_examples.scss */
+/* line 197, src/_examples.scss */
 .twoUp div:first-child img {
   width: 100%;
 }
-/* line 203, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_examples.scss */
+/* line 203, src/_examples.scss */
 .twoUp div:last-child {
   float: left;
   margin-top: 1em;
   width: 40.1878914%;
   text-align: left;
 }
-/* line 211, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_examples.scss */
+/* line 211, src/_examples.scss */
 .twoUp h3 {
   font-size: 2.1em;
   font-weight: 700;
   line-height: 0.9em;
   margin-bottom: 0.2em;
 }
-/* line 219, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_examples.scss */
+/* line 219, src/_examples.scss */
 .twoUp h4 {
   color: #757575;
   font: 1.1em/1.2em "botanika-mono-web-1", "botanika-mono-web-2", monospace, sans-serif;
 }
-/* line 225, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_examples.scss */
+/* line 225, src/_examples.scss */
 .twoUp ul {
   margin-top: 1.1em;
 }
-/* line 230, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_examples.scss */
+/* line 230, src/_examples.scss */
 .twoUp li {
   font-size: 0.95em;
   padding: 0.15em 0;
 }
-/* line 235, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_examples.scss */
+/* line 235, src/_examples.scss */
 .twoUp li b {
   display: inline-block;
   min-width: 5.5em;
   width: 30%;
 }
 @media screen and (max-width: 480px) {
-  /* line 245, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_examples.scss */
+  /* line 245, src/_examples.scss */
   .twoUp div:first-child {
     float: none;
     width: 100%;
   }
-  /* line 250, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_examples.scss */
+  /* line 250, src/_examples.scss */
   .twoUp div:first-child a {
     padding: 0.5em;
   }
-  /* line 256, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_examples.scss */
+  /* line 256, src/_examples.scss */
   .twoUp div:last-child {
     float: none;
     width: 100%;
   }
 }
 
-/* line 264, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_examples.scss */
+/* line 264, src/_examples.scss */
 #shotCommentsList {
   margin-top: 1.4em;
 }
-/* line 268, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_examples.scss */
+/* line 268, src/_examples.scss */
 #shotCommentsList li {
   border-bottom: 1px dashed #bfbfbf;
   margin-bottom: 0.7em;
@@ -1185,7 +1192,7 @@ nav + .jribbble-feature {
   padding-bottom: 0.7em;
   width: 100%;
 }
-/* line 275, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_examples.scss */
+/* line 275, src/_examples.scss */
 #shotCommentsList li > a {
   background-color: rgba(255, 255, 255, 0.6);
   display: block;
@@ -1193,26 +1200,26 @@ nav + .jribbble-feature {
   padding: 0.2em;
   width: 10%;
 }
-/* line 283, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_examples.scss */
+/* line 283, src/_examples.scss */
 #shotCommentsList li > a img {
   width: 100%;
 }
-/* line 289, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_examples.scss */
+/* line 289, src/_examples.scss */
 #shotCommentsList li:last-child {
   border-bottom: none;
 }
-/* line 297, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_examples.scss */
+/* line 297, src/_examples.scss */
 #shotCommentsList img {
   display: block;
 }
-/* line 302, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_examples.scss */
+/* line 302, src/_examples.scss */
 #shotCommentsList h5 {
   color: #757575;
   float: right;
   font: 1em/1.2em "botanika-mono-web-1", "botanika-mono-web-2", monospace, sans-serif;
   width: 86.2077922%;
 }
-/* line 310, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_examples.scss */
+/* line 310, src/_examples.scss */
 #shotCommentsList p {
   float: right;
   font-size: 0.95em;
@@ -1220,12 +1227,12 @@ nav + .jribbble-feature {
   width: 86.2077922%;
 }
 
-/* line 319, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_examples.scss */
+/* line 319, src/_examples.scss */
 #playerProfile {
   color: #353535;
   overflow: hidden;
 }
-/* line 324, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_examples.scss */
+/* line 324, src/_examples.scss */
 #playerProfile > a {
   background-color: rgba(255, 255, 255, 0.7);
   display: inline-block;
@@ -1233,29 +1240,29 @@ nav + .jribbble-feature {
   margin-right: 0.8em;
   padding: 0.4em;
 }
-/* line 332, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_examples.scss */
+/* line 332, src/_examples.scss */
 #playerProfile > a img {
   display: block;
 }
-/* line 338, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_examples.scss */
+/* line 338, src/_examples.scss */
 #playerProfile div {
   float: left;
   margin-top: 0.4em;
   min-width: 290px;
   width: 56.4384134%;
 }
-/* line 346, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_examples.scss */
+/* line 346, src/_examples.scss */
 #playerProfile h3 {
   font-size: 1.4em;
   font-weight: 700;
   line-height: 0.8em;
   margin-bottom: 0.2em;
 }
-/* line 354, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_examples.scss */
+/* line 354, src/_examples.scss */
 #playerProfile h4 {
   font: 1em/1.2em "botanika-mono-web-1", "botanika-mono-web-2", monospace, sans-serif;
 }
-/* line 359, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_examples.scss */
+/* line 359, src/_examples.scss */
 #playerProfile ul {
   border-top: 1px dashed #bfbfbf;
   -moz-column-count: 2;
@@ -1271,50 +1278,50 @@ nav + .jribbble-feature {
   padding-top: 0.4em;
   width: 80%;
 }
-/* line 370, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_examples.scss */
+/* line 370, src/_examples.scss */
 #playerProfile li {
   display: inline-block;
   font-size: 0.95em;
   padding: 0.15em 0;
 }
-/* line 377, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_examples.scss */
+/* line 377, src/_examples.scss */
 #playerProfile b {
   display: inline-block;
   min-width: 5em;
   width: 30%;
 }
 @media screen and (max-width: 480px) {
-  /* line 385, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_examples.scss */
+  /* line 385, src/_examples.scss */
   #playerProfile > a {
     width: 16.66666675;
   }
-  /* line 389, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_examples.scss */
+  /* line 389, src/_examples.scss */
   #playerProfile > a img {
     width: 100%;
   }
-  /* line 395, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_examples.scss */
+  /* line 395, src/_examples.scss */
   #playerProfile div {
     min-width: 0;
   }
-  /* line 400, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_examples.scss */
+  /* line 400, src/_examples.scss */
   #playerProfile h3 {
     font-size: 1.1em;
   }
-  /* line 405, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_examples.scss */
+  /* line 405, src/_examples.scss */
   #playerProfile h4 {
     font-size: 0.9em;
   }
-  /* line 410, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_examples.scss */
+  /* line 410, src/_examples.scss */
   #playerProfile ul {
     width: 100%;
   }
-  /* line 415, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_examples.scss */
+  /* line 415, src/_examples.scss */
   #playerProfile li {
     font-size: 0.85em;
   }
 }
 
-/* line 2, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_footer.scss */
+/* line 2, src/_footer.scss */
 footer {
   clear: both;
   float: right;
@@ -1324,13 +1331,13 @@ footer {
   text-align: right;
   width: 73.1732777%;
 }
-/* line 12, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_footer.scss */
+/* line 12, src/_footer.scss */
 footer p {
   background-color: rgba(255, 255, 255, 0.8);
   display: inline;
 }
 @media screen and (max-width: 480px) {
-  /* line 2, /Users/tylergaw/Projects/lab/jribbble.com/css/src/_footer.scss */
+  /* line 2, src/_footer.scss */
   footer {
     font-size: 1em;
     margin-top: 0em;

@@ -1,24 +1,32 @@
 body 
 {
-	//background: #dfdfdf url(../images/branding.png) no-repeat -4em -11em;
 	background-color: #dfdfdf;
-	
-	//@include background-size('81.7857143%');
 	@include dagny('100%');
 }
 
 #bigAssJribbble
 {
-	background-image: url(../images/branding-die-cut.png), url(../images/branding-fauxBgColor.png);
-	background-repeat: no-repeat, repeat-y;
-	background-position: -16% 99%, 119.3% top;
-	-moz-background-size: 81.7857143%, auto 100%;
-	-webkit-background-size: 81.7857143%, auto 100%;
-	-o-background-size: 81.7857143%, auto;
-	background-size: 81.7857143%, auto 100%;
-	padding-top: 34.1%;
+	background-image: url(../images/branding-die-cut.png);
+	background-repeat: no-repeat;
+	background-position: -12em -13em;
+	height: 454px;
 	position: absolute;
 	width: 100%;
+}
+
+.multiplebgs #bigAssJribbble
+{
+	background-position: 15% 100%;
+	
+	$bgSizeWidth: 190%;
+	$bgSizeHeight: 140%;
+	-moz-background-size: $bgSizeWidth $bgSizeHeight;
+	-webkit-background-size: $bgSizeWidth $bgSizeHeight;
+	-o-background-size: $bgSizeWidth $bgSizeHeight;
+	background-size: $bgSizeWidth $bgSizeHeight;
+	
+	height: auto;
+	padding-top: 45%;
 }
 
 a
