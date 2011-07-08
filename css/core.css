@@ -709,7 +709,7 @@ header[role="banner"] h2 {
 }
 /* line 21, src/_banner.scss */
 header[role="banner"] h2 span {
-  background-color: rgba(255, 255, 255, 0.85);
+  background-color: #fff;
 }
 @media screen and (max-width: 768px) {
   /* line 29, src/_banner.scss */
@@ -724,6 +724,11 @@ header[role="banner"] h2 span {
   header[role="banner"] h2 {
     font-size: 2em;
   }
+}
+
+/* line 46, src/_banner.scss */
+.rgba header[role="banner"] h2 span {
+  background-color: rgba(255, 255, 255, 0.85);
 }
 
 /* line 2, src/_download.scss */

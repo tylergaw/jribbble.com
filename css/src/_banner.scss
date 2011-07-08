@@ -19,7 +19,7 @@ header[role="banner"]
 		
 		span
 		{
-			background-color: fade-out(#fff, 0.15);
+			background-color: #fff;
 		}
 	}
 	
@@ -40,4 +40,9 @@ header[role="banner"]
 			font-size: 2em;
 		}
 	}
+}
+
+.rgba header[role="banner"] h2 span
+{
+	background-color: fade-out(#fff, 0.15);
 }
