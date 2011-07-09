@@ -144,4 +144,20 @@ $(document).ready(function () {
 		});
 		$('#playerDraftees').html(html.join(''));
 	}, {per_page: 12});
+	
+	
+	// This isn't for the Jribbble demos.
+	// This is a workaround for the Mobile Safari scale orientation bug.
+	// Code from Adactio: http://adactio.com/journal/4470/
+	if (navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i)) {
+		var viewportmeta = document.querySelector('meta[name="viewport"]'),
+		
+		if (viewportmeta) {
+			viewportmeta.content = 'width=device-width, minimum-scale=1.0, maximum-scale=1.0';
+			
+			document.addEventListener('gesturestart', function () {
+				viewportmeta.content = 'width=device-width, minimum-scale=0.25, maximum-scale=1.6';
+			}, false);			
+		}
+	}
 });
