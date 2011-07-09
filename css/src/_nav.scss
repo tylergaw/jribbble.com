@@ -76,6 +76,13 @@ nav
 			font-size: 1em;
 		}
 	}
+	
+	@media screen and (max-width: 320px) {
+		h1
+		{
+			font-size: 1.8em;
+		}
+	}
 }
 
 .rgba nav h1

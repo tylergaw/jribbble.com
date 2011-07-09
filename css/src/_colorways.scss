@@ -78,3 +78,7 @@
 @media screen and (max-width: 480px) {
 	@include colorWay(adjust-hue(#ff0066, 280deg));
 }
+
+@media screen and (max-width: 320px) {
+	@include colorWay(adjust-hue(#ff0066, 5deg));
+}

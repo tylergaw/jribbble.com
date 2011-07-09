@@ -60,6 +60,18 @@
 			font-size: 0.9em;
 		}
 	}
+	
+	@media screen and (max-width: 320px) {
+		h1
+		{
+			font-size: 1.8em;
+		}
+		
+		h2
+		{
+			font-size: 0.8em;
+		}
+	}
 }
 
 .method-description

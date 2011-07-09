@@ -37,7 +37,15 @@ header[role="banner"]
 		
 		h2
 		{
-			font-size: 2em;
+			font-size: 1.9em;
+		}
+	}
+	
+	@media screen and (max-width: 320px) {
+		
+		h2
+		{
+			font-size: 1.5em;
 		}
 	}
 }

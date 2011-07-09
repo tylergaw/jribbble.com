@@ -40,4 +40,12 @@
 			font-size: 1.8em;
 		}
 	}
+	
+	@media screen and (max-width: 320px) {
+		
+		a
+		{
+			font-size: 1.5em;
+		}
+	}
 }
