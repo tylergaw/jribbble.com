@@ -245,6 +245,12 @@
 	
 	@media screen and (max-width: 480px) {
 		
+		div
+		{
+			float: none;
+			width: 100%;
+		}
+		
 		div:first-child
 		{
 			float: none;
@@ -254,12 +260,6 @@
 			{
 				padding: 0.5em;
 			}
-		}
-		
-		div:last-child
-		{
-			float: none;
-			width: 100%;
 		}
 	}
 }

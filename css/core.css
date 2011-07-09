@@ -1200,18 +1200,18 @@ nav + .jribbble-feature {
 }
 @media screen and (max-width: 480px) {
   /* line 249, src/_examples.scss */
+  .twoUp div {
+    float: none;
+    width: 100%;
+  }
+  /* line 255, src/_examples.scss */
   .twoUp div:first-child {
     float: none;
     width: 100%;
   }
-  /* line 254, src/_examples.scss */
+  /* line 260, src/_examples.scss */
   .twoUp div:first-child a {
     padding: 0.5em;
-  }
-  /* line 260, src/_examples.scss */
-  .twoUp div:last-child {
-    float: none;
-    width: 100%;
   }
 }
 
