@@ -150,7 +150,7 @@ $(document).ready(function () {
 	// This is a workaround for the Mobile Safari scale orientation bug.
 	// Code from Adactio: http://adactio.com/journal/4470/
 	if (navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i)) {
-		var viewportmeta = document.querySelector('meta[name="viewport"]'),
+		var viewportmeta = document.querySelector('meta[name="viewport"]');
 		
 		if (viewportmeta) {
 			viewportmeta.content = 'width=device-width, minimum-scale=1.0, maximum-scale=1.0';
