@@ -1368,7 +1368,7 @@ footer {
 }
 /* line 12, src/_footer.scss */
 footer p {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: #f8f8f8;
   display: inline;
 }
 @media screen and (max-width: 480px) {
