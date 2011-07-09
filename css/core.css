@@ -1365,18 +1365,27 @@ nav + .jribbble-feature {
 
 /* line 2, src/_footer.scss */
 footer {
-  clear: both;
-  float: right;
-  font: 1.4em/1.6em "botanika-mono-web-1", "botanika-mono-web-2", monospace, sans-serif;
-  margin-top: 1.4em;
-  padding-bottom: 1.4em;
+  margin-top: 0.6em;
+  overflow: hidden;
+  padding-bottom: 1.8em;
   text-align: right;
-  width: 73.1732777%;
 }
-/* line 12, src/_footer.scss */
+/* line 9, src/_footer.scss */
+footer em {
+  clear: both;
+  color: #5b5b5b;
+  display: block;
+  font: 0.8em/1em "ff-dagny-web-pro-1", "ff-dagny-web-pro-2", sans-serif;
+  padding-top: 1.4em;
+  width: 100%;
+}
+/* line 19, src/_footer.scss */
 footer p {
   background-color: #f8f8f8;
-  display: inline;
+  clear: right;
+  display: inline-block;
+  float: right;
+  font: 1.5em/1.6em "botanika-mono-web-1", "botanika-mono-web-2", monospace, sans-serif;
 }
 @media screen and (max-width: 480px) {
   /* line 2, src/_footer.scss */
