@@ -319,6 +319,20 @@
 	}
 }
 
+.csscolumns #playerProfile
+{
+	ul
+	{
+		@include column-count(2);
+		@include column-width(50%);
+	}
+	
+	li
+	{
+		display: inline-block;
+	}
+}
+
 #playerProfile
 {
 	color: #353535;
@@ -362,8 +376,6 @@
 	ul
 	{
 		border-top: 1px dashed darken(#ccc, 5%);
-		@include column-count(2);
-		@include column-width(50%);
 		margin-top: 0.4em;
 		max-width: 300px;
 		padding-top: 0.4em;
@@ -372,7 +384,6 @@
 	
 	li
 	{
-		display: inline-block;
 		font-size: 0.95em;
 		padding: 0.15em 0;
 	}
