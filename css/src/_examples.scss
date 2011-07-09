@@ -184,6 +184,14 @@
 	overflow: hidden;
 	padding-bottom: 0.5em;
 	
+	div
+	{
+		float: left;
+		margin-top: 1em;
+		width: 40.1878914%;
+		text-align: left;
+	}
+	
 	div:first-child
 	{
 		float: right;
@@ -202,15 +210,7 @@
 			width: 100%;
 		}
 	}
-	
-	div:last-child
-	{
-		float: left;
-		margin-top: 1em;
-		width: 40.1878914%;
-		text-align: left;
-	}
-	
+		
 	h3
 	{
 		font-size: 2.1em;

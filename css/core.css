@@ -1149,27 +1149,27 @@ nav + .jribbble-feature {
   padding-bottom: 0.5em;
 }
 /* line 188, src/_examples.scss */
+.twoUp div {
+  float: left;
+  margin-top: 1em;
+  width: 40.1878914%;
+  text-align: left;
+}
+/* line 196, src/_examples.scss */
 .twoUp div:first-child {
   float: right;
   width: 56.4718163%;
 }
-/* line 193, src/_examples.scss */
+/* line 201, src/_examples.scss */
 .twoUp div:first-child a {
   background-color: #ebebeb;
   display: block;
   max-width: 500px;
   padding: 1em;
 }
-/* line 201, src/_examples.scss */
+/* line 209, src/_examples.scss */
 .twoUp div:first-child img {
   width: 100%;
-}
-/* line 207, src/_examples.scss */
-.twoUp div:last-child {
-  float: left;
-  margin-top: 1em;
-  width: 40.1878914%;
-  text-align: left;
 }
 /* line 215, src/_examples.scss */
 .twoUp h3 {
