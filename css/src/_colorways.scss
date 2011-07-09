@@ -8,7 +8,6 @@
 	#download a
 	{
 		background-color: $color;
-		@include transition(background-color, .2s);
 	}
 
 	#download a:hover
@@ -19,8 +18,22 @@
 	nav li
 	{
 		color: $color;
-		@include transition(color, .2s);
 	}
+}
+
+#bigAssJribbble,
+.jribbble-feature h2,
+.playerList h3,
+#fork-me:hover,
+.rgba #fork-me:hover,
+#download a
+{
+	@include transition(background-color, .2s);
+}
+
+nav li
+{
+	@include transition(color, .2s);
 }
 
 /*-------- Media Query Color shifting, big fun, big fun!

@@ -80,6 +80,43 @@ hr {
   display: none;
 }
 
+/* line 30, src/_colorways.scss */
+#bigAssJribbble,
+.jribbble-feature h2,
+.playerList h3,
+#fork-me:hover,
+.rgba #fork-me:hover,
+#download a {
+  -moz-transition-property: background-color;
+  -webkit-transition-property: background-color;
+  -o-transition-property: background-color;
+  transition-property: background-color;
+  -moz-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -moz-transition-timing-function: linear;
+  -webkit-transition-timing-function: linear;
+  -o-transition-timing-function: linear;
+  transition-timing-function: linear;
+}
+
+/* line 35, src/_colorways.scss */
+nav li {
+  -moz-transition-property: color;
+  -webkit-transition-property: color;
+  -o-transition-property: color;
+  transition-property: color;
+  -moz-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -moz-transition-timing-function: linear;
+  -webkit-transition-timing-function: linear;
+  -o-transition-timing-function: linear;
+  transition-timing-function: linear;
+}
+
 /*-------- Media Query Color shifting, big fun, big fun!
 	This is where shit gets real. The base color I start with is #ff0066, from there
     as the browswer scales down, the colors adjust to be cooler. As the browser 
@@ -100,40 +137,16 @@ hr {
 .rgba #fork-me:hover,
 #download a {
   background-color: #ff0066;
-  -moz-transition-property: background-color;
-  -webkit-transition-property: background-color;
-  -o-transition-property: background-color;
-  transition-property: background-color;
-  -moz-transition-duration: 0.2s;
-  -webkit-transition-duration: 0.2s;
-  -o-transition-duration: 0.2s;
-  transition-duration: 0.2s;
-  -moz-transition-timing-function: linear;
-  -webkit-transition-timing-function: linear;
-  -o-transition-timing-function: linear;
-  transition-timing-function: linear;
 }
 
-/* line 15, src/_colorways.scss */
+/* line 14, src/_colorways.scss */
 #download a:hover {
   background-color: #cc0052;
 }
 
-/* line 20, src/_colorways.scss */
+/* line 19, src/_colorways.scss */
 nav li {
   color: #ff0066;
-  -moz-transition-property: color;
-  -webkit-transition-property: color;
-  -o-transition-property: color;
-  transition-property: color;
-  -moz-transition-duration: 0.2s;
-  -webkit-transition-duration: 0.2s;
-  -o-transition-duration: 0.2s;
-  transition-duration: 0.2s;
-  -moz-transition-timing-function: linear;
-  -webkit-transition-timing-function: linear;
-  -o-transition-timing-function: linear;
-  transition-timing-function: linear;
 }
 
 @media screen and (max-width: 2360px) {
@@ -145,40 +158,16 @@ nav li {
   .rgba #fork-me:hover,
   #download a {
     background-color: #00e5ff;
-    -moz-transition-property: background-color;
-    -webkit-transition-property: background-color;
-    -o-transition-property: background-color;
-    transition-property: background-color;
-    -moz-transition-duration: 0.2s;
-    -webkit-transition-duration: 0.2s;
-    -o-transition-duration: 0.2s;
-    transition-duration: 0.2s;
-    -moz-transition-timing-function: linear;
-    -webkit-transition-timing-function: linear;
-    -o-transition-timing-function: linear;
-    transition-timing-function: linear;
   }
 
-  /* line 15, src/_colorways.scss */
+  /* line 14, src/_colorways.scss */
   #download a:hover {
     background-color: #00b8cc;
   }
 
-  /* line 20, src/_colorways.scss */
+  /* line 19, src/_colorways.scss */
   nav li {
     color: #00e5ff;
-    -moz-transition-property: color;
-    -webkit-transition-property: color;
-    -o-transition-property: color;
-    transition-property: color;
-    -moz-transition-duration: 0.2s;
-    -webkit-transition-duration: 0.2s;
-    -o-transition-duration: 0.2s;
-    transition-duration: 0.2s;
-    -moz-transition-timing-function: linear;
-    -webkit-transition-timing-function: linear;
-    -o-transition-timing-function: linear;
-    transition-timing-function: linear;
   }
 }
 @media screen and (max-width: 2160px) {
@@ -190,40 +179,16 @@ nav li {
   .rgba #fork-me:hover,
   #download a {
     background-color: #00ffc4;
-    -moz-transition-property: background-color;
-    -webkit-transition-property: background-color;
-    -o-transition-property: background-color;
-    transition-property: background-color;
-    -moz-transition-duration: 0.2s;
-    -webkit-transition-duration: 0.2s;
-    -o-transition-duration: 0.2s;
-    transition-duration: 0.2s;
-    -moz-transition-timing-function: linear;
-    -webkit-transition-timing-function: linear;
-    -o-transition-timing-function: linear;
-    transition-timing-function: linear;
   }
 
-  /* line 15, src/_colorways.scss */
+  /* line 14, src/_colorways.scss */
   #download a:hover {
     background-color: #00cc9c;
   }
 
-  /* line 20, src/_colorways.scss */
+  /* line 19, src/_colorways.scss */
   nav li {
     color: #00ffc4;
-    -moz-transition-property: color;
-    -webkit-transition-property: color;
-    -o-transition-property: color;
-    transition-property: color;
-    -moz-transition-duration: 0.2s;
-    -webkit-transition-duration: 0.2s;
-    -o-transition-duration: 0.2s;
-    transition-duration: 0.2s;
-    -moz-transition-timing-function: linear;
-    -webkit-transition-timing-function: linear;
-    -o-transition-timing-function: linear;
-    transition-timing-function: linear;
   }
 }
 @media screen and (max-width: 1960px) {
@@ -235,40 +200,16 @@ nav li {
   .rgba #fork-me:hover,
   #download a {
     background-color: #3bff00;
-    -moz-transition-property: background-color;
-    -webkit-transition-property: background-color;
-    -o-transition-property: background-color;
-    transition-property: background-color;
-    -moz-transition-duration: 0.2s;
-    -webkit-transition-duration: 0.2s;
-    -o-transition-duration: 0.2s;
-    transition-duration: 0.2s;
-    -moz-transition-timing-function: linear;
-    -webkit-transition-timing-function: linear;
-    -o-transition-timing-function: linear;
-    transition-timing-function: linear;
   }
 
-  /* line 15, src/_colorways.scss */
+  /* line 14, src/_colorways.scss */
   #download a:hover {
     background-color: #30cc00;
   }
 
-  /* line 20, src/_colorways.scss */
+  /* line 19, src/_colorways.scss */
   nav li {
     color: #3bff00;
-    -moz-transition-property: color;
-    -webkit-transition-property: color;
-    -o-transition-property: color;
-    transition-property: color;
-    -moz-transition-duration: 0.2s;
-    -webkit-transition-duration: 0.2s;
-    -o-transition-duration: 0.2s;
-    transition-duration: 0.2s;
-    -moz-transition-timing-function: linear;
-    -webkit-transition-timing-function: linear;
-    -o-transition-timing-function: linear;
-    transition-timing-function: linear;
   }
 }
 @media screen and (max-width: 1760px) {
@@ -280,40 +221,16 @@ nav li {
   .rgba #fork-me:hover,
   #download a {
     background-color: #ffc300;
-    -moz-transition-property: background-color;
-    -webkit-transition-property: background-color;
-    -o-transition-property: background-color;
-    transition-property: background-color;
-    -moz-transition-duration: 0.2s;
-    -webkit-transition-duration: 0.2s;
-    -o-transition-duration: 0.2s;
-    transition-duration: 0.2s;
-    -moz-transition-timing-function: linear;
-    -webkit-transition-timing-function: linear;
-    -o-transition-timing-function: linear;
-    transition-timing-function: linear;
   }
 
-  /* line 15, src/_colorways.scss */
+  /* line 14, src/_colorways.scss */
   #download a:hover {
     background-color: #cc9c00;
   }
 
-  /* line 20, src/_colorways.scss */
+  /* line 19, src/_colorways.scss */
   nav li {
     color: #ffc300;
-    -moz-transition-property: color;
-    -webkit-transition-property: color;
-    -o-transition-property: color;
-    transition-property: color;
-    -moz-transition-duration: 0.2s;
-    -webkit-transition-duration: 0.2s;
-    -o-transition-duration: 0.2s;
-    transition-duration: 0.2s;
-    -moz-transition-timing-function: linear;
-    -webkit-transition-timing-function: linear;
-    -o-transition-timing-function: linear;
-    transition-timing-function: linear;
   }
 }
 @media screen and (max-width: 1560px) {
@@ -325,40 +242,16 @@ nav li {
   .rgba #fork-me:hover,
   #download a {
     background-color: #ff6e00;
-    -moz-transition-property: background-color;
-    -webkit-transition-property: background-color;
-    -o-transition-property: background-color;
-    transition-property: background-color;
-    -moz-transition-duration: 0.2s;
-    -webkit-transition-duration: 0.2s;
-    -o-transition-duration: 0.2s;
-    transition-duration: 0.2s;
-    -moz-transition-timing-function: linear;
-    -webkit-transition-timing-function: linear;
-    -o-transition-timing-function: linear;
-    transition-timing-function: linear;
   }
 
-  /* line 15, src/_colorways.scss */
+  /* line 14, src/_colorways.scss */
   #download a:hover {
     background-color: #cc5800;
   }
 
-  /* line 20, src/_colorways.scss */
+  /* line 19, src/_colorways.scss */
   nav li {
     color: #ff6e00;
-    -moz-transition-property: color;
-    -webkit-transition-property: color;
-    -o-transition-property: color;
-    transition-property: color;
-    -moz-transition-duration: 0.2s;
-    -webkit-transition-duration: 0.2s;
-    -o-transition-duration: 0.2s;
-    transition-duration: 0.2s;
-    -moz-transition-timing-function: linear;
-    -webkit-transition-timing-function: linear;
-    -o-transition-timing-function: linear;
-    transition-timing-function: linear;
   }
 }
 @media screen and (max-width: 1360px) {
@@ -370,40 +263,16 @@ nav li {
   .rgba #fork-me:hover,
   #download a {
     background-color: #ff1a00;
-    -moz-transition-property: background-color;
-    -webkit-transition-property: background-color;
-    -o-transition-property: background-color;
-    transition-property: background-color;
-    -moz-transition-duration: 0.2s;
-    -webkit-transition-duration: 0.2s;
-    -o-transition-duration: 0.2s;
-    transition-duration: 0.2s;
-    -moz-transition-timing-function: linear;
-    -webkit-transition-timing-function: linear;
-    -o-transition-timing-function: linear;
-    transition-timing-function: linear;
   }
 
-  /* line 15, src/_colorways.scss */
+  /* line 14, src/_colorways.scss */
   #download a:hover {
     background-color: #cc1400;
   }
 
-  /* line 20, src/_colorways.scss */
+  /* line 19, src/_colorways.scss */
   nav li {
     color: #ff1a00;
-    -moz-transition-property: color;
-    -webkit-transition-property: color;
-    -o-transition-property: color;
-    transition-property: color;
-    -moz-transition-duration: 0.2s;
-    -webkit-transition-duration: 0.2s;
-    -o-transition-duration: 0.2s;
-    transition-duration: 0.2s;
-    -moz-transition-timing-function: linear;
-    -webkit-transition-timing-function: linear;
-    -o-transition-timing-function: linear;
-    transition-timing-function: linear;
   }
 }
 @media screen and (max-width: 1160px) {
@@ -415,40 +284,16 @@ nav li {
   .rgba #fork-me:hover,
   #download a {
     background-color: #ff0066;
-    -moz-transition-property: background-color;
-    -webkit-transition-property: background-color;
-    -o-transition-property: background-color;
-    transition-property: background-color;
-    -moz-transition-duration: 0.2s;
-    -webkit-transition-duration: 0.2s;
-    -o-transition-duration: 0.2s;
-    transition-duration: 0.2s;
-    -moz-transition-timing-function: linear;
-    -webkit-transition-timing-function: linear;
-    -o-transition-timing-function: linear;
-    transition-timing-function: linear;
   }
 
-  /* line 15, src/_colorways.scss */
+  /* line 14, src/_colorways.scss */
   #download a:hover {
     background-color: #cc0052;
   }
 
-  /* line 20, src/_colorways.scss */
+  /* line 19, src/_colorways.scss */
   nav li {
     color: #ff0066;
-    -moz-transition-property: color;
-    -webkit-transition-property: color;
-    -o-transition-property: color;
-    transition-property: color;
-    -moz-transition-duration: 0.2s;
-    -webkit-transition-duration: 0.2s;
-    -o-transition-duration: 0.2s;
-    transition-duration: 0.2s;
-    -moz-transition-timing-function: linear;
-    -webkit-transition-timing-function: linear;
-    -o-transition-timing-function: linear;
-    transition-timing-function: linear;
   }
 }
 @media screen and (max-width: 960px) {
@@ -460,40 +305,16 @@ nav li {
   .rgba #fork-me:hover,
   #download a {
     background-color: #e600cf;
-    -moz-transition-property: background-color;
-    -webkit-transition-property: background-color;
-    -o-transition-property: background-color;
-    transition-property: background-color;
-    -moz-transition-duration: 0.2s;
-    -webkit-transition-duration: 0.2s;
-    -o-transition-duration: 0.2s;
-    transition-duration: 0.2s;
-    -moz-transition-timing-function: linear;
-    -webkit-transition-timing-function: linear;
-    -o-transition-timing-function: linear;
-    transition-timing-function: linear;
   }
 
-  /* line 15, src/_colorways.scss */
+  /* line 14, src/_colorways.scss */
   #download a:hover {
     background-color: #b300a1;
   }
 
-  /* line 20, src/_colorways.scss */
+  /* line 19, src/_colorways.scss */
   nav li {
     color: #e600cf;
-    -moz-transition-property: color;
-    -webkit-transition-property: color;
-    -o-transition-property: color;
-    transition-property: color;
-    -moz-transition-duration: 0.2s;
-    -webkit-transition-duration: 0.2s;
-    -o-transition-duration: 0.2s;
-    transition-duration: 0.2s;
-    -moz-transition-timing-function: linear;
-    -webkit-transition-timing-function: linear;
-    -o-transition-timing-function: linear;
-    transition-timing-function: linear;
   }
 }
 @media screen and (max-width: 768px) {
@@ -505,40 +326,16 @@ nav li {
   .rgba #fork-me:hover,
   #download a {
     background-color: #c300ff;
-    -moz-transition-property: background-color;
-    -webkit-transition-property: background-color;
-    -o-transition-property: background-color;
-    transition-property: background-color;
-    -moz-transition-duration: 0.2s;
-    -webkit-transition-duration: 0.2s;
-    -o-transition-duration: 0.2s;
-    transition-duration: 0.2s;
-    -moz-transition-timing-function: linear;
-    -webkit-transition-timing-function: linear;
-    -o-transition-timing-function: linear;
-    transition-timing-function: linear;
   }
 
-  /* line 15, src/_colorways.scss */
+  /* line 14, src/_colorways.scss */
   #download a:hover {
     background-color: #9c00cc;
   }
 
-  /* line 20, src/_colorways.scss */
+  /* line 19, src/_colorways.scss */
   nav li {
     color: #c300ff;
-    -moz-transition-property: color;
-    -webkit-transition-property: color;
-    -o-transition-property: color;
-    transition-property: color;
-    -moz-transition-duration: 0.2s;
-    -webkit-transition-duration: 0.2s;
-    -o-transition-duration: 0.2s;
-    transition-duration: 0.2s;
-    -moz-transition-timing-function: linear;
-    -webkit-transition-timing-function: linear;
-    -o-transition-timing-function: linear;
-    transition-timing-function: linear;
   }
 }
 @media screen and (max-width: 480px) {
@@ -550,40 +347,16 @@ nav li {
   .rgba #fork-me:hover,
   #download a {
     background-color: #4400ff;
-    -moz-transition-property: background-color;
-    -webkit-transition-property: background-color;
-    -o-transition-property: background-color;
-    transition-property: background-color;
-    -moz-transition-duration: 0.2s;
-    -webkit-transition-duration: 0.2s;
-    -o-transition-duration: 0.2s;
-    transition-duration: 0.2s;
-    -moz-transition-timing-function: linear;
-    -webkit-transition-timing-function: linear;
-    -o-transition-timing-function: linear;
-    transition-timing-function: linear;
   }
 
-  /* line 15, src/_colorways.scss */
+  /* line 14, src/_colorways.scss */
   #download a:hover {
     background-color: #3600cc;
   }
 
-  /* line 20, src/_colorways.scss */
+  /* line 19, src/_colorways.scss */
   nav li {
     color: #4400ff;
-    -moz-transition-property: color;
-    -webkit-transition-property: color;
-    -o-transition-property: color;
-    transition-property: color;
-    -moz-transition-duration: 0.2s;
-    -webkit-transition-duration: 0.2s;
-    -o-transition-duration: 0.2s;
-    transition-duration: 0.2s;
-    -moz-transition-timing-function: linear;
-    -webkit-transition-timing-function: linear;
-    -o-transition-timing-function: linear;
-    transition-timing-function: linear;
   }
 }
 @media screen and (max-width: 320px) {
@@ -595,40 +368,16 @@ nav li {
   .rgba #fork-me:hover,
   #download a {
     background-color: #ff0051;
-    -moz-transition-property: background-color;
-    -webkit-transition-property: background-color;
-    -o-transition-property: background-color;
-    transition-property: background-color;
-    -moz-transition-duration: 0.2s;
-    -webkit-transition-duration: 0.2s;
-    -o-transition-duration: 0.2s;
-    transition-duration: 0.2s;
-    -moz-transition-timing-function: linear;
-    -webkit-transition-timing-function: linear;
-    -o-transition-timing-function: linear;
-    transition-timing-function: linear;
   }
 
-  /* line 15, src/_colorways.scss */
+  /* line 14, src/_colorways.scss */
   #download a:hover {
     background-color: #cc0041;
   }
 
-  /* line 20, src/_colorways.scss */
+  /* line 19, src/_colorways.scss */
   nav li {
     color: #ff0051;
-    -moz-transition-property: color;
-    -webkit-transition-property: color;
-    -o-transition-property: color;
-    transition-property: color;
-    -moz-transition-duration: 0.2s;
-    -webkit-transition-duration: 0.2s;
-    -o-transition-duration: 0.2s;
-    transition-duration: 0.2s;
-    -moz-transition-timing-function: linear;
-    -webkit-transition-timing-function: linear;
-    -o-transition-timing-function: linear;
-    transition-timing-function: linear;
   }
 }
 /* line 2, src/_general.scss */
