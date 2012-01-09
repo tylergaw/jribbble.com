@@ -93,6 +93,19 @@ $(document).ready(function () {
 		$('#shotsPlayerFollows').html(html.join(''));
 	}, {page: 3, per_page: 10});
 	
+	// API Ref: http://api.dribbble/players/:id/shots/likes
+	$.jribbble.getShotsThatPlayerLikes('acreek', function (likedShots) {
+		var html = [];
+		$.each(likedShots.shots, function (i, shot) {
+			html.push('<li><h3>' + shot.title + '</h3>');
+			html.push('<h4>by ' + shot.player.name + '</h4><a href="' + shot.url + '">');
+			html.push('<img src="' + shot.image_teaser_url + '" ');
+			html.push('alt="' + shot.title + '"></a></li>');
+		});
+			
+		$('#shotsPlayerLikes').html(html.join(''));
+	}, {page: 1, per_page: 10});
+	
 	// API Ref: http://api.dribbble/players/:id
 	$.jribbble.getPlayerById('tylergaw', function (player) {
 		

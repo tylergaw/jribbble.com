@@ -41,7 +41,7 @@
 	
 	<section id="download">
 		<h1><a href="https://raw.github.com/tylergaw/jribbble/master/dist/jquery.jribbble-0.11.0.ugly.js">Download Jribbble</a></h1>
-		<h2>Current release: <strong>v0.11.0</strong></h2>
+		<h2>Current release: <strong>v1.0.0</strong></h2>
 	</section>
 	
 	<hr />
@@ -55,6 +55,7 @@
 			<li><a href="#getShotsByList">Get a <b>list of shots</b> by the list name</a></li>
 			<li><a href="#getShotsByPlayerId">Get a list of a <b>player's shots</b></a></li>
 			<li><a href="#getShotsThatPlayerFollows">Get a list of <b>shots</b> a player is <b>following</b></a></li>
+			<li><a href="#getShotsThatPlayerLikes">Get a list of <b>shots</b> a player <b>likes</b></a></li>
 			<li><a href="#getPlayerById">Get the <b>profile</b> details of a player</a></li>
 			<li><a href="#getPlayerFollowers">Get the <b>followers</b> of a player</a></li>
 			<li><a href="#getPlayerFollowing">Get the <b>players</b> a player is <b>following</b></a></li>
@@ -261,6 +262,36 @@
 	
 	<hr />
 	
+	<section class="jribbble-feature" id="getShotsThatPlayerLikes">
+		<header>
+			<h1>Get a List of Shots a Player Likes</h1>
+			<h2>$.jribbble.getShotsThatPlayerLikes(playerId, callback, <i>[pagingOpts]</i>)</h2>
+			<ul class="method-description">
+				<li>
+					<h3>Parameter/Type</h3>
+					<p>Description</p>
+				</li>
+				<li>
+					<h3>playerId STRING or INT</h3> 
+					<p>Example 'username' or 9999</p>
+				</li>
+				<li>
+					<h3>callback FUNCTION</h3>
+					<p>Function to call once the request has completed successfully. One parameter will be passed containing the contents of the request; callback(data).</p>
+				</li>
+				<li>
+					<h3>pagingOpts OPTIONAL OBJECT</h3> 
+					<p>Example: {page: 1, per_page: 15}</p>
+				</li>
+			</ul>
+		</header>
+		<div class="feature-examples">
+			<ul id="shotsPlayerLikes" class="shotList"></ul>
+		</div>
+	</section>
+	
+	<hr />
+	
 	<section class="jribbble-feature" id="getPlayerById">
 		<header>
 			<h1>Get the Profile Details of a Player</h1>
@@ -379,13 +410,13 @@
 	
 	<footer>
 		
-		<p>Created and maintained by <a href="http://tylergaw.com">Tyler Gaw</a></p><br>
+		<p>Created by <a href="http://tylergaw.com">Tyler Gaw</a></p><br>
 		<p>He is <a href="http://twitter.com/thegaw">@thegaw</a> on Twitter</p>
 		<em>For more documentation and code examples head to <a href="https://github.com/tylergaw/jribbble/blob/master/README.md">http://github.com/tylergaw/jribbble</a></em>
 	</footer>
 </div>
-	<script src="js/jquery-1.6.1.min.js"></script>
-	<script src="js/jquery.jribbble-0.11.0.ugly.js"></script>
+	<script src="js/jquery-1.7.1.min.js"></script>
+	<script src="js/jquery.jribbble-1.0.0.ugly.js"></script>
 	<script src="js/jribbble.demos.js"></script>
 	
 	<script type="text/javascript" src="http://use.typekit.com/nyr0qms.js"></script>
