@@ -1,17 +1,17 @@
 <!doctype html>
 <html lang="en">
 <head>
-	
+
 	<!--
 		Hello source code lurkers. If you want to have a closer look at how
 		anything is done here, feel free to grab all the code from this site's
 		Github repo: http://github.com/tylergaw/jribbble.com
 	-->
-	
+
 	<meta charset="utf-8">
 	<title>Jribbble | A jQuery Plugin for the Dribbble API</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="Jribbble is a jQuery plugin for fetching shot and player info from the Dribbble API">	
+	<meta name="description" content="Jribbble is a jQuery plugin for fetching shot and player info from the Dribbble API">
 	<link rel="stylesheet" href="css/core.css">
 	<script src="js/modernizr.custom.js"></script>
 	<script type="text/javascript">
@@ -38,14 +38,14 @@
 		<h1>Jribbble</h1>
 		<h2><span>A jQuery plugin for</span><br><span>fetching shots from</span><br><span>the <a href="http://dribbble.com/api">Dribbble API</a></span></h2>
 	</header>
-	
+
 	<section id="download">
-		<h1><a href="https://raw.github.com/tylergaw/jribbble/master/dist/jquery.jribbble-1.0.0.ugly.js">Download Jribbble</a></h1>
-		<h2>Current release: <strong>v1.0.0</strong></h2>
+		<h1><a href="https://raw.github.com/tylergaw/jribbble/master/dist/jquery.jribbble-1.0.1.ugly.js">Download Jribbble</a></h1>
+		<h2>Current release: <strong>v1.0.1</strong></h2>
 	</section>
-	
+
 	<hr />
-	
+
 	<nav>
 		<h1 class="features-heading">What can it do?</h1>
 		<ol>
@@ -62,7 +62,7 @@
 			<li><a href="#getPlayerDraftees">Get the <b>draftees</b> of a player</a></li>
 		</ol>
 	</nav>
-	
+
 	<section class="jribbble-feature" id="getShotById">
 		<header>
 			<h1>Get a shot</h1>
@@ -73,7 +73,7 @@
 					<p>Description</p>
 				</li>
 				<li>
-					<h3>shotId INT</h3> 
+					<h3>shotId INT</h3>
 					<p>The ID of the shot you're looking for.</p>
 				</li>
 				<li>
@@ -82,7 +82,7 @@
 				</li>
 			</ul>
 		</header>
-		
+
 		<div class="feature-examples">
 			<div id="shotById" class="twoUp">
 				<div>
@@ -96,9 +96,9 @@
 			</div>
 		</div>
 	</section>
-	
-	<hr />	
-	
+
+	<hr />
+
 	<section class="jribbble-feature" id="getCommentsOfShot">
 		<header>
 			<h1>Get the Comments of a Shot</h1>
@@ -109,7 +109,7 @@
 					<p>Description</p>
 				</li>
 				<li>
-					<h3>shotId INT</h3> 
+					<h3>shotId INT</h3>
 					<p>The ID of the shot you want comments.</p>
 				</li>
 				<li>
@@ -117,13 +117,13 @@
 					<p>Function to call once the request has completed successfully. One parameter will be passed containing the contents of the request; callback(data).</p>
 				</li>
 				<li>
-					<h3>pagingOpts OPTIONAL OBJECT</h3> 
+					<h3>pagingOpts OPTIONAL OBJECT</h3>
 					<p>Example: {page: 1, per_page: 15}</p>
 				</li>
 			</ul>
 		</header>
 		<div class="feature-examples">
-			
+
 			<div id="shotComments" class="twoUp">
 				<div>
 					<a href=""><img src="." alt=""></a>
@@ -138,7 +138,7 @@
 	</section>
 
 	<hr />
-	
+
 	<section class="jribbble-feature" id="getReboundsOfShot">
 		<header>
 			<h1>Get the Rebounds of a Shot</h1>
@@ -149,7 +149,7 @@
 					<p>Description</p>
 				</li>
 				<li>
-					<h3>shotId INT</h3> 
+					<h3>shotId INT</h3>
 					<p>The ID of the shot you want rebounds.</p>
 				</li>
 				<li>
@@ -157,19 +157,19 @@
 					<p>Function to call once the request has completed successfully. One parameter will be passed containing the contents of the request; callback(data).</p>
 				</li>
 				<li>
-					<h3>pagingOpts OPTIONAL OBJECT</h3> 
+					<h3>pagingOpts OPTIONAL OBJECT</h3>
 					<p>Example: {page: 1, per_page: 15}</p>
 				</li>
 			</ul>
 		</header>
-		
+
 		<div class="feature-examples">
 			<ul id="reboundsOfShot" class="shotList"></ul>
 		</div>
 	</section>
-	
+
 	<hr />
-	
+
 	<section class="jribbble-feature" id="getShotsByList">
 		<header>
 			<h1>Get a List of Shots by the List Name</h1>
@@ -180,7 +180,7 @@
 					<p>Description</p>
 				</li>
 				<li>
-					<h3>listName STRING</h3> 
+					<h3>listName STRING</h3>
 					<p>Can be one of: "popular", "everyone", "debuts"</p>
 				</li>
 				<li>
@@ -188,19 +188,19 @@
 					<p>Function to call once the request has completed successfully. One parameter will be passed containing the contents of the request; callback(data).</p>
 				</li>
 				<li>
-					<h3>pagingOpts OPTIONAL OBJECT</h3> 
+					<h3>pagingOpts OPTIONAL OBJECT</h3>
 					<p>Example: {page: 1, per_page: 15}</p>
 				</li>
 			</ul>
 		</header>
-		
+
 		<div class="feature-examples">
 			<ul id="shotsByList" class="shotList"></ul>
 		</div>
 	</section>
-	
+
 	<hr />
-	
+
 	<section class="jribbble-feature" id="getShotsByPlayerId">
 		<header>
 			<h1>Get a List of a Player's Shots</h1>
@@ -211,7 +211,7 @@
 					<p>Description</p>
 				</li>
 				<li>
-					<h3>playerId STRING or INT</h3> 
+					<h3>playerId STRING or INT</h3>
 					<p>Example 'username' or 9999</p>
 				</li>
 				<li>
@@ -219,19 +219,19 @@
 					<p>Function to call once the request has completed successfully. One parameter will be passed containing the contents of the request; callback(data).</p>
 				</li>
 				<li>
-					<h3>pagingOpts OPTIONAL OBJECT</h3> 
+					<h3>pagingOpts OPTIONAL OBJECT</h3>
 					<p>Example: {page: 1, per_page: 15}</p>
 				</li>
 			</ul>
 		</header>
-		
+
 		<div class="feature-examples">
 			<ul id="shotsByPlayerId" class="shotList"></ul>
 		</div>
 	</section>
-	
+
 	<hr />
-	
+
 	<section class="jribbble-feature" id="getShotsThatPlayerFollows">
 		<header>
 			<h1>Get a List of Shots a Player is Following</h1>
@@ -242,7 +242,7 @@
 					<p>Description</p>
 				</li>
 				<li>
-					<h3>playerId STRING or INT</h3> 
+					<h3>playerId STRING or INT</h3>
 					<p>Example 'username' or 9999</p>
 				</li>
 				<li>
@@ -250,7 +250,7 @@
 					<p>Function to call once the request has completed successfully. One parameter will be passed containing the contents of the request; callback(data).</p>
 				</li>
 				<li>
-					<h3>pagingOpts OPTIONAL OBJECT</h3> 
+					<h3>pagingOpts OPTIONAL OBJECT</h3>
 					<p>Example: {page: 1, per_page: 15}</p>
 				</li>
 			</ul>
@@ -259,9 +259,9 @@
 			<ul id="shotsPlayerFollows" class="shotList"></ul>
 		</div>
 	</section>
-	
+
 	<hr />
-	
+
 	<section class="jribbble-feature" id="getShotsThatPlayerLikes">
 		<header>
 			<h1>Get a List of Shots a Player Likes</h1>
@@ -272,7 +272,7 @@
 					<p>Description</p>
 				</li>
 				<li>
-					<h3>playerId STRING or INT</h3> 
+					<h3>playerId STRING or INT</h3>
 					<p>Example 'username' or 9999</p>
 				</li>
 				<li>
@@ -280,7 +280,7 @@
 					<p>Function to call once the request has completed successfully. One parameter will be passed containing the contents of the request; callback(data).</p>
 				</li>
 				<li>
-					<h3>pagingOpts OPTIONAL OBJECT</h3> 
+					<h3>pagingOpts OPTIONAL OBJECT</h3>
 					<p>Example: {page: 1, per_page: 15}</p>
 				</li>
 			</ul>
@@ -289,9 +289,9 @@
 			<ul id="shotsPlayerLikes" class="shotList"></ul>
 		</div>
 	</section>
-	
+
 	<hr />
-	
+
 	<section class="jribbble-feature" id="getPlayerById">
 		<header>
 			<h1>Get the Profile Details of a Player</h1>
@@ -302,7 +302,7 @@
 					<p>Description</p>
 				</li>
 				<li>
-					<h3>playerId STRING or INT</h3> 
+					<h3>playerId STRING or INT</h3>
 					<p>Example 'username' or 9999</p>
 				</li>
 				<li>
@@ -315,7 +315,7 @@
 			<div id="playerProfile"></div>
 		</div>
 	</section>
-	
+
 	<hr />
 
 	<section class="jribbble-feature" id="getPlayerFollowers">
@@ -328,7 +328,7 @@
 					<p>Description</p>
 				</li>
 				<li>
-					<h3>playerId STRING or INT</h3> 
+					<h3>playerId STRING or INT</h3>
 					<p>Example 'username' or 9999</p>
 				</li>
 				<li>
@@ -336,7 +336,7 @@
 					<p>Function to call once the request has completed successfully. One parameter will be passed containing the contents of the request; callback(data).</p>
 				</li>
 				<li>
-					<h3>pagingOpts OPTIONAL OBJECT</h3> 
+					<h3>pagingOpts OPTIONAL OBJECT</h3>
 					<p>Example: {page: 1, per_page: 15}</p>
 				</li>
 			</ul>
@@ -345,9 +345,9 @@
 			<ul id="playerFollowers" class="playerList"></ul>
 		</div>
 	</section>
-	
+
 	<hr />
-	
+
 	<section class="jribbble-feature" id="getPlayerFollowing">
 		<header>
 			<h1>Get the Players a Player is Following</h1>
@@ -358,7 +358,7 @@
 					<p>Description</p>
 				</li>
 				<li>
-					<h3>playerId STRING or INT</h3> 
+					<h3>playerId STRING or INT</h3>
 					<p>Example 'username' or 9999</p>
 				</li>
 				<li>
@@ -366,7 +366,7 @@
 					<p>Function to call once the request has completed successfully. One parameter will be passed containing the contents of the request; callback(data).</p>
 				</li>
 				<li>
-					<h3>pagingOpts OPTIONAL OBJECT</h3> 
+					<h3>pagingOpts OPTIONAL OBJECT</h3>
 					<p>Example: {page: 1, per_page: 15}</p>
 				</li>
 			</ul>
@@ -375,9 +375,9 @@
 			<ul id="playerFollowing" class="playerList"></ul>
 		</div>
 	</section>
-		
+
 	<hr />
-	
+
 	<section class="jribbble-feature" id="getPlayerDraftees">
 		<header>
 			<h1>Get the Draftees of a Player</h1>
@@ -388,7 +388,7 @@
 					<p>Description</p>
 				</li>
 				<li>
-					<h3>playerId STRING or INT</h3> 
+					<h3>playerId STRING or INT</h3>
 					<p>Example 'username' or 9999</p>
 				</li>
 				<li>
@@ -396,7 +396,7 @@
 					<p>Function to call once the request has completed successfully. One parameter will be passed containing the contents of the request; callback(data).</p>
 				</li>
 				<li>
-					<h3>pagingOpts OPTIONAL OBJECT</h3> 
+					<h3>pagingOpts OPTIONAL OBJECT</h3>
 					<p>Example: {page: 1, per_page: 15}</p>
 				</li>
 			</ul>
@@ -405,20 +405,20 @@
 			<ul id="playerDraftees" class="playerList"></ul>
 		</div>
 	</section>
-	
+
 	<hr/>
-	
+
 	<footer>
-		
+
 		<p>Created by <a href="http://tylergaw.com">Tyler Gaw</a></p><br>
 		<p>He is <a href="http://twitter.com/thegaw">@thegaw</a> on Twitter</p>
 		<em>For more documentation and code examples head to <a href="https://github.com/tylergaw/jribbble/blob/master/README.md">http://github.com/tylergaw/jribbble</a></em>
 	</footer>
 </div>
-	<script src="js/jquery-1.7.1.min.js"></script>
-	<script src="js/jquery.jribbble-1.0.0.ugly.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="js/jquery.jribbble-1.0.1.ugly.js"></script>
 	<script src="js/jribbble.demos.js"></script>
-	
+
 	<script type="text/javascript" src="http://use.typekit.com/nyr0qms.js"></script>
 	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 </body>
