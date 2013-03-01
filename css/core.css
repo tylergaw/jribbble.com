@@ -87,34 +87,20 @@ hr {
 #fork-me:hover,
 .rgba #fork-me:hover,
 #download a {
-  -moz-transition-property: background-color;
-  -webkit-transition-property: background-color;
-  -o-transition-property: background-color;
-  transition-property: background-color;
-  -moz-transition-duration: 0.2s;
-  -webkit-transition-duration: 0.2s;
-  -o-transition-duration: 0.2s;
-  transition-duration: 0.2s;
-  -moz-transition-timing-function: linear;
-  -webkit-transition-timing-function: linear;
-  -o-transition-timing-function: linear;
-  transition-timing-function: linear;
+  -webkit-transition: background-color, 0.2s;
+  -moz-transition: background-color, 0.2s;
+  -ms-transition: background-color, 0.2s;
+  -o-transition: background-color, 0.2s;
+  transition: background-color, 0.2s;
 }
 
 /* line 35, src/_colorways.scss */
 nav li {
-  -moz-transition-property: color;
-  -webkit-transition-property: color;
-  -o-transition-property: color;
-  transition-property: color;
-  -moz-transition-duration: 0.2s;
-  -webkit-transition-duration: 0.2s;
-  -o-transition-duration: 0.2s;
-  transition-duration: 0.2s;
-  -moz-transition-timing-function: linear;
-  -webkit-transition-timing-function: linear;
-  -o-transition-timing-function: linear;
-  transition-timing-function: linear;
+  -webkit-transition: color, 0.2s;
+  -moz-transition: color, 0.2s;
+  -ms-transition: color, 0.2s;
+  -o-transition: color, 0.2s;
+  transition: color, 0.2s;
 }
 
 /*-------- Media Query Color shifting, big fun, big fun!
@@ -450,10 +436,10 @@ a:hover {
   border-top: 2px solid #E0E0E0;
   padding: 8px 42px;
   right: -3.5em;
-  -moz-transform: rotate(40deg);
   -webkit-transform: rotate(40deg);
-  -o-transform: rotate(40deg);
+  -moz-transform: rotate(40deg);
   -ms-transform: rotate(40deg);
+  -o-transform: rotate(40deg);
   transform: rotate(40deg);
   top: 3em;
 }
@@ -475,10 +461,10 @@ a:hover {
     padding: 6px 6px;
     right: 0;
     top: 0;
-    -moz-transform: rotate(0deg);
     -webkit-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
     -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
     transform: rotate(0deg);
   }
 }
@@ -541,11 +527,10 @@ header[role="banner"] h2 span {
 }
 /* line 10, src/_download.scss */
 #download a {
-  -moz-border-radius: 32px;
   -webkit-border-radius: 32px;
-  -o-border-radius: 32px;
+  -moz-border-radius: 32px;
   -ms-border-radius: 32px;
-  -khtml-border-radius: 32px;
+  -o-border-radius: 32px;
   border-radius: 32px;
   color: #ececec;
   display: inline-block;
@@ -697,10 +682,10 @@ nav + .jribbble-feature {
   margin: 0 auto;
   height: 8px;
   width: 8px;
-  -moz-transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
   transform: rotate(45deg);
 }
 /* line 26, src/_features.scss */
@@ -832,12 +817,14 @@ nav + .jribbble-feature {
 .shotList li img {
   display: block;
   margin: 0 auto;
-  -moz-transition-property: opacity;
   -webkit-transition-property: opacity;
+  -moz-transition-property: opacity;
+  -ms-transition-property: opacity;
   -o-transition-property: opacity;
   transition-property: opacity;
-  -moz-transition-duration: 0.15s;
   -webkit-transition-duration: 0.15s;
+  -moz-transition-duration: 0.15s;
+  -ms-transition-duration: 0.15s;
   -o-transition-duration: 0.15s;
   transition-duration: 0.15s;
 }
@@ -940,8 +927,9 @@ nav + .jribbble-feature {
 /* line 151, src/_examples.scss */
 .playerList a img {
   display: block;
+  max-width: 82px;
 }
-/* line 156, src/_examples.scss */
+/* line 157, src/_examples.scss */
 .playerList a:hover {
   background-color: #fff;
 }
@@ -950,98 +938,98 @@ nav + .jribbble-feature {
   .playerList {
     width: 100%;
   }
-  /* line 165, src/_examples.scss */
+  /* line 166, src/_examples.scss */
   .playerList li {
     width: 25%;
   }
-  /* line 169, src/_examples.scss */
+  /* line 170, src/_examples.scss */
   .playerList li:nth-child(4n) {
     margin-right: 0;
   }
-  /* line 174, src/_examples.scss */
+  /* line 175, src/_examples.scss */
   .playerList li img {
     width: 100%;
   }
 }
 
-/* line 182, src/_examples.scss */
+/* line 183, src/_examples.scss */
 .twoUp {
   color: #353535;
   overflow: hidden;
   padding-bottom: 0.5em;
 }
-/* line 188, src/_examples.scss */
+/* line 189, src/_examples.scss */
 .twoUp div {
   float: left;
   margin-top: 1em;
   width: 40.1878914%;
   text-align: left;
 }
-/* line 196, src/_examples.scss */
+/* line 197, src/_examples.scss */
 .twoUp div:first-child {
   float: right;
   width: 56.4718163%;
 }
-/* line 201, src/_examples.scss */
+/* line 202, src/_examples.scss */
 .twoUp div:first-child a {
   background-color: #ebebeb;
   display: block;
   max-width: 500px;
   padding: 1em;
 }
-/* line 209, src/_examples.scss */
+/* line 210, src/_examples.scss */
 .twoUp div:first-child img {
   width: 100%;
 }
-/* line 215, src/_examples.scss */
+/* line 216, src/_examples.scss */
 .twoUp h3 {
   font-size: 2.1em;
   font-weight: 700;
   line-height: 0.9em;
   margin-bottom: 0.2em;
 }
-/* line 223, src/_examples.scss */
+/* line 224, src/_examples.scss */
 .twoUp h4 {
   color: #757575;
   font: 1.1em/1.2em "botanika-mono-web-1", "botanika-mono-web-2", monospace, sans-serif;
 }
-/* line 229, src/_examples.scss */
+/* line 230, src/_examples.scss */
 .twoUp ul {
   margin-top: 1.1em;
 }
-/* line 234, src/_examples.scss */
+/* line 235, src/_examples.scss */
 .twoUp li {
   font-size: 0.95em;
   padding: 0.15em 0;
 }
-/* line 239, src/_examples.scss */
+/* line 240, src/_examples.scss */
 .twoUp li b {
   display: inline-block;
   min-width: 5.5em;
   width: 30%;
 }
 @media screen and (max-width: 480px) {
-  /* line 249, src/_examples.scss */
+  /* line 250, src/_examples.scss */
   .twoUp div {
     float: none;
     width: 100%;
   }
-  /* line 255, src/_examples.scss */
+  /* line 256, src/_examples.scss */
   .twoUp div:first-child {
     float: none;
     width: 100%;
   }
-  /* line 260, src/_examples.scss */
+  /* line 261, src/_examples.scss */
   .twoUp div:first-child a {
     padding: 0.5em;
   }
 }
 
-/* line 268, src/_examples.scss */
+/* line 269, src/_examples.scss */
 #shotCommentsList {
   margin-top: 1.4em;
 }
-/* line 272, src/_examples.scss */
+/* line 273, src/_examples.scss */
 #shotCommentsList li {
   border-bottom: 1px dashed #bfbfbf;
   margin-bottom: 0.7em;
@@ -1049,7 +1037,7 @@ nav + .jribbble-feature {
   padding-bottom: 0.7em;
   width: 100%;
 }
-/* line 279, src/_examples.scss */
+/* line 280, src/_examples.scss */
 #shotCommentsList li > a {
   background-color: #ebebeb;
   display: block;
@@ -1057,26 +1045,26 @@ nav + .jribbble-feature {
   padding: 0.2em;
   width: 10%;
 }
-/* line 287, src/_examples.scss */
+/* line 288, src/_examples.scss */
 #shotCommentsList li > a img {
   width: 100%;
 }
-/* line 293, src/_examples.scss */
+/* line 294, src/_examples.scss */
 #shotCommentsList li:last-child {
   border-bottom: none;
 }
-/* line 301, src/_examples.scss */
+/* line 302, src/_examples.scss */
 #shotCommentsList img {
   display: block;
 }
-/* line 306, src/_examples.scss */
+/* line 307, src/_examples.scss */
 #shotCommentsList h5 {
   color: #757575;
   float: right;
   font: 1em/1.2em "botanika-mono-web-1", "botanika-mono-web-2", monospace, sans-serif;
   width: 86.2077922%;
 }
-/* line 314, src/_examples.scss */
+/* line 315, src/_examples.scss */
 #shotCommentsList p {
   float: right;
   font-size: 0.95em;
@@ -1084,28 +1072,28 @@ nav + .jribbble-feature {
   width: 86.2077922%;
 }
 
-/* line 325, src/_examples.scss */
+/* line 326, src/_examples.scss */
 .csscolumns #playerProfile ul {
-  -moz-column-count: 2;
   -webkit-column-count: 2;
-  -o-column-count: 2;
+  -moz-column-count: 2;
+  -ms-column-count: 2;
   column-count: 2;
-  -moz-column-width: 50%;
   -webkit-column-width: 50%;
-  -o-column-width: 50%;
+  -moz-column-width: 50%;
+  -ms-column-width: 50%;
   column-width: 50%;
 }
-/* line 331, src/_examples.scss */
+/* line 332, src/_examples.scss */
 .csscolumns #playerProfile li {
   display: inline-block;
 }
 
-/* line 337, src/_examples.scss */
+/* line 338, src/_examples.scss */
 #playerProfile {
   color: #353535;
   overflow: hidden;
 }
-/* line 342, src/_examples.scss */
+/* line 343, src/_examples.scss */
 #playerProfile > a {
   background-color: #ebebeb;
   display: inline-block;
@@ -1113,29 +1101,29 @@ nav + .jribbble-feature {
   margin-right: 0.8em;
   padding: 0.4em;
 }
-/* line 350, src/_examples.scss */
+/* line 351, src/_examples.scss */
 #playerProfile > a img {
   display: block;
 }
-/* line 356, src/_examples.scss */
+/* line 357, src/_examples.scss */
 #playerProfile div {
   float: left;
   margin-top: 0.4em;
   min-width: 290px;
   width: 56.4384134%;
 }
-/* line 364, src/_examples.scss */
+/* line 365, src/_examples.scss */
 #playerProfile h3 {
   font-size: 1.4em;
   font-weight: 700;
   line-height: 0.8em;
   margin-bottom: 0.2em;
 }
-/* line 372, src/_examples.scss */
+/* line 373, src/_examples.scss */
 #playerProfile h4 {
   font: 1em/1.2em "botanika-mono-web-1", "botanika-mono-web-2", monospace, sans-serif;
 }
-/* line 377, src/_examples.scss */
+/* line 378, src/_examples.scss */
 #playerProfile ul {
   border-top: 1px dashed #bfbfbf;
   margin-top: 0.4em;
@@ -1143,43 +1131,43 @@ nav + .jribbble-feature {
   padding-top: 0.4em;
   width: 80%;
 }
-/* line 386, src/_examples.scss */
+/* line 387, src/_examples.scss */
 #playerProfile li {
   font-size: 0.95em;
   padding: 0.15em 0;
 }
-/* line 392, src/_examples.scss */
+/* line 393, src/_examples.scss */
 #playerProfile b {
   display: inline-block;
   min-width: 5em;
   width: 30%;
 }
 @media screen and (max-width: 480px) {
-  /* line 400, src/_examples.scss */
+  /* line 401, src/_examples.scss */
   #playerProfile > a {
     width: 16.66666675;
   }
-  /* line 404, src/_examples.scss */
+  /* line 405, src/_examples.scss */
   #playerProfile > a img {
     width: 100%;
   }
-  /* line 410, src/_examples.scss */
+  /* line 411, src/_examples.scss */
   #playerProfile div {
     min-width: 0;
   }
-  /* line 415, src/_examples.scss */
+  /* line 416, src/_examples.scss */
   #playerProfile h3 {
     font-size: 1.1em;
   }
-  /* line 420, src/_examples.scss */
+  /* line 421, src/_examples.scss */
   #playerProfile h4 {
     font-size: 0.9em;
   }
-  /* line 425, src/_examples.scss */
+  /* line 426, src/_examples.scss */
   #playerProfile ul {
     width: 100%;
   }
-  /* line 430, src/_examples.scss */
+  /* line 431, src/_examples.scss */
   #playerProfile li {
     font-size: 0.85em;
   }

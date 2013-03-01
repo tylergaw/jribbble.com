@@ -7,7 +7,7 @@
 {
 	display: inline-block;
 	overflow: hidden;
-	
+
 	li
 	{
 		background-color: #ebebeb;
@@ -18,7 +18,7 @@
 		overflow: hidden;
 		position: relative;
 		padding: 0.4em;
-		
+
 		a
 		{
 			display: block;
@@ -27,7 +27,7 @@
 			min-width: 200px;
 			overflow: hidden;
 		}
-		
+
 		img
 		{
 			display: block;
@@ -36,13 +36,13 @@
 			@include transition-duration(.15s);
 		}
 	}
-	
+
 	h3, h4
 	{
 		position: absolute;
 		visibility: hidden;
 	}
-	
+
 	h3
 	{
 		left: 0.8em;
@@ -52,7 +52,7 @@
 		top: 0.9em;
 		width: 90%;
 	}
-	
+
 	h4
 	{
 		bottom: 0.9em;
@@ -61,37 +61,37 @@
 		text-align: right;
 		width: 90%;
 	}
-	
+
 	li:hover
 	{
 		h3, h4
 		{
 			visibility: visible;
 		}
-		
+
 		img
 		{
 			visibility: hidden;
 		}
 	}
-	
+
 	@media screen and (max-width: 480px) {
-		
+
 		width: 100%;
-		
+
 		li
-		{	
+		{
 			clear: left;
 			overflow: hidden;
 			width: 45%;
-			
+
 			&:nth-child(2n)
 			{
 				clear: right;
 				float: right;
 				margin-right: 0;
 			}
-			
+
 			a
 			{
 				max-height: auto;
@@ -116,18 +116,18 @@
 .playerList
 {
 	overflow: visible;
-	
+
 	li
 	{
 		display: inline-block;
 		position: relative;
-		
+
 		&:hover h3
 		{
 			visibility: visible;
 		}
 	}
-	
+
 	h3
 	{
 		color: #fff;
@@ -138,7 +138,7 @@
 		visibility: hidden;
 		white-space: nowrap;
 	}
-	
+
 	a
 	{
 		background-color: #ebebeb;
@@ -146,25 +146,26 @@
 		float: left;
 		margin: 0.2em 0.8em 0.6em 0;
 		padding: 0.4em;
-		
+
 		img
 		{
 			display: block;
+            max-width: 82px;
 		}
-		
+
 		&:hover
 		{
 			background-color: #fff;
 		}
 	}
-	
+
 	@media screen and (max-width: 480px) {
 		width: 100%;
-		
+
 		li
-		{	
+		{
 			width: 25%;
-			
+
 			&:nth-child(4n)
 			{
 				margin-right: 0;
@@ -183,7 +184,7 @@
 	color: #353535;
 	overflow: hidden;
 	padding-bottom: 0.5em;
-	
+
 	div
 	{
 		float: left;
@@ -191,12 +192,12 @@
 		width: 40.1878914%;
 		text-align: left;
 	}
-	
+
 	div:first-child
 	{
 		float: right;
 		width: 56.4718163%;
-		
+
 		a
 		{
 			background-color: #ebebeb;
@@ -204,13 +205,13 @@
 			max-width: 500px;
 			padding: 1em;
 		}
-		
+
 		img
 		{
 			width: 100%;
 		}
 	}
-		
+
 	h3
 	{
 		font-size: 2.1em;
@@ -224,7 +225,7 @@
 		color: lighten(#353535, 25%);
 		@include botanika(1.1em, 1.2em);
 	}
-	
+
 	ul
 	{
 		margin-top: 1.1em;
@@ -235,22 +236,22 @@
 		font-size: 0.95em;
 		padding: 0.15em 0;
 
-		b 
+		b
 		{
 			display: inline-block;
 			min-width: 5.5em;
 			width: 30%;
 		}
 	}
-	
+
 	@media screen and (max-width: 480px) {
-		
+
 		div
 		{
 			float: none;
 			width: 100%;
 		}
-		
+
 		div:first-child
 		{
 			float: none;
@@ -267,14 +268,14 @@
 #shotCommentsList
 {
 	margin-top: 1.4em;
-	
+
 	li
 	{
 		border-bottom: 1px dashed darken(#ccc, 5%);
 		margin-bottom: 0.7em;
 		overflow: hidden;
 		padding-bottom: 0.7em;
-		
+
 		& > a
 		{
 			background-color: #ebebeb;
@@ -282,26 +283,26 @@
 			float: left;
 			padding: 0.2em;
 			width: 10%;
-			
+
 			img
 			{
 				width: 100%;
 			}
 		}
-		
+
 		&:last-child
 		{
 			border-bottom: none;
 		}
-		
+
 		width: 100%
 	}
-	
+
 	img
 	{
 		display: block;
 	}
-	
+
 	h5
 	{
 		color: lighten(#353535, 25%);
@@ -309,7 +310,7 @@
 		@include botanika(1em, 1.2em);
 		width: 86.2077922%;
 	}
-	
+
 	p
 	{
 		float: right;
@@ -326,7 +327,7 @@
 		@include column-count(2);
 		@include column-width(50%);
 	}
-	
+
 	li
 	{
 		display: inline-block;
@@ -337,7 +338,7 @@
 {
 	color: #353535;
 	overflow: hidden;
-	
+
 	& > a
 	{
 		background-color: #ebebeb;
@@ -345,13 +346,13 @@
 		float: left;
 		margin-right: 0.8em;
 		padding: 0.4em;
-		
+
 		img
 		{
 			display: block;
 		}
 	}
-	
+
 	div
 	{
 		float: left;
@@ -359,7 +360,7 @@
 		min-width: 290px;
 		width: 56.4384134%;
 	}
-	
+
 	h3
 	{
 		font-size: 1.4em;
@@ -367,12 +368,12 @@
 		line-height: 0.8em;
 		margin-bottom: 0.2em;
 	}
-	
+
 	h4
 	{
 		@include botanika(1em, 1.2em);
 	}
-	
+
 	ul
 	{
 		border-top: 1px dashed darken(#ccc, 5%);
@@ -380,32 +381,32 @@
 		max-width: 300px;
 		padding-top: 0.4em;
 		width: 80%;
-	}	
-	
+	}
+
 	li
 	{
 		font-size: 0.95em;
 		padding: 0.15em 0;
 	}
-	
-	b 
+
+	b
 	{
 		display: inline-block;
 		min-width: 5em;
 		width: 30%;
 	}
-	
+
 	@media screen and (max-width: 480px) {
 		& > a
 		{
 			width: 16.66666675;
-			
+
 			img
 			{
 				width: 100%;
 			}
 		}
-		
+
 		div
 		{
 			min-width: 0;
@@ -420,12 +421,12 @@
 		{
 			font-size: 0.9em;
 		}
-		
+
 		ul
 		{
 			width: 100%;
 		}
-		
+
 		li
 		{
 			font-size: 0.85em;
