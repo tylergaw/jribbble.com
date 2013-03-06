@@ -1,12 +1,11 @@
-#download
-{
+#download {
 	clear: both;
 	float: right;
 	margin: 1.1em 0 1.4em 0;
 	text-align: right;
 	width: 73.1732777%;
-	
-	a
+
+	.download-btn
 	{
 		@include border-radius(32px);
 		color: #ececec;
@@ -17,34 +16,44 @@
 		padding: 6px 18px 4px 18px;
 		text-align: center;
 		text-transform: uppercase;
-		
+
 		&:hover
 		{
 			text-decoration: none;
 		}
 	}
-	
+
 	h2
 	{
 		color: lighten(#676767, 15%);
-		font-size: 1em;
-		margin: 0.3em 0.8em 0 0;
+		font-size: 1.1em;
+		margin: 0.3em 0.8em 0.8em 0;
 	}
-	
+
+    .non-jquery {
+        color: lighten(#676767, 25%);
+        display: inline-block;
+        font-size: 0.8em;
+        font-style: italic;
+        margin-right: 0.8em;
+
+        &:hover {
+            color: #2f39ff;
+        }
+    }
+
 	@media screen and (max-width: 768px) {
-		
+
 		width: 100%;
-		
-		a
-		{
+
+		.download-btn {
 			font-size: 1.8em;
 		}
 	}
-	
+
 	@media screen and (max-width: 320px) {
-		
-		a
-		{
+
+		.download-btn {
 			font-size: 1.5em;
 		}
 	}

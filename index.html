@@ -14,7 +14,7 @@
 	<meta name="description" content="Jribbble is a jQuery plugin for fetching shot and player info from the Dribbble API">
 	<link rel="stylesheet" href="css/core.css">
 	<script src="js/modernizr.custom.js"></script>
-	<script type="text/javascript">
+	<script>
 
 	  var _gaq = _gaq || [];
 	  _gaq.push(['_setAccount', 'UA-24386968-1']);
@@ -40,8 +40,13 @@
 	</header>
 
 	<section id="download">
-		<h1><a href="https://raw.github.com/tylergaw/jribbble/master/dist/jquery.jribbble-1.0.1.ugly.js">Download Jribbble</a></h1>
+		<h1>
+            <a class="download-btn" href="https://raw.github.com/tylergaw/jribbble/master/dist/jquery.jribbble-1.0.1.ugly.js">Download Jribbble</a>
+        </h1>
 		<h2>Current release: <strong>v1.0.1</strong></h2>
+        <a class="non-jquery" href="https://github.com/tylergaw/jribbble-no-dependencies">
+            <i>Interested in a jQuery-free version?</i>
+        </a>
 	</section>
 
 	<hr />
@@ -419,7 +424,7 @@
 	<script src="js/jquery.jribbble-1.0.1.ugly.js"></script>
 	<script src="js/jribbble.demos.js"></script>
 
-	<script type="text/javascript" src="http://use.typekit.com/nyr0qms.js"></script>
-	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+	<script src="http://use.typekit.com/nyr0qms.js"></script>
+	<script>try{Typekit.load();}catch(e){}</script>
 </body>
 </html>

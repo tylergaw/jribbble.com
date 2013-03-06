@@ -5,12 +5,12 @@
 	.playerList h3,
 	#fork-me:hover,
 	.rgba #fork-me:hover,
-	#download a
+	#download .download-btn
 	{
 		background-color: $color;
 	}
 
-	#download a:hover
+	#download .download-btn:hover
 	{
 		background-color: darken($color, 10%);
 	}
@@ -26,7 +26,7 @@
 .playerList h3,
 #fork-me:hover,
 .rgba #fork-me:hover,
-#download a
+#download .download-btn
 {
 	@include transition(background-color, .2s);
 }
@@ -38,7 +38,7 @@ nav li
 
 /*-------- Media Query Color shifting, big fun, big fun!
 	This is where shit gets real. The base color I start with is #ff0066, from there
-    as the browswer scales down, the colors adjust to be cooler. As the browser 
+    as the browswer scales down, the colors adjust to be cooler. As the browser
     scales up, the colors adjust to be warmer.
 
     If you're looking here you're probably interested, I use SASS so for all of the
