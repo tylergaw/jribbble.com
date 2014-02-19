@@ -19,7 +19,7 @@ $(document).ready(function () {
 	});
 
 	// API Ref: http://api.dribbble/shots/:id/comments
-	$.jribbble.getCommentsOfShot(953794, function (response) {
+	$.jribbble.getCommentsOfShot(1426437, function (response) {
 		var html = [];
 		$.each(response.comments, function (i, comment) {
 			html.push('<li>');
@@ -33,7 +33,7 @@ $(document).ready(function () {
 	}, {page: 1, per_page: 5});
 
 	// Function used only for comments demo full sized shot
-	$.jribbble.getShotById(953794, function (shot) {
+	$.jribbble.getShotById(1426437, function (shot) {
 		$('#shotComments a:first').attr('href', shot.url);
 		$('#shotComments a:first img').attr('src', shot.image_url);
 		$('#shotComments h3').text(shot.title);
