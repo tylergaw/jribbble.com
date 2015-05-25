@@ -1,0 +1,21 @@
+{
+  "name": "jribbble.com",
+  "version": "2.0.0",
+  "homepage": "jribbble.com",
+  "authors": [
+    "Tyler Gaw <me@tylergaw.com>"
+  ],
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "jribbble": "~1.0.1"
+  }
+}

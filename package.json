@@ -1,0 +1,30 @@
+{
+  "name": "jribbble.com",
+  "version": "2.0.0",
+  "description": "Demo site for the jQuery plugin, Jribbble",
+  "main": "index.js",
+  "scripts": {
+    "scss": "./node_modules/.bin/node-sass -w ./css/scss -o ./css --output-style compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tylergaw/jribbble.com.git"
+  },
+  "keywords": [
+    "jquery",
+    "dribbble"
+  ],
+  "author": {
+    "name": "Tyler Gaw",
+    "email": "me@tylergaw.com",
+    "url": "http://tyleragw.com"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tylergaw/jribbble.com/issues"
+  },
+  "homepage": "https://github.com/tylergaw/jribbble.com",
+  "devDependencies": {
+    "node-sass": "^3.1.2"
+  }
+}
