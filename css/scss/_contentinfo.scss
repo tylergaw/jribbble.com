@@ -1,0 +1,16 @@
+[role="contentinfo"] {
+  position: relative;
+
+  &::before {
+    background-color: $red--firetruck;
+    content: "";
+    display: block;
+    height: 3px;
+    left: -2px;
+    margin: 0 auto;
+    position: relative;
+    top: 2px;
+    transform: rotate(0.1deg);
+    width: 99%;
+  }
+}

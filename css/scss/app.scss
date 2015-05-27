@@ -1,4 +1,7 @@
-body {
-  background-color: blue;
-  color: red;
-}
+@import "normalize";
+@import "colors";
+
+@import "general";
+@import "banner";
+@import "content";
+@import "contentinfo";

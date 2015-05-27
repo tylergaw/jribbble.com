@@ -1,0 +1,32 @@
+[role="banner"] {
+  background-color: $blue--light;
+  position: relative;
+
+  &::after {
+    background-color: $blue--med;
+    content: "";
+    display: block;
+    height: 3px;
+    left: 2px;
+    margin: 0 auto;
+    position: relative;
+    top: -2px;
+    transform: rotate(-0.2deg);
+    width: 99%;
+  }
+}
+
+.banner__branding {
+  display: block;
+  margin: 0 auto;
+  max-width: 760px;
+  width: 98%;
+}
+
+.banner__version {
+  text-align: right;
+  margin: 0 auto;
+  max-width: 758px;
+  position: relative;
+  width: 98%;
+}
