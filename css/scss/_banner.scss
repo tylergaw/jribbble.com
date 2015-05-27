@@ -56,15 +56,38 @@
   }
 }
 
+@-webkit-keyframes blink {
+  0%, 40% {
+    background-color: $blue--light;
+  }
+
+  49%, 100% {
+    background-color: rgba($blue--light, 0);
+  }
+}
+
+@keyframes blink {
+  0%, 40% {
+    background-color: $blue--light;
+  }
+
+  49%, 100% {
+    background-color: rgba($blue--light, 0);
+  }
+}
+
 .install__bower__container {
   background-color: $blue--dark;
   position: relative;
 
   &::after {
+    -webkit-animation: blink 0.8s infinite;
+    animation: blink 0.8s infinite;
     background-color: $blue--light;
+    border: 1px solid $blue--light;
     content: "";
     display: block;
-    height: 50%;
+    height: 49%;
     position: absolute;
     right: 0.8rem;
     top: 0.6rem;
@@ -112,7 +135,7 @@
 
   .install__bower__container {
     &::after {
-      height: 1.8rem;
+      height: 1.6rem;
     }
   }
 
