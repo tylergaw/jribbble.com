@@ -19,14 +19,28 @@
 .banner__branding {
   display: block;
   margin: 0 auto;
-  max-width: 760px;
+  max-width: 754px;
   width: 98%;
 }
 
 .banner__version {
+  font-size: 0.8rem;
   text-align: right;
   margin: 0 auto;
-  max-width: 758px;
+  max-width: 750px;
   position: relative;
+  bottom: 1.1em;
   width: 98%;
+
+  a {
+    color: $blue--dark;
+    text-decoration: none;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .banner__version {
+    font-size: 0.9rem;
+    bottom: 2em;
+  }
 }

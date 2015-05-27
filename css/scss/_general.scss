@@ -1,4 +1,9 @@
+%sans {
+  font-family: 'Nunito', arial, sans-serif;
+}
+
 body {
   background-color: $red--light;
   color: $blue--dark;
+  @extend %sans;
 }
