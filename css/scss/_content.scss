@@ -1,3 +1,14 @@
 .content--main {
   background-color: #fff;
 }
+
+.section-heading {
+  margin: 0;
+  max-width: 382px;
+}
+
+.section-heading__wrapper {
+  background-color: $blue--dark;
+  color: #fff;
+  padding: 0.2em;
+}
