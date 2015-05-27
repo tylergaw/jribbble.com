@@ -1,19 +1,11 @@
 {
   "name": "jribbble.com",
-  "version": "2.0.0",
   "homepage": "jribbble.com",
   "authors": [
     "Tyler Gaw <me@tylergaw.com>"
   ],
   "main": "index.html",
-  "license": "MIT",
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
-  ],
+  "license": "ISC",
   "dependencies": {
     "jribbble": "~2.0.0"
   }
