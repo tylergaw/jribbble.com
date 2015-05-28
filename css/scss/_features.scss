@@ -1,0 +1,23 @@
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: $width--max--content;
+  padding: 0;
+}
+
+.features__item {
+  flex: 0 0 33.3333%;
+  list-style: none;
+
+  img {
+    display: block;
+    width: 100%;
+  }
+
+  a {
+    display: block;
+    margin: 0 auto;
+    max-width: 200px;
+  }
+}
