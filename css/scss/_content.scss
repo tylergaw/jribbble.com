@@ -3,12 +3,16 @@
 }
 
 .section-heading {
-  margin: 0;
-  max-width: 382px;
+  font-size: 1.2rem;
+  line-height: 1.4;
+  margin-top: 0;
+  max-width: 410px;
 }
 
 .section-heading__wrapper {
   background-color: $blue--dark;
   color: #fff;
-  padding: 0.2em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding: 0.1em;
 }

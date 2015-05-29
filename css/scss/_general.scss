@@ -1,4 +1,4 @@
-$width--max--content: 992px;
+$width--max--content: 1080px;
 
 %sans {
   font-family: "Nunito", arial, sans-serif;
@@ -23,4 +23,10 @@ body {
   overflow: hidden;
   clip: rect(0,0,0,0);
   border: 0;
+}
+
+.content--restricted-width {
+  margin: 0 auto;
+  max-width: $width--max--content;
+  width: 95%;
 }

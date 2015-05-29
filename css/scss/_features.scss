@@ -1,13 +1,15 @@
-.features {
+.content--features {
+  padding-top: 1rem;
+}
+
+.features-list {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 auto;
-  max-width: $width--max--content;
   padding: 0;
 }
 
 .features__item {
-  flex: 0 0 33.3333%;
+  flex: 0 0 100%;
   list-style: none;
 
   img {
@@ -16,8 +18,83 @@
   }
 
   a {
-    display: block;
+    display: flex;
     margin: 0 auto;
-    max-width: 200px;
+    max-width: 170px;
+  }
+}
+
+.features__item--shrink {
+  a {
+    max-width: 140px;
+  }
+}
+
+@media screen and (min-width: 390px) {
+  .features__item {
+    flex: 1 0 50%;
+  }
+
+  // This item has...unconventional desires
+  .features--shots {
+    a {
+      padding-top: 1rem;
+    }
+  }
+}
+
+@media screen and (min-width: 520px) {
+  .content--features {
+    padding-top: 2.4em;
+
+    .section-heading {
+      margin-left: 3.8rem;
+    }
+  }
+}
+
+@media screen and (min-width: 620px) {
+  .features__item {
+    a {
+      max-width: 190px;
+    }
+  }
+
+  .features__item--shrink {
+    a {
+      max-width: 160px;
+    }
+  }
+
+  .content--features {
+    .section-heading {
+      margin-left: 5.8rem;
+    }
+  }
+}
+
+@media screen and (min-width: 780px) {
+  .features-list {
+    padding: 1.4rem 0 0 0;
+  }
+
+  .features__item {
+    margin-bottom: 1.4em;
+
+    a {
+      max-width: 220px;
+    }
+  }
+
+  .features__item--shrink {
+    a {
+      max-width: 180px;
+    }
+  }
+}
+
+@media screen and (min-width: 860px) {
+  .features__item {
+    flex: 0 0 33.3333%;
   }
 }
