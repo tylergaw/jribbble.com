@@ -196,7 +196,7 @@
     $.jribbble.shots('teams').then(function(shots) {
       <span class="code--highlight">var html = [];
 
-      res.forEach(function(shot) {
+      shots.forEach(function(shot) {
         <span class="code__comment">// See the <a href="http://developer.dribbble.com/v1/shots/#response">Dribbble docs</a> for all available shot properties.</span>
         html.push('&lt;li class="shots--shot"&gt;');
         html.push('&lt;a href="' + shot.html_url + '"&gt;');
@@ -218,6 +218,30 @@
               <div class="gear gear--two"></div>
               <div class="gear gear--three"></div>
             </div>
+
+            <ol class="demo-steps">
+              <li>
+                gearing up #seewhatididthere<span class="blink">&hellip;</span>
+              </li>
+              <li class="hidden">
+                setting client access token<span class="blink">&hellip;</span>
+              </li>
+              <li class="hidden">
+                appending shots container to DOM<span class="blink">&hellip;</span>
+              </li>
+              <li class="hidden">
+                requesting shots from api<span class="blink">&hellip;</span>
+              </li>
+              <li class="hidden">
+                request to api successful<span class="blink">&hellip;</span>
+              </li>
+              <li class="hidden">
+                building shots markup<span class="blink">&hellip;</span>
+              </li>
+              <li class="hidden">
+                <span class="blink">sequence complete</span>
+              </li>
+            </ol>
           </div>
         </li>
       </ol>
