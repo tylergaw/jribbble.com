@@ -114,7 +114,8 @@ $max-width-instructions: 1080px;
 }
 
 .instructions__item--special {
-  margin: 4rem 0;
+  margin: 4rem 0 5rem 0;
+  position: relative;
 }
 
 .do-not-press-btn {
@@ -166,13 +167,11 @@ $max-width-instructions: 1080px;
     opacity: 0;
     position: relative;
     text-transform: none;
-    transition: all 0.1s ease;
   }
 
   &:hover,
   &:focus {
     span {
-      display: block;
       opacity: 1;
     }
   }

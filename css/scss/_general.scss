@@ -30,3 +30,7 @@ body {
   max-width: $width--max--content;
   width: 95%;
 }
+
+.hidden {
+  visibility: hidden;
+}
