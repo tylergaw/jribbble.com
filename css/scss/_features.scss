@@ -1,3 +1,21 @@
+@keyframes shimmy {
+    0% {
+        transform: rotate(-4.5deg);
+    }
+
+    25% {
+        transform: rotate(1deg);
+    }
+
+    50% {
+        transform: rotate(4deg);
+    }
+
+    75% {
+        transform: rotate(0deg);
+    }
+}
+
 .content--features {
   padding-top: 1rem;
 }
@@ -11,6 +29,7 @@
 .features__item {
   flex: 0 0 100%;
   list-style: none;
+  position: relative;
 
   img {
     display: block;
@@ -21,6 +40,17 @@
     display: flex;
     margin: 0 auto;
     max-width: 170px;
+    position: relative;
+    top: 0;
+    transform-origin: center bottom;
+    transition: top 0.1s ease;
+
+    &:hover,
+    &:focus {
+        animation: shimmy 0.2s 1;
+        animation-delay: 0.12s;
+        top: -10px;
+    }
   }
 }
 
