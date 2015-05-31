@@ -74,6 +74,28 @@ $max-width-instructions: 1080px;
     background-image: url("../img/arrow-06.svg");
     background-position: 33% center;
   }
+
+  @media screen and (min-width: 650px) {
+    &:first-child::after {
+      background-position: 48% center;
+    }
+
+    &:nth-child(2)::after {
+      background-position: 45% center;
+    }
+
+    &:nth-child(3)::after {
+      background-position: 48% center;
+    }
+
+    &:nth-child(4)::after {
+      background-position: 44% center;
+    }
+
+    &:nth-child(5)::after {
+      background-position: 44% center;
+    }
+  }
 }
 
 .code--highlight {
