@@ -35,7 +35,7 @@ $max-width-instructions: 1080px;
   }
 }
 
-.instructions__item::after:not(:last-of-type),
+.instructions__item::after,
 .instructions__item:first-child::before {
   background-color: transparent;
   background-repeat: no-repeat;
@@ -78,6 +78,12 @@ $max-width-instructions: 1080px;
 
 .code--highlight {
   color: $red--not-really-red;
+}
+
+.instructions__item--nah {
+  &::after {
+    display: none;
+  }
 }
 
 .instructions__item--special {
