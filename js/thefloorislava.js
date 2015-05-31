@@ -1,3 +1,9 @@
 (function() {
-  console.log('ham and cheese all day');
+  var ohGeezStartDemoButBeCareful = function(e) {
+    e.preventDefault();
+
+    alert('shit');
+  };
+
+  $('.do-not-press-btn').on('click', ohGeezStartDemoButBeCareful);
 }());

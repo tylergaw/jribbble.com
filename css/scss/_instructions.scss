@@ -35,7 +35,7 @@ $max-width-instructions: 1080px;
   }
 }
 
-.instructions__item:not(:nth-last-child(2))::after,
+.instructions__item::after:not(:last-of-type),
 .instructions__item:first-child::before {
   background-color: transparent;
   background-repeat: no-repeat;
@@ -78,4 +78,46 @@ $max-width-instructions: 1080px;
 
 .code--highlight {
   color: $red--not-really-red;
+}
+
+.instructions__item--special {
+  margin: 4rem 0;
+}
+
+.do-not-press-btn {
+  background-color: $blue--light;
+  border: 3px solid $blue--med;
+  border-radius: 4.5rem;
+  box-shadow: inset 0 4px #fff;
+  color: $blue--dark;
+  display: block;
+  font-size: 1.5rem;
+  margin: 0 auto;
+  max-width: 630px;
+  padding: 1rem;
+  position: relative;
+  text-transform: uppercase;
+  width: 95%;
+
+  span {
+    display: block;
+    font-size: 0.9rem;
+    font-style: italic;
+    margin-bottom: -25px;
+    opacity: 0;
+    position: relative;
+    text-transform: none;
+    top: -25px;
+    transition: all 0.1s ease;
+  }
+
+  &:hover,
+  &:focus {
+    span {
+      display: block;
+      margin-bottom: 0;
+      opacity: 1;
+      top: 0px;
+    }
+  }
 }
