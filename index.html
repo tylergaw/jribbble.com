@@ -112,18 +112,24 @@
 
       <ol class="instructions-list content--restricted-width">
         <li class="instructions__item">
-          If you haven’t already, <a href="https://dribbble.com/account/applications/new">register an application on Dribbble</a>.
-          Go ahead. Do it now. We’ll wait.
+          <h3 class="instructions__detail">
+            If you haven’t already, <a href="https://dribbble.com/account/applications/new">register an application on Dribbble</a>.
+            Go ahead. Do it now. We’ll wait.
+          </h3>
         </li>
         <li class="instructions__item">
-          Include jQuery and Jribbble in your html before the closing <code>&lt;/body&gt;</code> tag:
+          <h3 class="instructions__detail">
+            Include jQuery and Jribbble in your html before the closing <code>&lt;/body&gt;</code> tag:
+          </h3>
 <pre><code class="language--html">&lt;body&gt;
   <span class="code--highlight">&lt;script src="bower_components/jquery/dist/jquery.min.js"&gt;&lt;/script&gt;
   &lt;script src="bower_components/jribbble/dist/jribbble.min.js"&gt;&lt;/script&gt;</span>
 &lt;/body&gt;</code></pre>
         </li>
         <li class="instructions__item">
-          Add an element (or elements) to your html where you want Dribbble stuff to display:
+          <h3 class="instructions__detail">
+            Add an element (or elements) to your html where you want Dribbble stuff to display:
+          </h3>
 <pre><code class="language--html">&lt;body&gt;
   <span class="code--highlight">&lt;ul class="shots"&gt;&lt;/ul&gt;</span>
 
@@ -132,7 +138,9 @@
 &lt;/body&gt;</code></pre>
         </li>
         <li class="instructions__item">
-          Tell Jribbble your client access token for your Dribbble application <em>(you registered an app right?)</em>
+          <h3 class="instructions__detail">
+            Tell Jribbble your client access token for your Dribbble application <em>(you registered an app right?)</em>
+          </h3>
 <pre><code class="language--html">&lt;body&gt;
   &lt;ul class="shots"&gt;&lt;/ul&gt;
 
@@ -145,7 +153,9 @@
 &lt;/body&gt;</code></pre>
         </li>
         <li class="instructions__item">
-          Tell Jribbble you want somethin’! In this example we want team shots, but there are other <a href="http://developer.dribbble.com/v1/shots/#list-shots">options</a>:
+          <h3 class="instructions__detail">
+            Tell Jribbble you want somethin’! In this example we want team shots, but there are other <a href="http://developer.dribbble.com/v1/shots/#list-shots">options</a>:
+          </h3>
 <pre><code class="language--html">&lt;body&gt;
   &lt;ul class="shots"&gt;&lt;/ul&gt;
 
@@ -165,8 +175,10 @@
 &lt;/body&gt;</code></pre>
         </li>
         <li class="instructions__item instructions__item--nah">
-          Iterate through the response to build markup for the shots then append
-          them to the DOM:
+          <h3 class="instructions__detail">
+            Iterate through the response to build markup for the shots then append
+            them to the DOM:
+          </h3>
 <pre><code class="language--html">&lt;body&gt;
   &lt;ul class="shots"&gt;&lt;/ul&gt;
 

@@ -35,6 +35,11 @@ $max-width-instructions: 1080px;
   }
 }
 
+.instructions__detail {
+  margin-bottom: 0;
+  padding-left: 0.5rem;
+}
+
 .instructions__item::after,
 .instructions__item:first-child::before {
   background-color: transparent;
