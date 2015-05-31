@@ -1,0 +1,38 @@
+.content--instructions {
+  padding-top: 3rem;
+}
+
+.instructions-list {
+  list-style: none outside;
+  max-width: 980px;
+  overflow: hidden;
+  padding-left: 0;
+
+  a {
+    color: $red--not-red-at-all-actually-pink;
+  }
+
+  pre {
+    background-color: $red--pale;
+    color: rgba($red--not-really-red, 0.5);
+    font-size: 0.8rem;
+    line-height: 1.4;
+    padding: 0.6rem 0.5rem;
+
+    a {
+      color: $red--not-really-red;
+    }
+  }
+
+  code {
+    @extend %mono;
+  }
+}
+
+.instructions__item {
+  margin-bottom: 2.5rem;
+}
+
+.code--highlight {
+  color: $red--not-really-red;
+}

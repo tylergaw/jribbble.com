@@ -43,13 +43,13 @@
   </header>
 
   <div class="content--main">
-    <div class="content--features content--restricted-width">
+    <div class="content--features">
       <p class="section-heading">
         <span class="section-heading__wrapper">
           However you get it, once you have it, you can use Jribbble to snag all this good stuff:</span>
         </span>
       </p>
-      <ul class="features-list">
+      <ul class="features-list content--restricted-width">
         <li class="features__item features__item--shrink features--shots">
           <a href="">
             <img src="img/icon-shots.svg">
@@ -107,13 +107,105 @@
       </ul>
     </div>
 
+    <div class="content--instructions">
+      <p class="section-heading">
+        <span class="section-heading__wrapper">
+          &hellip;but how does it work? You ask.
+        </span>
+      </p>
 
-    <p class="section-heading">
-      <span class="section-heading__wrapper">
-        &hellip;but how does it work? You ask.
-      </span>
-    </p>
+      <ol class="instructions-list content--restricted-width">
+        <li class="instructions__item">
+          If you haven’t already, <a href="https://dribbble.com/account/applications/new">register an application on Dribbble</a>.
+          Go ahead. Do it now. We’ll wait.
+        </li>
+        <li class="instructions__item">
+          Include jQuery and Jribbble in your html before the closing <code>&lt;/body&gt;</code> tag:
+<pre><code class="language--html">&lt;body&gt;
+  <span class="code--highlight">&lt;script src="bower_components/jquery/dist/jquery.min.js"&gt;&lt;/script&gt;
+  &lt;script src="bower_components/jribbble/dist/jribbble.min.js"&gt;&lt;/script&gt;</span>
+&lt;/body&gt;</code></pre>
+        </li>
+        <li class="instructions__item">
+          Add an element (or elements) to your html where you want Dribbble stuff to display:
+<pre><code class="language--html">&lt;body&gt;
+  <span class="code--highlight">&lt;ul class="shots"&gt;&lt;/ul&gt;</span>
 
+  &lt;script src="bower_components/jquery/dist/jquery.min.js"&gt;&lt;/script&gt;
+  &lt;script src="bower_components/jribbble/dist/jribbble.min.js"&gt;&lt;/script&gt;
+&lt;/body&gt;</code></pre>
+        </li>
+        <li class="instructions__item">
+          Tell Jribbble your client access token for your Dribbble application <em>(you registered an app right?)</em>
+<pre><code class="language--html">&lt;body&gt;
+  &lt;ul class="shots"&gt;&lt;/ul&gt;
+
+  &lt;script src="bower_components/jquery/dist/jquery.min.js"&gt;&lt;/script&gt;
+  &lt;script src="bower_components/jribbble/dist/jribbble.min.js"&gt;&lt;/script&gt;
+
+  <span class="code--highlight">&lt;script&gt;
+    $.jribbble.setToken('1234567890');
+  &lt;/script&gt;</span>
+&lt;/body&gt;</code></pre>
+        </li>
+        <li class="instructions__item">
+          Tell Jribbble you want somethin’! In this example we want team shots, but there are other <a href="http://developer.dribbble.com/v1/shots/#list-shots">options</a>:
+<pre><code class="language--html">&lt;body&gt;
+  &lt;ul class="shots"&gt;&lt;/ul&gt;
+
+  &lt;script src="bower_components/jquery/dist/jquery.min.js"&gt;&lt;/script&gt;
+  &lt;script src="bower_components/jribbble/dist/jribbble.min.js"&gt;&lt;/script&gt;
+
+  &lt;script&gt;
+    $.jribbble.setToken('1234567890');
+
+    <span class="code__comment">/*
+      Jribbble methods make ajax requests to the Dribbble API. When
+      the requests complete, a Promise is returned. Use `then` to take an action
+      on the response from the server.
+    */</span>
+    <span class="code--highlight">$.jribbble.shots('teams').then(function(shots) {});</span>
+  &lt;/script&gt;
+&lt;/body&gt;</code></pre>
+        </li>
+        <li class="instructions__item">
+          Iterate through the response to build markup for the shots then append
+          them to the DOM:
+<pre><code class="language--html">&lt;body&gt;
+  &lt;ul class="shots"&gt;&lt;/ul&gt;
+
+  &lt;script src="bower_components/jquery/dist/jquery.min.js"&gt;&lt;/script&gt;
+  &lt;script src="bower_components/jribbble/dist/jribbble.min.js"&gt;&lt;/script&gt;
+
+  &lt;script&gt;
+    $.jribbble.setToken('1234567890');
+
+    <span class="code__comment">/*
+      Jribbble methods make ajax requests to the Dribbble API. When
+      the requests complete, a Promise is returned. Use `then` to take an action
+      on the response from the server.
+    */</span>
+    $.jribbble.shots('teams').then(function(shots) {
+      <span class="code--highlight">var html = [];
+
+      res.forEach(function(shot) {
+        <span class="code__comment">// See the <a href="http://developer.dribbble.com/v1/shots/#response">Dribbble docs</a> for all available shot properties.</span>
+        html.push('&lt;li class="shots--shot"&gt;');
+        html.push('&lt;a href="' + shot.html_url + '"&gt;');
+        html.push('&lt;img src="' + shot.images.normal + '"&gt;');
+        html.push('&lt;/a&gt;&lt;/li&gt;');
+      });
+
+      $('.shots').html(html.join(''));</span>
+    });
+  &lt;/script&gt;
+&lt;/body&gt;</code></pre>
+        </li>
+        <li class="instructions__item">
+          <button class="do-not-press-btn">Do not press this button <span>(unless you want to see the above code happen right here on this website)</span></button>
+        </li>
+      </ol>
+    </div>
   </div>
 
   <footer role="contentinfo">

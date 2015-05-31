@@ -15,4 +15,8 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   padding: 0.1em;
+
+  @media screen and (min-width: 500px) {
+    padding-left: 2rem;
+  }
 }
