@@ -119,28 +119,53 @@ $max-width-instructions: 1080px;
 
 .do-not-press-btn {
   background-color: $blue--light;
-  border: 3px solid $blue--med;
-  border-radius: 4.5rem;
-  box-shadow: inset 0 4px #fff;
+  border-top: 0;
+  border-bottom: 0;
+  border-right: 4px solid $blue--med;
+  border-left: 3px solid $blue--med;
+  box-shadow: inset 0 4px #fff, inset 0 -10px 5px rgba($blue--med, 0.25);
   color: $blue--dark;
   display: block;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   margin: 0 auto;
   max-width: 630px;
-  padding: 1rem;
+  padding: 1.5rem 1rem 0.4rem 1rem;
   position: relative;
   text-transform: uppercase;
   width: 95%;
+
+  &::before,
+  &::after {
+    background-color: $blue--med;
+    border-radius: 1em;
+    content: "";
+    display: block;
+    position: absolute;
+  }
+
+  &::before {
+    height: 3px;
+    left: -5px;
+    top: -3px;
+    transform: rotate(-0.6deg);
+    width: 102%;
+  }
+
+  &::after {
+    height: 3px;
+    left: 12px;
+    top: 105%;
+    transform: rotate(-0.2deg);
+    width: 98%;
+  }
 
   span {
     display: block;
     font-size: 0.9rem;
     font-style: italic;
-    margin-bottom: -25px;
     opacity: 0;
     position: relative;
     text-transform: none;
-    top: -25px;
     transition: all 0.1s ease;
   }
 
@@ -148,9 +173,7 @@ $max-width-instructions: 1080px;
   &:focus {
     span {
       display: block;
-      margin-bottom: 0;
       opacity: 1;
-      top: 0px;
     }
   }
 }
