@@ -17,7 +17,7 @@
 }
 
 .content--features {
-  padding-top: 1rem;
+  padding-top: 2rem;
 }
 
 .features-list {
@@ -76,10 +76,6 @@
 @media screen and (min-width: 520px) {
   .content--features {
     padding-top: 2.4em;
-
-    .section-heading {
-      // margin-left: 3.8rem;
-    }
   }
 }
 
@@ -95,17 +91,11 @@
       max-width: 160px;
     }
   }
-
-  .content--features {
-    .section-heading {
-      // margin-left: 5.8rem;
-    }
-  }
 }
 
 @media screen and (min-width: 780px) {
   .features-list {
-    padding: 1.4rem 0 0 0;
+    padding: 2.6rem 0 0 0;
   }
 
   .features__item {

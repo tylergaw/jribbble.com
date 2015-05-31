@@ -1,10 +1,10 @@
 $max-width-instructions: 1080px;
 
 .content--instructions {
-  padding-top: 3rem;
+  padding-top: 4rem;
 
   .section-heading {
-    margin-bottom: 0;
+    margin-bottom: 0.8rem;
   }
 }
 
@@ -39,7 +39,7 @@ $max-width-instructions: 1080px;
 .instructions__item:first-child::before {
   background-color: transparent;
   background-repeat: no-repeat;
-  background-position: 20% center;
+  background-position: 45% center;
   content: "";
   display: block;
   height: 150px;
@@ -47,30 +47,32 @@ $max-width-instructions: 1080px;
 
 .instructions__item:first-of-type::before {
   background-image: url("../img/arrow-01.svg");
-  background-position: 5% center;
 }
 
 .instructions__item {
   &:first-child::after {
     background-image: url("../img/arrow-02.svg");
-    background-position: 5% center;
+    background-position: 40% center;
   }
 
   &:nth-child(2)::after {
     background-image: url("../img/arrow-03.svg");
-    background-position: 10% top;
+    background-position: 32% center;
   }
 
   &:nth-child(3)::after {
     background-image: url("../img/arrow-04.svg");
+    background-position: 39% center;
   }
 
   &:nth-child(4)::after {
     background-image: url("../img/arrow-05.svg");
+    background-position: 34% center;
   }
 
   &:nth-child(5)::after {
     background-image: url("../img/arrow-06.svg");
+    background-position: 33% center;
   }
 }
 

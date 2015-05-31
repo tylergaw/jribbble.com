@@ -3,20 +3,18 @@
 }
 
 .section-heading {
-  font-size: 1.2rem;
-  line-height: 1.4;
-  margin-top: 0;
-  max-width: 410px;
-}
-
-.section-heading__wrapper {
-  background-color: $blue--dark;
-  color: #fff;
+  font-size: 1.5rem;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  padding: 0.1em;
+  line-height: 1.4;
+  margin: 0 auto;
+  max-width: 900px;
+  padding: 0 0.2rem;
+  text-align: center;
+  text-transform: uppercase;
+  width: 92%;
 
-  @media screen and (min-width: 500px) {
-    padding-left: 2rem;
+  @media screen and (min-width: 860px) {
+    font-size: 2rem;
   }
 }
