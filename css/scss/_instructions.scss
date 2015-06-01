@@ -32,6 +32,7 @@ $max-width-instructions: 1080px;
 
   code {
     @extend %mono;
+    font-weight: normal;
   }
 }
 
@@ -65,7 +66,8 @@ $max-width-instructions: 1080px;
     background-position: 32% center;
   }
 
-  &:nth-child(3)::after {
+  &:nth-child(3)::after,
+  &:nth-child(6)::after {
     background-image: url("../img/arrow-04.svg");
     background-position: 39% center;
   }
@@ -89,7 +91,8 @@ $max-width-instructions: 1080px;
       background-position: 45% center;
     }
 
-    &:nth-child(3)::after {
+    &:nth-child(3)::after,
+    &:nth-child(6)::after {
       background-position: 48% center;
     }
 
@@ -107,14 +110,8 @@ $max-width-instructions: 1080px;
   color: $red--not-really-red;
 }
 
-.instructions__item--nah {
-  &::after {
-    display: none;
-  }
-}
-
 .instructions__item--special {
-  margin: 4rem 0 5rem 0;
+  margin: 1.8rem 0 6rem 0;
   position: relative;
 }
 
