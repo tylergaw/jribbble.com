@@ -87,9 +87,9 @@
     border: 1px solid $blue--light;
     content: "";
     display: block;
-    height: 49%;
+    height: 47%;
     position: absolute;
-    right: 0.8rem;
+    right: 0.7rem;
     top: 0.6rem;
     width: 0.9rem;
   }
@@ -135,7 +135,7 @@
 
   .install__bower__container {
     &::after {
-      height: 1.6rem;
+      height: 1.5rem;
     }
   }
 
