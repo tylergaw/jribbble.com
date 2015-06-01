@@ -1,5 +1,7 @@
 .shots {
+  -webkit-display: flex;
   display: flex;
+  -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
   list-style: none;
   margin-top: 0;
@@ -11,6 +13,7 @@
 }
 
 .shots__heading {
+  -webkit-flex-basis: 100%;
   flex-basis: 100%;
 
   h3 {
@@ -19,6 +22,7 @@
 }
 
 .shots--shot {
+  -webkit-flex: 0 0 100%;
   flex: 0 0 100%;
 
   a {
@@ -33,10 +37,12 @@
   }
 
   @media screen and (min-width: 460px) {
+    -webkit-flex-basis: 50%;
     flex-basis: 50%;
   }
 
   @media screen and (min-width: 640px) {
+    -webkit-flex-basis: 33.33%;
     flex-basis: 33.33%;
   }
 }

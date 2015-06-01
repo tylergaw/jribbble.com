@@ -37,6 +37,8 @@ $max-width-instructions: 1080px;
 }
 
 .instructions__detail {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   margin-bottom: 0;
   padding-left: 0.5rem;
 }
