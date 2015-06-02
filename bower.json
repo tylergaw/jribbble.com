@@ -1,0 +1,12 @@
+{
+  "name": "jribbble.com",
+  "homepage": "jribbble.com",
+  "authors": [
+    "Tyler Gaw <me@tylergaw.com>"
+  ],
+  "main": "index.html",
+  "license": "ISC",
+  "dependencies": {
+    "jribbble": "~2.0.0"
+  }
+}

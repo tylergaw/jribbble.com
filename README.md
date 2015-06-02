@@ -1,5 +1,27 @@
-# Demo site for Jribbble.js
+# [Jribbble.com](http://jribbble.com)
 
-[Jribbble](http://github.com/tylergaw/jribbble) is a jQuery plugin for accessing data from the [Dribbble](http://dribbble.com/api) api.
+[Jribbble](http://github.com/tylergaw/jribbble) is a jQuery plugin for accessing the [Dribbble](http://dribbble.com/api) api.
 
-The site lives at [http://lab.tylergaw.com/jribbble](http://lab.tylergaw.com/jribbble)
+## Working
+
+### JavaScript
+
+The site uses Jribbble. It has a jQuery dependency that will be installed along with it.
+
+```
+bower install
+```
+
+### CSS/SCSS
+
+This uses `node-sass`, installed globally:
+
+```
+npm install -g node-sass
+```
+
+and watch for scss changes with a Make command
+
+```
+make css
+```

@@ -1,430 +1,272 @@
 <!doctype html>
 <html lang="en">
 <head>
+  <meta charset="utf-8">
+  <title>Jribbble | A jQuery Plugin for the Dribbble API</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Jribbble is a jQuery plugin for the Dribbble API">
+  <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/app.css">
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-	<!--
-		Hello source code lurkers. If you want to have a closer look at how
-		anything is done here, feel free to grab all the code from this site's
-		Github repo: http://github.com/tylergaw/jribbble.com
-	-->
-
-	<meta charset="utf-8">
-	<title>Jribbble | A jQuery Plugin for the Dribbble API</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="Jribbble is a jQuery plugin for fetching shot and player info from the Dribbble API">
-	<link rel="stylesheet" href="css/core.css">
-	<script src="js/modernizr.custom.js"></script>
-	<script>
-
-	  var _gaq = _gaq || [];
-	  _gaq.push(['_setAccount', 'UA-24386968-1']);
-	  _gaq.push(['_setDomainName', '.tylergaw.com']);
-	  _gaq.push(['_trackPageview']);
-
-	  (function() {
-	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-	  })();
-
-	</script>
+    ga('create', 'UA-24386968-1', 'auto');
+    ga('send', 'pageview');
+  </script>
 </head>
 <body>
-<div id="bigAssJribbble"></div>
-<a id="fork-me" href="https://github.com/tylergaw/jribbble">Fork me on GitHub</a>
+  <header role="banner">
+    <img class="banner__branding" src="img/jribbble-branding.svg" alt="Jribbble - A jQuery plugin for the Dribbble API">
+    <p class="banner__version"><a href="https://github.com/tylergaw/jribbble">version 2.0.3</a></p>
 
-<div id="content">
-	<header role="banner">
-		<h1>Jribbble</h1>
-		<h2><span>A jQuery plugin for</span><br><span>fetching shots from</span><br><span>the <a href="http://dribbble.com/api">Dribbble API</a></span></h2>
-	</header>
+    <div class="banner__install">
 
-	<section id="download">
-		<h1>
-            <a class="download-btn" href="https://raw.github.com/tylergaw/jribbble/master/dist/jquery.jribbble-1.0.1.ugly.js">Download Jribbble</a>
-        </h1>
-		<h2>Current release: <strong>v1.0.1</strong></h2>
-        <a class="non-jquery" href="https://github.com/tylergaw/jribbble-no-dependencies">
-            <i>Interested in a jQuery-free version?</i>
+      <div class="install__field">
+        <label for="install__bower">
+          Install it with Bower:
+        </label>
+        <div class="install__bower__container">
+          <input class="install__bower" id="install__bower" type="text" readonly
+            value="bower install --save jribbble">
+        </div>
+      </div>
+
+      <p class="install__download">
+        <a href="https://raw.githubusercontent.com/tylergaw/jribbble/master/dist/jribbble.min.js">
+          or download jribbble.min.js
         </a>
-	</section>
+      </p>
+    </div>
+  </header>
 
-	<hr />
+  <div class="content--main">
+    <div class="content--features">
+      <p class="section-heading">
+        However you get it, once you have it, you can use Jribbble to snag all this good stuff:
+      </p>
+      <ul class="features-list content--restricted-width">
+        <li class="features__item features__item--shrink features--shots">
+          <a href="http://codepen.io/tylergaw/pen/RPRVew/?editors=101">
+            <img src="img/icon-shots.svg">
+            <b class="sr-only">Shots!</b>
+          </a>
+        </li>
+        <li class="features__item">
+          <a href="http://codepen.io/tylergaw/pen/qdqqYo/?editors=101">
+            <img src="img/icon-projects.svg">
+            <b class="sr-only">Projects!</b>
+          </a>
+        </li>
+        <li class="features__item features__item--shrink">
+          <a href="http://codepen.io/tylergaw/pen/bdBrXz?editors=101">
+            <img src="img/icon-buckets.svg">
+            <b class="sr-only">Buckets!</b>
+          </a>
+        </li>
+        <li class="features__item">
+          <a href="http://codepen.io/tylergaw/pen/XbKgJy/?editors=101">
+            <img src="img/icon-attachments.svg">
+            <b class="sr-only">Attachments!</b>
+          </a>
+        </li>
+        <li class="features__item">
+          <a href="http://codepen.io/tylergaw/pen/XbNpqx?editors=101">
+            <img src="img/icon-rebbbounds.svg">
+            <b class="sr-only">Rebbbounds!</b>
+          </a>
+        </li>
+        <li class="features__item features__item--shrink">
+          <a href="http://codepen.io/tylergaw/pen/LVZrBq/?editors=101">
+            <img src="img/icon-comments.svg">
+            <b class="sr-only">Comments!</b>
+          </a>
+        </li>
+        <li class="features__item features__item--shrink">
+          <a href="http://codepen.io/tylergaw/pen/bdBrYK/?editors=101">
+            <img src="img/icon-users.svg">
+            <b class="sr-only">Users!</b>
+          </a>
+        </li>
+        <li class="features__item">
+          <a href="http://codepen.io/tylergaw/pen/bdBrgv/?editors=101">
+            <img src="img/icon-teams.svg">
+            <b class="sr-only">Teams!</b>
+          </a>
+        </li>
+        <li class="features__item features__item--shrink">
+          <a href="http://codepen.io/tylergaw/pen/jPVVZb/?editors=101">
+            <img src="img/icon-likes.svg">
+            <b class="sr-only">Likes!</b>
+          </a>
+        </li>
+      </ul>
+    </div>
 
-	<nav>
-		<h1 class="features-heading">What can it do?</h1>
-		<ol>
-			<li><a href="#getShotById">Get a <b>shot</b></a></li>
-			<li><a href="#getCommentsOfShot">Get the <b>comments</b> of a shot</a></li>
-			<li><a href="#getReboundsOfShot">Get the <b>rebbbounds</b> of a shot</a></li>
-			<li><a href="#getShotsByList">Get a <b>list of shots</b> by the list name</a></li>
-			<li><a href="#getShotsByPlayerId">Get a list of a <b>player's shots</b></a></li>
-			<li><a href="#getShotsThatPlayerFollows">Get a list of <b>shots</b> a player is <b>following</b></a></li>
-			<li><a href="#getShotsThatPlayerLikes">Get a list of <b>shots</b> a player <b>likes</b></a></li>
-			<li><a href="#getPlayerById">Get the <b>profile</b> details of a player</a></li>
-			<li><a href="#getPlayerFollowers">Get the <b>followers</b> of a player</a></li>
-			<li><a href="#getPlayerFollowing">Get the <b>players</b> a player is <b>following</b></a></li>
-			<li><a href="#getPlayerDraftees">Get the <b>draftees</b> of a player</a></li>
-		</ol>
-	</nav>
+    <div class="content--instructions">
+      <p class="section-heading">
+        &hellip;but how does it work? You ask.
+      </p>
 
-	<section class="jribbble-feature" id="getShotById">
-		<header>
-			<h1>Get a shot</h1>
-			<h2>$.jribbble.getShotById(shotId, callback)</h2>
-			<ul class="method-description">
-				<li>
-					<h3>Parameter/Type</h3>
-					<p>Description</p>
-				</li>
-				<li>
-					<h3>shotId INT</h3>
-					<p>The ID of the shot you're looking for.</p>
-				</li>
-				<li>
-					<h3>callback FUNCTION</h3>
-					<p>Function to call once the request has completed successfully. One parameter will be passed containing the contents of the request; callback(data).</p>
-				</li>
-			</ul>
-		</header>
+      <ol class="instructions-list content--restricted-width">
+        <li class="instructions__item">
+          <h3 class="instructions__detail">
+            If you haven’t already, <a href="https://dribbble.com/account/applications/new">register an application on Dribbble</a>.
+            Go ahead. Do it now. We’ll wait.
+          </h3>
+        </li>
+        <li class="instructions__item">
+          <h3 class="instructions__detail">
+            Include jQuery and Jribbble in your html before the closing <code>&lt;/body&gt;</code> tag:
+          </h3>
+<pre><code class="language--html">&lt;body&gt;
+  <span class="code--highlight">&lt;script src="bower_components/jquery/dist/jquery.min.js"&gt;&lt;/script&gt;
+  &lt;script src="bower_components/jribbble/dist/jribbble.min.js"&gt;&lt;/script&gt;</span>
+&lt;/body&gt;</code></pre>
+        </li>
+        <li class="instructions__item">
+          <h3 class="instructions__detail">
+            Add an element (or elements) to your html where you want Dribbble stuff to display:
+          </h3>
+<pre><code class="language--html">&lt;body&gt;
+  <span class="code--highlight">&lt;ul class="shots"&gt;&lt;/ul&gt;</span>
 
-		<div class="feature-examples">
-			<div id="shotById" class="twoUp">
-				<div>
-					<a href=""><img src="." alt=""></a>
-				</div>
-				<div>
-					<h3></h3>
-					<h4></h4>
-					<ul></ul>
-				</div>
-			</div>
-		</div>
-	</section>
+  &lt;script src="bower_components/jquery/dist/jquery.min.js"&gt;&lt;/script&gt;
+  &lt;script src="bower_components/jribbble/dist/jribbble.min.js"&gt;&lt;/script&gt;
+&lt;/body&gt;</code></pre>
+        </li>
+        <li class="instructions__item">
+          <h3 class="instructions__detail">
+            Give Jribbble the client access token for your Dribbble application <em>(you registered an app right?)</em>
+          </h3>
+<pre><code class="language--html">&lt;body&gt;
+  &lt;ul class="shots"&gt;&lt;/ul&gt;
 
-	<hr />
+  &lt;script src="bower_components/jquery/dist/jquery.min.js"&gt;&lt;/script&gt;
+  &lt;script src="bower_components/jribbble/dist/jribbble.min.js"&gt;&lt;/script&gt;
 
-	<section class="jribbble-feature" id="getCommentsOfShot">
-		<header>
-			<h1>Get the Comments of a Shot</h1>
-			<h2>$.jribbble.getCommentsOfShot(shotId, callback, <i>[pagingOpts]</i>)</h2>
-			<ul class="method-description">
-				<li>
-					<h3>Parameter/Type</h3>
-					<p>Description</p>
-				</li>
-				<li>
-					<h3>shotId INT</h3>
-					<p>The ID of the shot you want comments.</p>
-				</li>
-				<li>
-					<h3>callback FUNCTION</h3>
-					<p>Function to call once the request has completed successfully. One parameter will be passed containing the contents of the request; callback(data).</p>
-				</li>
-				<li>
-					<h3>pagingOpts OPTIONAL OBJECT</h3>
-					<p>Example: {page: 1, per_page: 15}</p>
-				</li>
-			</ul>
-		</header>
-		<div class="feature-examples">
+  <span class="code--highlight">&lt;script&gt;
+    $.jribbble.setToken('1234567890');
+  &lt;/script&gt;</span>
+&lt;/body&gt;</code></pre>
+        </li>
+        <li class="instructions__item">
+          <h3 class="instructions__detail">
+            Tell Jribbble you want somethin’! In this example we want team shots, but there are other <a href="http://developer.dribbble.com/v1/shots/#list-shots">options</a>:
+          </h3>
+<pre><code class="language--html">&lt;body&gt;
+  &lt;ul class="shots"&gt;&lt;/ul&gt;
 
-			<div id="shotComments" class="twoUp">
-				<div>
-					<a href=""><img src="." alt=""></a>
-				</div>
-				<div>
-					<h3></h3>
-					<h4></h4>
-					<ul id="shotCommentsList"></ul>
-				</div>
-			</div>
-		</div>
-	</section>
+  &lt;script src="bower_components/jquery/dist/jquery.min.js"&gt;&lt;/script&gt;
+  &lt;script src="bower_components/jribbble/dist/jribbble.min.js"&gt;&lt;/script&gt;
 
-	<hr />
+  &lt;script&gt;
+    $.jribbble.setToken('1234567890');
 
-	<section class="jribbble-feature" id="getReboundsOfShot">
-		<header>
-			<h1>Get the Rebounds of a Shot</h1>
-			<h2>$.jribbble.getReboundsOfShot(shotId, callback, <i>[pagingOpts]</i>)</h2>
-			<ul class="method-description">
-				<li>
-					<h3>Parameter/Type</h3>
-					<p>Description</p>
-				</li>
-				<li>
-					<h3>shotId INT</h3>
-					<p>The ID of the shot you want rebounds.</p>
-				</li>
-				<li>
-					<h3>callback FUNCTION</h3>
-					<p>Function to call once the request has completed successfully. One parameter will be passed containing the contents of the request; callback(data).</p>
-				</li>
-				<li>
-					<h3>pagingOpts OPTIONAL OBJECT</h3>
-					<p>Example: {page: 1, per_page: 15}</p>
-				</li>
-			</ul>
-		</header>
+    <span class="code__comment">/*
+      Jribbble methods make ajax requests to the Dribbble API. When
+      the requests complete, a Promise is returned. Use `then` to take an action
+      on the response from the server.
+    */</span>
+    <span class="code--highlight">$.jribbble.shots('teams').then(function(shots) {});</span>
+  &lt;/script&gt;
+&lt;/body&gt;</code></pre>
+        </li>
+        <li class="instructions__item">
+          <h3 class="instructions__detail">
+            Iterate through the response to build markup for the shots then append
+            them to the DOM:
+          </h3>
+<pre><code class="language--html">&lt;body&gt;
+  &lt;ul class="shots"&gt;&lt;/ul&gt;
 
-		<div class="feature-examples">
-			<ul id="reboundsOfShot" class="shotList"></ul>
-		</div>
-	</section>
+  &lt;script src="bower_components/jquery/dist/jquery.min.js"&gt;&lt;/script&gt;
+  &lt;script src="bower_components/jribbble/dist/jribbble.min.js"&gt;&lt;/script&gt;
 
-	<hr />
+  &lt;script&gt;
+    $.jribbble.setToken('1234567890');
 
-	<section class="jribbble-feature" id="getShotsByList">
-		<header>
-			<h1>Get a List of Shots by the List Name</h1>
-			<h2>$.jribbble.getShotsByList(listName, callback, <i>[pagingOpts]</i>)</h2>
-			<ul class="method-description">
-				<li>
-					<h3>Parameter/Type</h3>
-					<p>Description</p>
-				</li>
-				<li>
-					<h3>listName STRING</h3>
-					<p>Can be one of: "popular", "everyone", "debuts"</p>
-				</li>
-				<li>
-					<h3>callback FUNCTION</h3>
-					<p>Function to call once the request has completed successfully. One parameter will be passed containing the contents of the request; callback(data).</p>
-				</li>
-				<li>
-					<h3>pagingOpts OPTIONAL OBJECT</h3>
-					<p>Example: {page: 1, per_page: 15}</p>
-				</li>
-			</ul>
-		</header>
+    <span class="code__comment">/*
+      Jribbble methods make ajax requests to the Dribbble API. When
+      the requests complete, a Promise is returned. Use `then` to take an action
+      on the response from the server.
+    */</span>
+    $.jribbble.shots('teams').then(function(shots) {
+      <span class="code--highlight">var html = [];
 
-		<div class="feature-examples">
-			<ul id="shotsByList" class="shotList"></ul>
-		</div>
-	</section>
+      shots.forEach(function(shot) {
+        <span class="code__comment">// See the <a href="http://developer.dribbble.com/v1/shots/#response">Dribbble docs</a> for all available shot properties.</span>
+        html.push('&lt;li class="shots--shot"&gt;');
+        html.push('&lt;a href="' + shot.html_url + '"&gt;');
+        html.push('&lt;img src="' + shot.images.normal + '"&gt;');
+        html.push('&lt;/a&gt;&lt;/li&gt;');
+      });
 
-	<hr />
+      $('.shots').html(html.join(''));</span>
+    });
+  &lt;/script&gt;
+&lt;/body&gt;</code></pre>
+        </li>
+        <li class="instructions__item--special">
+          <button class="do-not-press-btn">Do not press this button <span>(unless you want to see the above code happen right here on this website)</span></button>
 
-	<section class="jribbble-feature" id="getShotsByPlayerId">
-		<header>
-			<h1>Get a List of a Player's Shots</h1>
-			<h2>$.jribbble.getShotsByPlayerId(playerId, callback, <i>[pagingOpts]</i>)</h2>
-			<ul class="method-description">
-				<li>
-					<h3>Parameter/Type</h3>
-					<p>Description</p>
-				</li>
-				<li>
-					<h3>playerId STRING or INT</h3>
-					<p>Example 'username' or 9999</p>
-				</li>
-				<li>
-					<h3>callback FUNCTION</h3>
-					<p>Function to call once the request has completed successfully. One parameter will be passed containing the contents of the request; callback(data).</p>
-				</li>
-				<li>
-					<h3>pagingOpts OPTIONAL OBJECT</h3>
-					<p>Example: {page: 1, per_page: 15}</p>
-				</li>
-			</ul>
-		</header>
+          <div class="grinds-my-gears hidden">
+            <div class="gears">
+              <div class="gear gear--one"></div>
+              <div class="gear gear--two"></div>
+              <div class="gear gear--three"></div>
+            </div>
 
-		<div class="feature-examples">
-			<ul id="shotsByPlayerId" class="shotList"></ul>
-		</div>
-	</section>
+            <ol class="demo-steps">
+              <li>
+                gearing up #seewhatididthere<span class="blink">&hellip;</span>
+              </li>
+              <li class="hidden">
+                setting client access token<span class="blink">&hellip;</span>
+              </li>
+              <li class="hidden">
+                appending shots container to DOM<span class="blink">&hellip;</span>
+              </li>
+              <li class="hidden">
+                requesting shots from api<span class="blink">&hellip;</span>
+              </li>
+              <li class="hidden">
+                request to api successful<span class="blink">&hellip;</span>
+              </li>
+              <li class="hidden">
+                building shots markup<span class="blink">&hellip;</span>
+              </li>
+              <li class="hidden">
+                <span class="blink">sequence complete</span>
+              </li>
+            </ol>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </div>
 
-	<hr />
+  <footer role="contentinfo">
+    <ul class="jribbble-info">
+      <li>
+        Docs &amp; source
+        <br><a href="https://github.com/tylergaw/jribbble">Github</a>
+      </li>
+      <li>
+        More demos
+        <br><a href="http://codepen.io/collection/nWvjrg">Codepen</a>
+      </li>
+      <li class="info-credit">
+        Made by
+        <br><a href="http://tylergaw.com">Tyler Gaw</a>
+      </li>
+    </ul>
+  </footer>
 
-	<section class="jribbble-feature" id="getShotsThatPlayerFollows">
-		<header>
-			<h1>Get a List of Shots a Player is Following</h1>
-			<h2>$.jribbble.getShotsThatPlayerFollows(playerId, callback, <i>[pagingOpts]</i>)</h2>
-			<ul class="method-description">
-				<li>
-					<h3>Parameter/Type</h3>
-					<p>Description</p>
-				</li>
-				<li>
-					<h3>playerId STRING or INT</h3>
-					<p>Example 'username' or 9999</p>
-				</li>
-				<li>
-					<h3>callback FUNCTION</h3>
-					<p>Function to call once the request has completed successfully. One parameter will be passed containing the contents of the request; callback(data).</p>
-				</li>
-				<li>
-					<h3>pagingOpts OPTIONAL OBJECT</h3>
-					<p>Example: {page: 1, per_page: 15}</p>
-				</li>
-			</ul>
-		</header>
-		<div class="feature-examples">
-			<ul id="shotsPlayerFollows" class="shotList"></ul>
-		</div>
-	</section>
-
-	<hr />
-
-	<section class="jribbble-feature" id="getShotsThatPlayerLikes">
-		<header>
-			<h1>Get a List of Shots a Player Likes</h1>
-			<h2>$.jribbble.getShotsThatPlayerLikes(playerId, callback, <i>[pagingOpts]</i>)</h2>
-			<ul class="method-description">
-				<li>
-					<h3>Parameter/Type</h3>
-					<p>Description</p>
-				</li>
-				<li>
-					<h3>playerId STRING or INT</h3>
-					<p>Example 'username' or 9999</p>
-				</li>
-				<li>
-					<h3>callback FUNCTION</h3>
-					<p>Function to call once the request has completed successfully. One parameter will be passed containing the contents of the request; callback(data).</p>
-				</li>
-				<li>
-					<h3>pagingOpts OPTIONAL OBJECT</h3>
-					<p>Example: {page: 1, per_page: 15}</p>
-				</li>
-			</ul>
-		</header>
-		<div class="feature-examples">
-			<ul id="shotsPlayerLikes" class="shotList"></ul>
-		</div>
-	</section>
-
-	<hr />
-
-	<section class="jribbble-feature" id="getPlayerById">
-		<header>
-			<h1>Get the Profile Details of a Player</h1>
-			<h2>$.jribbble.getPlayerById(playerId, callback)</h2>
-			<ul class="method-description">
-				<li>
-					<h3>Parameter/Type</h3>
-					<p>Description</p>
-				</li>
-				<li>
-					<h3>playerId STRING or INT</h3>
-					<p>Example 'username' or 9999</p>
-				</li>
-				<li>
-					<h3>callback FUNCTION</h3>
-					<p>Function to call once the request has completed successfully. One parameter will be passed containing the contents of the request; callback(data).</p>
-				</li>
-			</ul>
-		</header>
-		<div class="feature-examples">
-			<div id="playerProfile"></div>
-		</div>
-	</section>
-
-	<hr />
-
-	<section class="jribbble-feature" id="getPlayerFollowers">
-		<header>
-			<h1>Get the Followers of a Player</h1>
-			<h2>$.jribbble.getPlayerFollowers(playerId, callback, <i>[pagingOpts]</i>)</h2>
-			<ul class="method-description">
-				<li>
-					<h3>Parameter/Type</h3>
-					<p>Description</p>
-				</li>
-				<li>
-					<h3>playerId STRING or INT</h3>
-					<p>Example 'username' or 9999</p>
-				</li>
-				<li>
-					<h3>callback FUNCTION</h3>
-					<p>Function to call once the request has completed successfully. One parameter will be passed containing the contents of the request; callback(data).</p>
-				</li>
-				<li>
-					<h3>pagingOpts OPTIONAL OBJECT</h3>
-					<p>Example: {page: 1, per_page: 15}</p>
-				</li>
-			</ul>
-		</header>
-		<div class="feature-examples">
-			<ul id="playerFollowers" class="playerList"></ul>
-		</div>
-	</section>
-
-	<hr />
-
-	<section class="jribbble-feature" id="getPlayerFollowing">
-		<header>
-			<h1>Get the Players a Player is Following</h1>
-			<h2>$.jribbble.getPlayerFollowing(playerId, callback, <i>[pagingOpts]</i>)</h2>
-			<ul class="method-description">
-				<li>
-					<h3>Parameter/Type</h3>
-					<p>Description</p>
-				</li>
-				<li>
-					<h3>playerId STRING or INT</h3>
-					<p>Example 'username' or 9999</p>
-				</li>
-				<li>
-					<h3>callback FUNCTION</h3>
-					<p>Function to call once the request has completed successfully. One parameter will be passed containing the contents of the request; callback(data).</p>
-				</li>
-				<li>
-					<h3>pagingOpts OPTIONAL OBJECT</h3>
-					<p>Example: {page: 1, per_page: 15}</p>
-				</li>
-			</ul>
-		</header>
-		<div class="feature-examples">
-			<ul id="playerFollowing" class="playerList"></ul>
-		</div>
-	</section>
-
-	<hr />
-
-	<section class="jribbble-feature" id="getPlayerDraftees">
-		<header>
-			<h1>Get the Draftees of a Player</h1>
-			<h2>$.jribbble.getPlayerDraftees(playerId, callback, <i>[pagingOpts]</i>)</h2>
-			<ul class="method-description">
-				<li>
-					<h3>Parameter/Type</h3>
-					<p>Description</p>
-				</li>
-				<li>
-					<h3>playerId STRING or INT</h3>
-					<p>Example 'username' or 9999</p>
-				</li>
-				<li>
-					<h3>callback FUNCTION</h3>
-					<p>Function to call once the request has completed successfully. One parameter will be passed containing the contents of the request; callback(data).</p>
-				</li>
-				<li>
-					<h3>pagingOpts OPTIONAL OBJECT</h3>
-					<p>Example: {page: 1, per_page: 15}</p>
-				</li>
-			</ul>
-		</header>
-		<div class="feature-examples">
-			<ul id="playerDraftees" class="playerList"></ul>
-		</div>
-	</section>
-
-	<hr/>
-
-	<footer>
-
-		<p>Created by <a href="http://tylergaw.com">Tyler Gaw</a></p><br>
-		<p>He is <a href="http://twitter.com/thegaw">@thegaw</a> on Twitter</p>
-		<em>For more documentation and code examples head to <a href="https://github.com/tylergaw/jribbble/blob/master/README.md">http://github.com/tylergaw/jribbble</a></em>
-	</footer>
-</div>
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-	<script src="js/jquery.jribbble-1.0.1.ugly.js"></script>
-	<script src="js/jribbble.demos.js"></script>
-
-	<script src="http://use.typekit.com/nyr0qms.js"></script>
-	<script>try{Typekit.load();}catch(e){}</script>
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/jribbble/dist/jribbble.min.js"></script>
+  <script src="js/thefloorislava.js"></script>
 </body>
 </html>

@@ -1,0 +1,151 @@
+[role="banner"] {
+  background-color: $blue--light;
+  padding-top: 0.6em;
+  position: relative;
+
+  &::after {
+    background-color: $blue--med;
+    content: "";
+    display: block;
+    height: 3px;
+    left: 2px;
+    margin: 0 auto;
+    position: relative;
+    top: -2px;
+    transform: rotate(-0.2deg);
+    width: 99%;
+  }
+}
+
+.banner__branding {
+  display: block;
+  margin: 0 auto;
+  max-width: 754px;
+  width: 98%;
+}
+
+.banner__version {
+  font-size: 0.8rem;
+  text-align: right;
+  margin: 0 auto;
+  max-width: 748px;
+  position: relative;
+  bottom: 1.1em;
+  width: 98%;
+
+  a {
+    color: $blue--dark;
+    text-decoration: none;
+  }
+}
+
+.banner__install {
+  box-sizing: border-box;
+  margin: 0 auto;
+  max-width: 510px;
+  overflow: hidden;
+  padding: 1.4em 0 2.4em 0;
+  width: 98%;
+}
+
+.install__field {
+  label {
+    display: block;
+    font-size: 1.2rem;
+    padding: 0 0 0.2em 0.25em;
+  }
+}
+
+@-webkit-keyframes cursor-blink {
+  0%, 40% {
+    background-color: $blue--light;
+  }
+
+  49%, 100% {
+    background-color: rgba($blue--light, 0);
+  }
+}
+
+@keyframes cursor-blink {
+  0%, 40% {
+    background-color: $blue--light;
+  }
+
+  49%, 100% {
+    background-color: rgba($blue--light, 0);
+  }
+}
+
+.install__bower__container {
+  background-color: $blue--dark;
+  position: relative;
+
+  &::after {
+    -webkit-animation: cursor-blink 0.8s infinite;
+    animation: cursor-blink 0.8s infinite;
+    background-color: $blue--light;
+    border: 1px solid $blue--light;
+    content: "";
+    display: block;
+    height: 47%;
+    position: absolute;
+    right: 0.7rem;
+    top: 0.6rem;
+    width: 0.9rem;
+  }
+}
+
+.install__bower {
+  @extend %mono;
+  background-color: transparent;
+  border: 0;
+  box-sizing: border-box;
+  color: $blue--light;
+  cursor: text;
+  display: block;
+  font-size: 0.9rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding: 0.6rem 0.6rem;
+  width: 100%;
+}
+
+.install__download {
+  margin: 0.6em 0.4em 0 0;
+  text-align: right;
+
+  a {
+    border-bottom: 2px solid $blue--hyper;
+    color: $blue--hyper;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      border-bottom-color: $red--firetruck;
+      color: $red--firetruck;
+    }
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .banner__version {
+    font-size: 0.8rem;
+    bottom: 2.4em;
+  }
+
+  .install__bower__container {
+    &::after {
+      height: 1.5rem;
+    }
+  }
+
+  .install__bower {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (min-width: 570px) {
+  .banner__install {
+    padding-left: 88px;
+  }
+}

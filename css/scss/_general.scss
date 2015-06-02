@@ -1,0 +1,36 @@
+$width--max--content: 1260px;
+
+%sans {
+  font-family: "Nunito", arial, sans-serif;
+}
+
+%mono {
+  font-family: "Lucida Sans Typewriter", "monaco", "Consolas", "Lucida Console", monospace;
+}
+
+body {
+  background-color: $red--light;
+  color: $blue--dark;
+  @extend %sans;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
+
+.content--restricted-width {
+  margin: 0 auto;
+  max-width: $width--max--content;
+  width: 95%;
+}
+
+.hidden {
+  visibility: hidden;
+}

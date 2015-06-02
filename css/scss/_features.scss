@@ -1,0 +1,149 @@
+@keyframes shimmy {
+  0% {
+    transform: rotate(-4.5deg);
+  }
+
+  25% {
+    transform: rotate(1deg);
+  }
+
+  50% {
+    transform: rotate(4deg);
+  }
+
+  75% {
+    transform: rotate(0deg);
+  }
+}
+
+.content--features {
+  padding-top: 2rem;
+}
+
+.features-list {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+.features__item {
+  -webkit-flex: 0 0 100%;
+  flex: 0 0 100%;
+  list-style: none;
+  position: relative;
+
+  img {
+    display: block;
+    width: 100%;
+  }
+
+  a {
+    display: -webkit-flex;
+    display: flex;
+    margin: 0 auto;
+    max-width: 170px;
+    position: relative;
+    top: 0;
+    transform-origin: center bottom;
+    transition: top 0.1s ease;
+
+    &::after {
+      bottom: 0;
+      content: "demo on Codepen >";
+      color: $blue--hyper;
+      display: inline-block;
+      font-size: 0.8em;
+      left: 2%;
+      opacity: 0;
+      position: absolute;
+      text-align: center;
+      text-transform: uppercase;
+      -webkit-transform: rotate(-2deg);
+      transform: rotate(-2deg);
+      transition: all 0.1s;
+      transition-delay: 0.3s;
+      white-space: nowrap;
+      width: 100%;
+    }
+
+    &:hover,
+    &:focus {
+      animation: shimmy 0.2s 0.12s 1;
+      top: -10px;
+
+      &::after {
+        bottom: -15px;
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.features__item--shrink {
+  a {
+    max-width: 140px;
+  }
+}
+
+@media screen and (min-width: 390px) {
+  .features__item {
+    -webkit-flex: 1 0 50%;
+    flex: 1 0 50%;
+  }
+
+  // This item has...unconventional desires
+  .features--shots {
+    a {
+      padding-top: 1rem;
+    }
+  }
+}
+
+@media screen and (min-width: 520px) {
+  .content--features {
+    padding-top: 2.4em;
+  }
+}
+
+@media screen and (min-width: 620px) {
+  .features__item {
+    a {
+      max-width: 190px;
+    }
+  }
+
+  .features__item--shrink {
+    a {
+      max-width: 160px;
+    }
+  }
+}
+
+@media screen and (min-width: 780px) {
+  .features-list {
+    padding: 2.6rem 0 0 0;
+  }
+
+  .features__item {
+    margin-bottom: 1.4em;
+
+    a {
+      max-width: 220px;
+    }
+  }
+
+  .features__item--shrink {
+    a {
+      max-width: 180px;
+    }
+  }
+}
+
+@media screen and (min-width: 860px) {
+  .features__item {
+    -webkit-flex: 0 0 33.3333%;
+    flex: 0 0 33.3333%;
+  }
+}
